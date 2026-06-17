@@ -1,0 +1,9 @@
+"variant";"direction";"nodes";"edges"
+"1. Full network";"Export";226;28909
+"2. After node filter";"Export";203;26774
+"3. After edge filter";"Export";192;5355
+"4. Backbone (disparity)";"Export";203;3173
+"1. Full network";"Import";226;28909
+"2. After node filter";"Import";203;26905
+"3. After edge filter";"Import";195;5381
+"4. Backbone (disparity)";"Import";203;3189

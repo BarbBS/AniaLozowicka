@@ -1,0 +1,825 @@
+"variant";"name";"continent";"iso3";"label";"color";"strength";"eigenv";"between";"closen"
+"1. Full network";"Afghanistan";"Asia";"AFG";"AFG";"gold";1615214,623;0,00100991877583987;0;0,000489871801597511
+"1. Full network";"Albania";"Europe";"ALB";"ALB";"skyblue";3930716,042;0,00171322341627708;0;0,000540985526792978
+"1. Full network";"Algeria";"Africa";"DZA";"DZA";"tomato";48039608,084;0,0149807063580035;0;0,000580444676003085
+"1. Full network";"American Samoa";"Oceania";"ASM";"ASM";"orchid";32538,695;2,27907519825688e-05;0;2,5146698900769e-05
+"1. Full network";"Andorra";"Europe";"AND";"AND";"skyblue";109559,271;0,000175888889296079;0;0,000133030656828426
+"1. Full network";"Angola";"Africa";"AGO";"AGO";"tomato";42285090,254;0,0137839652764734;0;0,000583557338501335
+"1. Full network";"Antigua and Barbuda";"Americas";"ATG";"ATG";"palegreen3";217115,449;0,00038864403446557;0;0,000222796365208051
+"1. Full network";"Azerbaijan";"Asia";"AZE";"AZE";"gold";27102277,039;0,00600860057510569;0;0,000578177565902076
+"1. Full network";"Argentina";"Americas";"ARG";"ARG";"palegreen3";79931917,799;0,0249050611133587;0;0,000581857356276961
+"1. Full network";"Australia";"Oceania";"AUS";"AUS";"orchid";357389546,818;0,170342852143766;1558;0,000587658942758969
+"1. Full network";"Austria";"Europe";"AUT";"AUT";"skyblue";205128559,07;0,0713868821400222;0;0,000586378468988238
+"1. Full network";"Bahamas";"Americas";"BHS";"BHS";"palegreen3";2357190,253;0,00388118624546594;224;0,000519694941124689
+"1. Full network";"Bahrain";"Asia";"BHR";"BHR";"gold";18156800,78;0,00472677871014105;0;0,000561742545583091
+"1. Full network";"Bangladesh";"Asia";"BGD";"BGD";"gold";58762121,141;0,0269900946643177;447;0,000579179460505545
+"1. Full network";"Armenia";"Asia";"ARM";"ARM";"gold";13361658,303;0,00365536055203748;224;0,000571850797969675
+"1. Full network";"Barbados";"Americas";"BRB";"BRB";"palegreen3";440719,499;0,000683395584016456;224;0,000260796202862503
+"1. Full network";"Belgium";"Europe";"BEL";"BEL";"skyblue";380560365,179;0,124594606769706;224;0,000586359424481765
+"1. Full network";"Bermuda";"Americas";"BMU";"BMU";"palegreen3";247378,136;0,000983624925660742;0;0,000310042743288013
+"1. Full network";"Bhutan";"Asia";"BTN";"BTN";"gold";461085,158;0,000239795128096451;0;0,000450592779681758
+"1. Full network";"Bolivia (Plurinational State of)";"Americas";"BOL";"BOL";"palegreen3";9048777,713;0,0034396666372654;0;0,000540969161121642
+"1. Full network";"Bosnia Herzegovina";"Europe";"BIH";"BIH";"skyblue";9528865,27;0,00270284132256644;0;0,00053710066381904
+"1. Full network";"Botswana";"Africa";"BWA";"BWA";"tomato";4174071,578;0,00120091673717605;0;0,000528116205123793
+"1. Full network";"Brazil";"Americas";"BRA";"BRA";"palegreen3";350305232,86;0,157895652695067;893;0,00058743827746364
+"1. Full network";"Belize";"Americas";"BLZ";"BLZ";"palegreen3";431383,043;0,00067563478394714;0;0,000282318635734725
+"1. Full network";"Br. Indian Ocean Terr.";"Asia";"IOT";"IOT";"gold";14366,156;7,94698451541632e-06;0;4,69852769460106e-05
+"1. Full network";"Solomon Isds";"Oceania";"SLB";"SLB";"orchid";678493,67;0,000348367758300496;0;0,000442026087173368
+"1. Full network";"Br. Virgin Isds";"Americas";"VGB";"VGB";"palegreen3";202354,025;0,000342022038633231;0;0,000167917026909078
+"1. Full network";"Brunei Darussalam";"Asia";"BRN";"BRN";"gold";11469666,574;0,00322984854410938;0;0,00055323896593797
+"1. Full network";"Bulgaria";"Europe";"BGR";"BGR";"skyblue";51973180,534;0,0117429793712217;0;0,000577263222595032
+"1. Full network";"Myanmar";"Asia";"MMR";"MMR";"gold";19979771,077;0,00922680855451872;0;0,00057394116351539
+"1. Full network";"Burundi";"Africa";"BDI";"BDI";"tomato";68168,783;8,01401742326928e-05;0;8,68526400318538e-05
+"1. Full network";"Belarus";"Europe";"BLR";"BLR";"skyblue";6270550,59;0,00489642840205996;0;0,000548191256310964
+"1. Full network";"Cambodia";"Asia";"KHM";"KHM";"gold";36087517,557;0,0197619677472441;0;0,000581676946448032
+"1. Full network";"Cameroon";"Africa";"CMR";"CMR";"tomato";6916336,107;0,00345539036571332;224;0,000536871245434519
+"1. Full network";"Canada";"Americas";"CAN";"CAN";"palegreen3";573325205,665;0,459251840050231;670;0,000587638177801804
+"1. Full network";"Cabo Verde";"Africa";"CPV";"CPV";"tomato";86460,243;0,000114876236266277;0;0,000158369418706062
+"1. Full network";"Cayman Isds";"Americas";"CYM";"CYM";"palegreen3";2243011,477;0,00160141794757626;0;0,000547207162070753
+"1. Full network";"Central African Rep.";"Africa";"CAF";"CAF";"tomato";245289,956;0,000164211146848855;0;0,000187842528805094
+"1. Full network";"Sri Lanka";"Asia";"LKA";"LKA";"gold";13775407,019;0,00654420517461944;0;0,000563841420030287
+"1. Full network";"Chad";"Africa";"TCD";"TCD";"tomato";3480675,78;0,00108066111470601;0;0,000519653497618702
+"1. Full network";"Chile";"Americas";"CHL";"CHL";"palegreen3";101235581,444;0,0549520640460693;448;0,000586231500849623
+"1. Full network";"China";"Asia";"CHN";"CHN";"gold";3605655196,924;0,8555349948378;38015;0,000588237769850865
+"1. Full network";"Christmas Isds";"Oceania";"CXR";"CXR";"orchid";12031,658;6,75717024584392e-06;0;2,01968391054909e-05
+"1. Full network";"Cocos Isds";"Oceania";"CCK";"CCK";"orchid";3997,56;3,06345518945343e-06;0;3,1170127230844e-06
+"1. Full network";"Colombia";"Americas";"COL";"COL";"palegreen3";51122270,715;0,0323743861647521;0;0,000582524014881128
+"1. Full network";"Comoros";"Africa";"COM";"COM";"tomato";49868,368;7,04362463967173e-05;0;6,32591910979894e-05
+"1. Full network";"Congo";"Africa";"COG";"COG";"tomato";8512232,385;0,0034636202089423;0;0,000570504996526283
+"1. Full network";"Dem. Rep. of the Congo";"Africa";"COD";"COD";"tomato";29599508,708;0,0136071890342116;0;0,000584733044342689
+"1. Full network";"Cook Isds";"Oceania";"COK";"COK";"orchid";34286,85;2,85952202567522e-05;0;5,16185110697642e-05
+"1. Full network";"Costa Rica";"Americas";"CRI";"CRI";"palegreen3";24147521,183;0,0147372343273838;0;0,000580071359190602
+"1. Full network";"Croatia";"Europe";"HRV";"HRV";"skyblue";24254357,984;0,00716500121109476;0;0,000562864028108993
+"1. Full network";"Cuba";"Americas";"CUB";"CUB";"palegreen3";986837,54;0,00102988586443388;0;0,000395064018906919
+"1. Full network";"Cyprus";"Asia";"CYP";"CYP";"gold";5444980,264;0,00189501978281048;224;0,000500712484593822
+"1. Full network";"Czechia";"Europe";"CZE";"CZE";"skyblue";244664898,041;0,0751187760034769;224;0,00058668975217199
+"1. Full network";"Benin";"Africa";"BEN";"BEN";"tomato";1471280,794;0,000922286842599038;224;0,000455944819734483
+"1. Full network";"Denmark";"Europe";"DNK";"DNK";"skyblue";119603537,327;0,0383636220122772;448;0,000583170236823773
+"1. Full network";"Dominica";"Americas";"DMA";"DMA";"palegreen3";29528,652;6,76734700917029e-05;0;1,82092117194837e-05
+"1. Full network";"Dominican Rep.";"Americas";"DOM";"DOM";"palegreen3";14654680,33;0,0165264103036991;0;0,000577972539656573
+"1. Full network";"Ecuador";"Americas";"ECU";"ECU";"palegreen3";40320802,31;0,0182442366616567;0;0,000578972553578669
+"1. Full network";"El Salvador";"Americas";"SLV";"SLV";"palegreen3";6660009,527;0,00594999976777296;0;0,0005530681268131
+"1. Full network";"Equatorial Guinea";"Africa";"GNQ";"GNQ";"tomato";4471120,029;0,00108246534507097;0;0,000520224603289964
+"1. Full network";"Ethiopia";"Africa";"ETH";"ETH";"tomato";3207962,444;0,00274618587630805;0;0,000444575261709039
+"1. Full network";"Eritrea";"Africa";"ERI";"ERI";"tomato";573916,127;0,000340765703464442;0;0,000456256687190309
+"1. Full network";"Estonia";"Europe";"EST";"EST";"skyblue";20313297,022;0,00476639164816019;0;0,000552037359394383
+"1. Full network";"Falkland Isds (Malvinas)";"Americas";"FLK";"FLK";"palegreen3";378803,466;5,85636863190399e-05;0;0,00038743583037856
+"1. Full network";"Fiji";"Oceania";"FJI";"FJI";"orchid";1194908,76;0,000891843123097496;224;0,000437209400062206
+"1. Full network";"Finland";"Europe";"FIN";"FIN";"skyblue";80766700,611;0,0240255020322927;222;0,000579185236322617
+"1. Full network";"France";"Europe";"FRA";"FRA";"skyblue";636371457,741;0,219600636067921;2860;0,000586845665800529
+"1. Full network";"French Polynesia";"Oceania";"PYF";"PYF";"orchid";188943,274;0,000339716119575002;0;0,000221068761883497
+"1. Full network";"Fr. South Antarctic Terr.";"Antarctica";"ATF";"ATF";"lightgray";12991,931;5,10754691849923e-06;0;3,36419527579994e-05
+"1. Full network";"Djibouti";"Africa";"DJI";"DJI";"tomato";192703,509;0,00179077778581112;0;0,000253562038604268
+"1. Full network";"Gabon";"Africa";"GAB";"GAB";"tomato";8037633,267;0,00251551751819183;0;0,000563126722078048
+"1. Full network";"Georgia";"Asia";"GEO";"GEO";"gold";2951180,382;0,00205205826408429;0;0,000481591483936801
+"1. Full network";"Gambia";"Africa";"GMB";"GMB";"tomato";205544,176;0,000399373711935979;224;0,000219087113724136
+"1. Full network";"State of Palestine";"Asia";"PSE";"PSE";"gold";98205,723;0,000190040927041654;0;8,09738026317158e-05
+"1. Full network";"Germany";"Europe";"DEU";"DEU";"skyblue";1553266741,115;0,431472828782698;16105;0,000587735552137478
+"1. Full network";"Ghana";"Africa";"GHA";"GHA";"tomato";15919632,733;0,00867093194321955;0;0,000569165627407262
+"1. Full network";"Gibraltar";"Europe";"GIB";"GIB";"skyblue";153054,829;0,000952740943543044;0;0,000177367180973675
+"1. Full network";"Kiribati";"Oceania";"KIR";"KIR";"orchid";109372,466;4,77200433903773e-05;0;0,000201899019356248
+"1. Full network";"Greece";"Europe";"GRC";"GRC";"skyblue";53108830,634;0,0167037902799728;293;0,000571872441642174
+"1. Full network";"Greenland";"Americas";"GRL";"GRL";"palegreen3";1580145,813;0,000302714202970187;0;0,000493501296418521
+"1. Full network";"Grenada";"Americas";"GRD";"GRD";"palegreen3";26025,515;0,000122804275172282;0;5,92152242349152e-05
+"1. Full network";"Guam";"Oceania";"GUM";"GUM";"orchid";25519,313;0,000114547835896559;0;3,12212718392867e-05
+"1. Full network";"Guatemala";"Americas";"GTM";"GTM";"palegreen3";15544506,028;0,0137284233522816;0;0,000572707392789161
+"1. Full network";"Guinea";"Africa";"GIN";"GIN";"tomato";9643413,837;0,00606837128737433;0;0,000578303166115033
+"1. Full network";"Guyana";"Americas";"GUY";"GUY";"palegreen3";18542378,521;0,00598384318778038;0;0,000574136902700746
+"1. Full network";"Haiti";"Americas";"HTI";"HTI";"palegreen3";815075,911;0,00130520036909733;0;0,000487027695155817
+"1. Full network";"Honduras";"Americas";"HND";"HND";"palegreen3";10103659,203;0,0085149174204302;0;0,000571940149909685
+"1. Full network";"China, Hong Kong SAR";"Asia";"HKG";"HKG";"gold";156468833,463;0,221708381005236;224;0,000586268930243671
+"1. Full network";"Hungary";"Europe";"HUN";"HUN";"skyblue";159778119,617;0,0450885656544201;0;0,000585673108867358
+"1. Full network";"Iceland";"Europe";"ISL";"ISL";"skyblue";7906861,591;0,00288300147720449;0;0,000555198487236393
+"1. Full network";"Indonesia";"Asia";"IDN";"IDN";"gold";296408361,008;0,12455523858973;670;0,000587070998647695
+"1. Full network";"Iran";"Asia";"IRN";"IRN";"gold";12956293,649;0,00807673560096059;0;0,00057125638964601
+"1. Full network";"Iraq";"Asia";"IRQ";"IRQ";"gold";109122962,689;0,0404008410189728;0;0,00058623361585331
+"1. Full network";"Ireland";"Europe";"IRL";"IRL";"skyblue";244850102,141;0,0980993179063689;224;0,000586869259818658
+"1. Full network";"Israel";"Asia";"ISR";"ISR";"gold";64031345,816;0,0353057944730338;0;0,000584104982384298
+"1. Full network";"Italy";"Europe";"ITA";"ITA";"skyblue";639718699,953;0,183440989336935;2873;0,000586916636350783
+"1. Full network";"CÃ´te d'Ivoire";"Africa";"CIV";"CIV";"tomato";26046254,42;0,00599992979029788;223;0,00057322610937624
+"1. Full network";"Jamaica";"Americas";"JAM";"JAM";"palegreen3";1058157,43;0,00239876660582911;0;0,000427910353072233
+"1. Full network";"Japan";"Asia";"JPN";"JPN";"gold";730811014,8;0,355210569079225;448;0,000587650925827133
+"1. Full network";"Kazakhstan";"Asia";"KAZ";"KAZ";"gold";87240676,464;0,0291828333248128;0;0,00058312437881012
+"1. Full network";"Jordan";"Asia";"JOR";"JOR";"gold";10364691,546;0,00710062759380818;0;0,000565661603265097
+"1. Full network";"Kenya";"Africa";"KEN";"KEN";"tomato";8699310,56;0,00582136262639382;0;0,000501508289479227
+"1. Full network";"Dem. People's Rep. of Korea";"Asia";"PRK";"PRK";"gold";396433,348;0,00102293244656622;0;0,00042249866852573
+"1. Full network";"Rep. of Korea";"Asia";"KOR";"KOR";"gold";720789276,405;0,332702866880695;670;0,000587700361974293
+"1. Full network";"Kuwait";"Asia";"KWT";"KWT";"gold";66705091,704;0,0202256641192668;0;0,000581747620363696
+"1. Full network";"Kyrgyzstan";"Asia";"KGZ";"KGZ";"gold";9711120,708;0,0112990159316399;0;0,000561546508454561
+"1. Full network";"Lao People's Dem. Rep.";"Asia";"LAO";"LAO";"gold";10696224,595;0,00498732392475231;0;0,000570165591188168
+"1. Full network";"Lebanon";"Asia";"LBN";"LBN";"gold";2036897,986;0,00234367505504081;0;0,000390963253468575
+"1. Full network";"Lesotho";"Africa";"LSO";"LSO";"tomato";1101813,236;0,000360591147113281;0;0,000456875568817947
+"1. Full network";"Latvia";"Europe";"LVA";"LVA";"skyblue";19748571,706;0,00349436167370243;0;0,000547491384595014
+"1. Full network";"Liberia";"Africa";"LBR";"LBR";"tomato";2434599,778;0,00813317959119805;0;0,000511218941008356
+"1. Full network";"Libya";"Africa";"LBY";"LBY";"tomato";30492348,843;0,00744729137399145;447;0,000576875916858721
+"1. Full network";"Lithuania";"Europe";"LTU";"LTU";"skyblue";39786270,82;0,00865033231798321;446;0,000567265366065085
+"1. Full network";"Luxembourg";"Europe";"LUX";"LUX";"skyblue";18070436,652;0,00650078130489757;0;0,000566480092995288
+"1. Full network";"China, Macao SAR";"Asia";"MAC";"MAC";"gold";2016272,224;0,00345357828941582;0;0,00054007566855295
+"1. Full network";"Madagascar";"Africa";"MDG";"MDG";"tomato";3468695,898;0,00169125531766096;0;0,000485026407637995
+"1. Full network";"Malawi";"Africa";"MWI";"MWI";"tomato";1002022,244;0,00052197860398546;0;0,000282465213962601
+"1. Full network";"Malaysia";"Asia";"MYS";"MYS";"gold";407611729,089;0,169721820951703;670;0,000587393902240289
+"1. Full network";"Maldives";"Asia";"MDV";"MDV";"gold";278847,348;0,00075691155290522;0;0,000244639930997793
+"1. Full network";"Mali";"Africa";"MLI";"MLI";"tomato";1252645,123;0,00075760287683855;0;0,000414420980537716
+"1. Full network";"Malta";"Europe";"MLT";"MLT";"skyblue";7085315,914;0,00399646595172554;0;0,000513695958123002
+"1. Full network";"Mauritania";"Africa";"MRT";"MRT";"tomato";4748117,316;0,00190097496651469;0;0,000535067581714434
+"1. Full network";"Mauritius";"Africa";"MUS";"MUS";"tomato";2551781,579;0,00141018696348586;0;0,000401414742153871
+"1. Full network";"Mexico";"Americas";"MEX";"MEX";"palegreen3";650272340,335;0,528926877108088;0;0,000587673181197964
+"1. Full network";"Other Asia, nes";"Asia";NA;"Oth";"gold";526138617,022;0,229979268120298;224;0,000587529547903801
+"1. Full network";"Mongolia";"Asia";"MNG";"MNG";"gold";14797284,638;0,00940769613265881;0;0,00058266060350338
+"1. Full network";"Rep. of Moldova";"Europe";"MDA";"MDA";"skyblue";4299604,63;0,00148745119715843;0;0,000529842696457609
+"1. Full network";"Montenegro";"Europe";"MNE";"MNE";"skyblue";1254358,524;0,000630504572615519;0;0,000423014080909337
+"1. Full network";"Montserrat";"Americas";"MSR";"MSR";"palegreen3";10559,466;9,97581848275534e-06;0;2,40093711849004e-05
+"1. Full network";"Morocco";"Africa";"MAR";"MAR";"tomato";67541630,203;0,0220102228379298;0;0,000580904408435553
+"1. Full network";"Mozambique";"Africa";"MOZ";"MOZ";"tomato";13464160,018;0,0039840479231929;0;0,00055782529905461
+"1. Full network";"Oman";"Asia";"OMN";"OMN";"gold";69632323,342;0,0242357211680891;0;0,000585792571023482
+"1. Full network";"Namibia";"Africa";"NAM";"NAM";"tomato";8024762,76;0,00232928263555207;0;0,000548572811905255
+"1. Full network";"Nauru";"Oceania";"NRU";"NRU";"orchid";202264,597;3,11322099051208e-05;0;0,000306826795646527
+"1. Full network";"Nepal";"Asia";"NPL";"NPL";"gold";1239178,159;0,00217288476363891;0;0,000509457768941707
+"1. Full network";"Netherlands";"Europe";"NLD";"NLD";"skyblue";582982633,797;0,212154057983805;1178;0,000587005549964752
+"1. Full network";"CuraÃ§ao";"Americas";"CUW";"CUW";"palegreen3";322489,741;0,000560636600512896;0;0,00037090151756188
+"1. Full network";"Aruba";"Americas";"ABW";"ABW";"palegreen3";153607,062;0,000475614354397536;0;0,000254300003628003
+"1. Full network";"Saint Maarten";"Americas";"SXM";"SXM";"palegreen3";14210,304;0,000418050881594047;0;1,44724778743587e-05
+"1. Full network";"Bonaire";"Americas";"BES";"BES";"palegreen3";9130,476;0,000105424999153294;0;2,17265749212791e-05
+"1. Full network";"New Caledonia";"Oceania";"NCL";"NCL";"orchid";1374477,209;0,000677684540097975;0;0,000497184916979957
+"1. Full network";"Vanuatu";"Oceania";"VUT";"VUT";"orchid";321226,077;0,000160849108927615;0;0,000360455166696936
+"1. Full network";"New Zealand";"Oceania";"NZL";"NZL";"orchid";45218273,242;0,0223907598165574;448;0,000581424943817616
+"1. Full network";"Nicaragua";"Americas";"NIC";"NIC";"palegreen3";8335152,451;0,00561792045934538;0;0,000567961085258447
+"1. Full network";"Niger";"Africa";"NER";"NER";"tomato";1571362,332;0,000640143875840321;0;0,000483573326873983
+"1. Full network";"Nigeria";"Africa";"NGA";"NGA";"tomato";63699820,016;0,0224179710276507;0;0,000575338396096972
+"1. Full network";"Niue";"Oceania";"NIU";"NIU";"orchid";7024,559;5,20532144546622e-06;0;1,53569492717987e-05
+"1. Full network";"Norfolk Isds";"Oceania";"NFK";"NFK";"orchid";3064,338;2,57744915540219e-06;0;4,9040541202632e-06
+"1. Full network";"Norway";"Europe";"NOR";"NOR";"skyblue";174343576,904;0,0400117676038376;1;0,000585007927936308
+"1. Full network";"N. Mariana Isds";"Oceania";"MNP";"MNP";"orchid";2846,02;1,40183902809185e-05;0;6,66173667507258e-06
+"1. Full network";"FS Micronesia";"Oceania";"FSM";"FSM";"orchid";329818,29;0,000111650671569836;0;0,000357938554142003
+"1. Full network";"Marshall Isds";"Oceania";"MHL";"MHL";"orchid";1067767,236;0,00367036802254217;0;0,000369668649370736
+"1. Full network";"Palau";"Oceania";"PLW";"PLW";"orchid";19670,66;4,48738932541066e-05;0;3,97491500063411e-05
+"1. Full network";"Pakistan";"Asia";"PAK";"PAK";"gold";37115584,997;0,0195587854734111;448;0,000574035729508227
+"1. Full network";"Panama";"Americas";"PAN";"PAN";"palegreen3";3704837,418;0,011828505148214;0;0,000462593799859971
+"1. Full network";"Papua New Guinea";"Oceania";"PNG";"PNG";"orchid";13880292,835;0,00406832677080529;0;0,00056552132239742
+"1. Full network";"Paraguay";"Americas";"PRY";"PRY";"palegreen3";11465650,419;0,00514392956908125;0;0,000566379562914161
+"1. Full network";"Peru";"Americas";"PER";"PER";"palegreen3";74958947,217;0,0371564512111981;0;0,000585052690853914
+"1. Full network";"Philippines";"Asia";"PHL";"PHL";"gold";96249162,03;0,0593069762517359;0;0,000583730422810953
+"1. Full network";"Pitcairn";"Oceania";"PCN";"PCN";"orchid";852,217;8,95324588957885e-07;0;9,0382916075671e-07
+"1. Full network";"Poland";"Europe";"POL";"POL";"skyblue";366707881,549;0,119599017431889;1332;0,000586940600875546
+"1. Full network";"Portugal";"Europe";"PRT";"PRT";"skyblue";86178464,008;0,0260769167870767;672;0,000582160311006559
+"1. Full network";"Guinea-Bissau";"Africa";"GNB";"GNB";"tomato";215881,106;8,5784647657866e-05;0;0,000354003321382812
+"1. Full network";"Timor-Leste";"Asia";"TLS";"TLS";"gold";88847,023;0,000206190268526762;0;0,000192132515983568
+"1. Full network";"Qatar";"Asia";"QAT";"QAT";"gold";88847213,557;0,0260024266212583;0;0,000584396775742663
+"1. Full network";"Romania";"Europe";"ROU";"ROU";"skyblue";106581892,357;0,0300856059988272;671;0,000583865849291325
+"1. Full network";"Russian Federation";"Europe";"RUS";"RUS";"skyblue";374422796,772;0,142124598558764;223;0,000587647718695898
+"1. Full network";"Rwanda";"Africa";"RWA";"RWA";"tomato";579987,731;0,000468120300746137;0;0,000321902645640836
+"1. Full network";"Saint BarthÃ©lemy";"Americas";"BLM";"BLM";"palegreen3";12636,153;2,84985379196185e-05;0;2,59931577741068e-05
+"1. Full network";"Saint Helena";"Africa";"SHN";"SHN";"tomato";32903,86;1,57212157546203e-05;0;4,1905394900138e-05
+"1. Full network";"Saint Kitts and Nevis";"Americas";"KNA";"KNA";"palegreen3";40324,004;0,000112482032696604;0;6,26954025316666e-05
+"1. Full network";"Anguilla";"Americas";"AIA";"AIA";"palegreen3";21607,36;4,13900168921129e-05;0;6,4820768034789e-05
+"1. Full network";"Saint Lucia";"Americas";"LCA";"LCA";"palegreen3";22749,029;0,000555974831500108;0;2,38053640085902e-05
+"1. Full network";"Saint Pierre and Miquelon";"Americas";"SPM";"SPM";"palegreen3";4349,032;1,38708743627701e-05;0;1,31091262222006e-05
+"1. Full network";"Saint Vincent and the Grenadines";"Americas";"VCT";"VCT";"palegreen3";26423,677;0,000111129780218755;0;4,15672820231862e-05
+"1. Full network";"San Marino";"Europe";"SMR";"SMR";"skyblue";231294,263;8,12405226530813e-05;0;9,76579102902219e-05
+"1. Full network";"Sao Tome and Principe";"Africa";"STP";"STP";"tomato";48987,676;2,03091736412829e-05;0;4,13706866571645e-05
+"1. Full network";"Saudi Arabia";"Asia";"SAU";"SAU";"gold";307650537,289;0,107519459055668;1785;0,000586900803259756
+"1. Full network";"Senegal";"Africa";"SEN";"SEN";"tomato";6679440,641;0,00369100740956771;0;0,000512264103908276
+"1. Full network";"Serbia";"Europe";"SRB";"SRB";"skyblue";34927700,363;0,00902954928952902;224;0,000573273785660743
+"1. Full network";"Seychelles";"Africa";"SYC";"SYC";"tomato";898937,879;0,000229440135132347;0;0,000397837957415902
+"1. Full network";"Sierra Leone";"Africa";"SLE";"SLE";"tomato";1517629,776;0,00106225371019008;0;0,000516820847935315
+"1. Full network";"India";"Asia";"IND";"IND";"gold";454780509,254;0,20450742218856;3337;0,00058696652224819
+"1. Full network";"Singapore";"Asia";"SGP";"SGP";"gold";330555564,008;0,148923358532107;1558;0,000586464723563019
+"1. Full network";"Slovakia";"Europe";"SVK";"SVK";"skyblue";118389620,995;0,0313935816215816;0;0,00058448620689855
+"1. Full network";"Viet Nam";"Asia";"VNM";"VNM";"gold";504977367,122;0,265335866586577;0;0,000587483690177038
+"1. Full network";"Slovenia";"Europe";"SVN";"SVN";"skyblue";67846808,632;0,016232153468922;0;0,000582992547763847
+"1. Full network";"Somalia";"Africa";"SOM";"SOM";"tomato";508953,682;0,000681956582421503;0;0,000427034231457027
+"1. Full network";"South Africa";"Africa";"ZAF";"ZAF";"tomato";152235700,635;0,049644006057066;2219;0,000585709901051584
+"1. Full network";"Zimbabwe";"Africa";"ZWE";"ZWE";"tomato";7898470,17;0,00231534453895942;0;0,000559151752694411
+"1. Full network";"Spain";"Europe";"ESP";"ESP";"skyblue";400747913,224;0,124860010653187;2472;0,000586008418166293
+"1. Full network";"South Sudan";"Africa";"SSD";"SSD";"tomato";506954,792;0,00028692976874879;0;0,000408553533690651
+"1. Full network";"Sudan";"Africa";"SDN";"SDN";"tomato";3060915,094;0,0010440870086818;0;0,000503938478280987
+"1. Full network";"Suriname";"Americas";"SUR";"SUR";"palegreen3";1656663,651;0,000662631029519153;0;0,000534064226705073
+"1. Full network";"Eswatini";"Africa";"SWZ";"SWZ";"tomato";2172779,553;0,000184479500896515;0;0,000538407948648472
+"1. Full network";"Sweden";"Europe";"SWE";"SWE";"skyblue";191533718,177;0,0536258395999401;2;0,000583784371489625
+"1. Full network";"Switzerland";"Europe";"CHE";"CHE";"skyblue";398804885,309;0,146838751702107;2006;0,000586692287835832
+"1. Full network";"Syria";"Asia";"SYR";"SYR";"gold";978860,503;0,000411068292965372;0;0,000449355144270186
+"1. Full network";"Tajikistan";"Asia";"TJK";"TJK";"gold";1689364,452;0,00207463476424195;0;0,000424622148824239
+"1. Full network";"Thailand";"Asia";"THA";"THA";"gold";340766655,983;0,149648308714808;1562;0,000586626858718316
+"1. Full network";"Togo";"Africa";"TGO";"TGO";"tomato";2327328,052;0,0026528094053552;0;0,000501627979699175
+"1. Full network";"Tokelau";"Oceania";"TKL";"TKL";"orchid";35844,455;5,38431927456713e-06;0;5,59087788280688e-05
+"1. Full network";"Tonga";"Oceania";"TON";"TON";"orchid";22738,234;5,4595836573135e-05;0;3,29893819957004e-05
+"1. Full network";"Trinidad and Tobago";"Americas";"TTO";"TTO";"palegreen3";11033655,707;0,00475606815302571;0;0,000566187282565318
+"1. Full network";"United Arab Emirates";"Asia";"ARE";"ARE";"gold";309551308,463;0,112381899799201;1559;0,000586154767790098
+"1. Full network";"Tunisia";"Africa";"TUN";"TUN";"tomato";23344786,434;0,00693965705480299;0;0,000572949630042878
+"1. Full network";"TÃ¼rkiye";"Asia";"TUR";"TUR";"gold";267377806,988;0,0816458373368873;1708;0,000584225561386273
+"1. Full network";"Turkmenistan";"Asia";"TKM";"TKM";"gold";13457374,203;0,00542360835331876;0;0,000580568292571501
+"1. Full network";"Turks and Caicos Isds";"Americas";"TCA";"TCA";"palegreen3";25207,458;0,000248139512058762;0;2,28227688080061e-05
+"1. Full network";"Tuvalu";"Oceania";"TUV";"TUV";"orchid";80189,663;1,88123814284799e-05;0;0,000211337356829251
+"1. Full network";"Uganda";"Africa";"UGA";"UGA";"tomato";8881087,148;0,00265450760451358;447;0,000558323583308783
+"1. Full network";"Ukraine";"Europe";"UKR";"UKR";"skyblue";46148666,586;0,0168344902476726;0;0,000571149321892509
+"1. Full network";"North Macedonia";"Europe";"MKD";"MKD";"skyblue";9254017,281;0,00262679749075685;0;0,000565696002584841
+"1. Full network";"Egypt";"Africa";"EGY";"EGY";"tomato";53006222,753;0,0221934405810788;0;0,000573938729724881
+"1. Full network";"United Kingdom";"Europe";"GBR";"GBR";"skyblue";423679302,703;0,224334523902975;896;0,000586762412478522
+"1. Full network";"United Rep. of Tanzania";"Africa";"TZA";"TZA";"tomato";11979635,815;0,00534692032550308;0;0,000554125439827245
+"1. Full network";"USA";"Americas";"USA";"USA";"palegreen3";1897844747,989;1;20834;0,000587828832418354
+"1. Full network";"Burkina Faso";"Africa";"BFA";"BFA";"tomato";9459680,149;0,00156304001568213;0;0,000575043859931999
+"1. Full network";"Uruguay";"Americas";"URY";"URY";"palegreen3";12290790,485;0,00512947358870579;0;0,000558599659034084
+"1. Full network";"Uzbekistan";"Asia";"UZB";"UZB";"gold";22835275,918;0,0100882862163795;0;0,000574389708782996
+"1. Full network";"Venezuela";"Americas";"VEN";"VEN";"palegreen3";13609199,518;0,00966452480039079;0;0,000575813048129734
+"1. Full network";"Wallis and Futuna Isds";"Oceania";"WLF";"WLF";"orchid";343,203;4,45905987304035e-06;0;3,59515267069368e-07
+"1. Full network";"Samoa";"Oceania";"WSM";"WSM";"orchid";39835,711;0,000110513630710842;0;3,46745567397275e-05
+"1. Full network";"Yemen";"Asia";"YEM";"YEM";"gold";661397,694;0,00178560684459336;0;0,00035191106096247
+"1. Full network";"Zambia";"Africa";"ZMB";"ZMB";"tomato";14520198,405;0,00381353057294154;0;0,000571118739797743
+"2. After node filter";"Afghanistan";"Asia";"AFG";"AFG";"gold";1615214,623;0,00100991938096986;0;0,00140098224274447
+"2. After node filter";"Albania";"Europe";"ALB";"ALB";"skyblue";3930716,042;0,00171322437892391;0;0,00184961754189017
+"2. After node filter";"Algeria";"Africa";"DZA";"DZA";"tomato";48039608,084;0,0149807144856424;0;0,00233712314708296
+"2. After node filter";"American Samoa";"Oceania";"ASM";"ASM";"orchid";32538,695;2,27907662461561e-05;0;2,89169948982823e-05
+"2. After node filter";"Andorra";"Europe";"AND";"AND";"skyblue";109559,271;0,000175889000033384;0;0,000177628141793821
+"2. After node filter";"Angola";"Africa";"AGO";"AGO";"tomato";42279393,759;0,0137839722793356;0;0,00238342384128623
+"2. After node filter";"Antigua and Barbuda";"Americas";"ATG";"ATG";"palegreen3";217115,449;0,000388644149954717;0;0,000343579610514628
+"2. After node filter";"Azerbaijan";"Asia";"AZE";"AZE";"gold";27102277,039;0,00600860389176222;0;0,0023045585527309
+"2. After node filter";"Argentina";"Americas";"ARG";"ARG";"palegreen3";79931917,799;0,0249050724162754;0;0,00235799849778281
+"2. After node filter";"Australia";"Oceania";"AUS";"AUS";"orchid";357279432,725;0,170342939843885;800;0,00244547207235514
+"2. After node filter";"Austria";"Europe";"AUT";"AUT";"skyblue";205121127,591;0,0713869191059808;0;0,00242591733519558
+"2. After node filter";"Bahamas";"Americas";"BHS";"BHS";"palegreen3";2356864,106;0,00388118663080754;0;0,0016428941644773
+"2. After node filter";"Bahrain";"Asia";"BHR";"BHR";"gold";18156269,914;0,00472678108320103;0;0,0020863625249814
+"2. After node filter";"Bangladesh";"Asia";"BGD";"BGD";"gold";58762121,141;0,0269901083198481;201;0,00231878247865186
+"2. After node filter";"Armenia";"Asia";"ARM";"ARM";"gold";13361658,303;0,00365536290903417;201;0,0022169591365304
+"2. After node filter";"Barbados";"Americas";"BRB";"BRB";"palegreen3";387345,74;0,00068338494766873;0;0,000430381298336162
+"2. After node filter";"Belgium";"Europe";"BEL";"BEL";"skyblue";380544033,404;0,124594666706845;201;0,00242557483130713
+"2. After node filter";"Bermuda";"Americas";"BMU";"BMU";"palegreen3";247378,136;0,000983625304728578;0;0,000562885343193573
+"2. After node filter";"Bhutan";"Asia";"BTN";"BTN";"gold";461085,158;0,000239795275046236;0;0,00114478035823585
+"2. After node filter";"Bolivia (Plurinational State of)";"Americas";"BOL";"BOL";"palegreen3";9048750,293;0,00343966837776986;0;0,00184955831528607
+"2. After node filter";"Bosnia Herzegovina";"Europe";"BIH";"BIH";"skyblue";9528847,754;0,00270284285919046;0;0,00180956679913278
+"2. After node filter";"Botswana";"Africa";"BWA";"BWA";"tomato";4174071,578;0,00120091733916034;0;0,00172083770139263
+"2. After node filter";"Brazil";"Americas";"BRA";"BRA";"palegreen3";350186537,139;0,157895703269775;801;0,00244237735887996
+"2. After node filter";"Belize";"Americas";"BLZ";"BLZ";"palegreen3";426590,924;0,000675633158591667;0;0,000485187013199877
+"2. After node filter";"Solomon Isds";"Oceania";"SLB";"SLB";"orchid";678493,67;0,000348367966328493;0;0,0010968419370574
+"2. After node filter";"Br. Virgin Isds";"Americas";"VGB";"VGB";"palegreen3";202354,025;0,000342022175342535;0;0,000236555639047844
+"2. After node filter";"Brunei Darussalam";"Asia";"BRN";"BRN";"gold";11469658,695;0,00322985043514498;0;0,00198442657828119
+"2. After node filter";"Bulgaria";"Europe";"BGR";"BGR";"skyblue";51971805,199;0,0117429857051705;0;0,00229163210462574
+"2. After node filter";"Myanmar";"Asia";"MMR";"MMR";"gold";19979771,077;0,00922681394007406;0;0,00224533295718318
+"2. After node filter";"Burundi";"Africa";"BDI";"BDI";"tomato";68168,783;8,01402201291085e-05;0;0,000108497501269371
+"2. After node filter";"Belarus";"Europe";"BLR";"BLR";"skyblue";6270550,59;0,00489643136404974;0;0,00192737092315556
+"2. After node filter";"Cambodia";"Asia";"KHM";"KHM";"gold";36087459,848;0,0197619765942422;0;0,00235505988082642
+"2. After node filter";"Cameroon";"Africa";"CMR";"CMR";"tomato";6916336,107;0,00345539232610276;201;0,00180745532144214
+"2. After node filter";"Canada";"Americas";"CAN";"CAN";"palegreen3";572972031,883;0,459251933315;0;0,00244514439742067
+"2. After node filter";"Cabo Verde";"Africa";"CPV";"CPV";"tomato";86460,243;0,000114876302189528;0;0,00021979021664186
+"2. After node filter";"Cayman Isds";"Americas";"CYM";"CYM";"palegreen3";2243011,477;0,00160141865680706;0;0,00191655966663051
+"2. After node filter";"Central African Rep.";"Africa";"CAF";"CAF";"tomato";245289,956;0,000164210867244958;0;0,000273220725522663
+"2. After node filter";"Sri Lanka";"Asia";"LKA";"LKA";"gold";13774459,345;0,00654420820335276;0;0,00211227303665152
+"2. After node filter";"Chad";"Africa";"TCD";"TCD";"tomato";3480675,78;0,00108066173409844;0;0,00164329417422755
+"2. After node filter";"Chile";"Americas";"CHL";"CHL";"palegreen3";101102585,983;0,054952085250552;0;0,00242335608677416
+"2. After node filter";"China";"Asia";"CHN";"CHN";"gold";3605372429,694;0,855535350047658;31350;0,00245480719248704
+"2. After node filter";"Colombia";"Americas";"COL";"COL";"palegreen3";50893751,769;0,0323743835972061;0;0,00236756171746903
+"2. After node filter";"Comoros";"Africa";"COM";"COM";"tomato";49868,368;7,04362873984936e-05;0;7,64983791244053e-05
+"2. After node filter";"Congo";"Africa";"COG";"COG";"tomato";8512232,385;0,00346362222234596;0;0,00219905440792719
+"2. After node filter";"Dem. Rep. of the Congo";"Africa";"COD";"COD";"tomato";29599508,708;0,0136071970387462;0;0,00240102901186106
+"2. After node filter";"Cook Isds";"Oceania";"COK";"COK";"orchid";34286,85;2,85952361146879e-05;0;6,14528855579743e-05
+"2. After node filter";"Costa Rica";"Americas";"CRI";"CRI";"palegreen3";24138903,37;0,0147372372481866;0;0,00233162146402047
+"2. After node filter";"Croatia";"Europe";"HRV";"HRV";"skyblue";24249141,634;0,00716500483941279;0;0,00210020812052949
+"2. After node filter";"Cuba";"Americas";"CUB";"CUB";"palegreen3";986837,54;0,00102988634772425;0;0,000866918912930959
+"2. After node filter";"Cyprus";"Asia";"CYP";"CYP";"gold";5444169,332;0,00189502075057846;201;0,00148347530992986
+"2. After node filter";"Czechia";"Europe";"CZE";"CZE";"skyblue";244661428,496;0,0751188179359303;201;0,00243071820092492
+"2. After node filter";"Benin";"Africa";"BEN";"BEN";"tomato";1471272,32;0,000922286575281565;0;0,00117634292643989
+"2. After node filter";"Denmark";"Europe";"DNK";"DNK";"skyblue";119591608,754;0,0383636406463727;402;0,00237741965373351
+"2. After node filter";"Dominican Rep.";"Americas";"DOM";"DOM";"palegreen3";14595703,264;0,0165264071521103;0;0,00230144161116187
+"2. After node filter";"Ecuador";"Americas";"ECU";"ECU";"palegreen3";40319602,551;0,0182442436962353;0;0,00231581259777752
+"2. After node filter";"El Salvador";"Americas";"SLV";"SLV";"palegreen3";6659697,12;0,00595000165427403;0;0,00198239446605695
+"2. After node filter";"Equatorial Guinea";"Africa";"GNQ";"GNQ";"tomato";4471120,029;0,00108246594468853;0;0,00164935536863662
+"2. After node filter";"Ethiopia";"Africa";"ETH";"ETH";"tomato";3207962,444;0,00274618733762399;0;0,00111045662182772
+"2. After node filter";"Eritrea";"Africa";"ERI";"ERI";"tomato";573916,127;0,00034076589827152;0;0,00117895213734542
+"2. After node filter";"Estonia";"Europe";"EST";"EST";"skyblue";20312824,889;0,00476639411955172;0;0,00197100570807733
+"2. After node filter";"Falkland Isds (Malvinas)";"Americas";"FLK";"FLK";"palegreen3";378803,466;5,85637162122583e-05;0;0,000834990116563823
+"2. After node filter";"Fiji";"Oceania";"FJI";"FJI";"orchid";1100621,446;0,000891841275962733;201;0,0010660565055308
+"2. After node filter";"Finland";"Europe";"FIN";"FIN";"skyblue";80765774,619;0,024025513801235;199;0,00231906964689979
+"2. After node filter";"France";"Europe";"FRA";"FRA";"skyblue";636024216,066;0,219600727361733;1188;0,00243286162714013
+"2. After node filter";"French Polynesia";"Oceania";"PYF";"PYF";"orchid";188943,274;0,000339716287269231;0;0,000339891258545805
+"2. After node filter";"Djibouti";"Africa";"DJI";"DJI";"tomato";192703,509;0,0017907788332383;0;0,000412921056021877
+"2. After node filter";"Gabon";"Africa";"GAB";"GAB";"tomato";8037633,267;0,00251551894928352;0;0,00210402550809929
+"2. After node filter";"Georgia";"Asia";"GEO";"GEO";"gold";2951180,382;0,00205205909356448;0;0,00134180726066381
+"2. After node filter";"Gambia";"Africa";"GMB";"GMB";"tomato";205544,176;0,000399373664692053;0;0,000335713737755238
+"2. After node filter";"State of Palestine";"Asia";"PSE";"PSE";"gold";98205,723;0,000190041041023885;0;0,000100318560827745
+"2. After node filter";"Germany";"Europe";"DEU";"DEU";"skyblue";1553157047,375;0,431473022741197;13476;0,00244689397207307
+"2. After node filter";"Ghana";"Africa";"GHA";"GHA";"tomato";15919632,733;0,00867093663387147;0;0,00218097076445535
+"2. After node filter";"Gibraltar";"Europe";"GIB";"GIB";"skyblue";153054,829;0,000952741404846902;0;0,000253627351624581
+"2. After node filter";"Kiribati";"Oceania";"KIR";"KIR";"orchid";109372,466;4,7720071237537e-05;0;0,00030066555469337
+"2. After node filter";"Greece";"Europe";"GRC";"GRC";"skyblue";53061320,944;0,0167037976690989;62;0,00221719856260412
+"2. After node filter";"Greenland";"Americas";"GRL";"GRL";"palegreen3";1580145,813;0,000302714374351771;0;0,00142818151452244
+"2. After node filter";"Guatemala";"Americas";"GTM";"GTM";"palegreen3";15542349,419;0,0137284275581405;0;0,00222822323841677
+"2. After node filter";"Guinea";"Africa";"GIN";"GIN";"tomato";9643413,837;0,00606837488619545;0;0,00230650369991051
+"2. After node filter";"Guyana";"Americas";"GUY";"GUY";"palegreen3";18542378,521;0,00598384520907541;0;0,00224814029871314
+"2. After node filter";"Haiti";"Americas";"HTI";"HTI";"palegreen3";815075,911;0,00130520073056839;0;0,00138028775055272
+"2. After node filter";"Honduras";"Americas";"HND";"HND";"palegreen3";10101596,493;0,00851491929137626;0;0,00221786145773541
+"2. After node filter";"China, Hong Kong SAR";"Asia";"HKG";"HKG";"gold";156435472,388;0,22170850465914;201;0,00242430694457685
+"2. After node filter";"Hungary";"Europe";"HUN";"HUN";"skyblue";159774803,298;0,0450885898316405;0;0,00241512389841627
+"2. After node filter";"Iceland";"Europe";"ISL";"ISL";"skyblue";7906788,921;0,00288300277705985;0;0,00200764897507722
+"2. After node filter";"Indonesia";"Asia";"IDN";"IDN";"gold";296334516,588;0,124555298238229;401;0,00243668935817466
+"2. After node filter";"Iran";"Asia";"IRN";"IRN";"gold";12956293,649;0,00807674039830885;0;0,00220886401850304
+"2. After node filter";"Iraq";"Asia";"IRQ";"IRQ";"gold";109122962,689;0,0404008631137577;0;0,00242380266235709
+"2. After node filter";"Ireland";"Europe";"IRL";"IRL";"skyblue";244837505,008;0,0980993519639573;0;0,00243298966957
+"2. After node filter";"Israel";"Asia";"ISR";"ISR";"gold";64029537,816;0,0353058081931658;0;0,00239119220415707
+"2. After node filter";"Italy";"Europe";"ITA";"ITA";"skyblue";639576368,205;0,183441066896726;2181;0,00243408578476775
+"2. After node filter";"CÃ´te d'Ivoire";"Africa";"CIV";"CIV";"tomato";26046254,42;0,00599993290533374;200;0,00223580875539644
+"2. After node filter";"Jamaica";"Americas";"JAM";"JAM";"palegreen3";1058157,43;0,00239876736226954;0;0,00102123554448641
+"2. After node filter";"Japan";"Asia";"JPN";"JPN";"gold";730580531,79;0,355210712575479;402;0,00244555691645682
+"2. After node filter";"Kazakhstan";"Asia";"KAZ";"KAZ";"gold";87240676,464;0,0291828502015327;0;0,00237674958309204
+"2. After node filter";"Jordan";"Asia";"JOR";"JOR";"gold";10364691,546;0,00710063069066594;0;0,00213537249320357
+"2. After node filter";"Kenya";"Africa";"KEN";"KEN";"tomato";8699288,452;0,00582136571281294;0;0,00148989262534834
+"2. After node filter";"Dem. People's Rep. of Korea";"Asia";"PRK";"PRK";"gold";396433,348;0,00102293305698797;0;0,00099401957347304
+"2. After node filter";"Rep. of Korea";"Asia";"KOR";"KOR";"gold";720478026,921;0,332703000328688;201;0,00244629755624675
+"2. After node filter";"Kuwait";"Asia";"KWT";"KWT";"gold";66704820,131;0,0202256752063241;0;0,0023563994217997
+"2. After node filter";"Kyrgyzstan";"Asia";"KGZ";"KGZ";"gold";9711120,708;0,011299022673419;0;0,00208375976771472
+"2. After node filter";"Lao People's Dem. Rep.";"Asia";"LAO";"LAO";"gold";10696224,595;0,00498732671832043;0;0,00219434185484846
+"2. After node filter";"Lebanon";"Asia";"LBN";"LBN";"gold";2036897,986;0,00234367628277531;0;0,000849279320081216
+"2. After node filter";"Lesotho";"Africa";"LSO";"LSO";"tomato";1101813,236;0,000360591301774795;0;0,00118196753373388
+"2. After node filter";"Latvia";"Europe";"LVA";"LVA";"skyblue";19747802,147;0,00349436354624474;0;0,00192001107848106
+"2. After node filter";"Liberia";"Africa";"LBR";"LBR";"tomato";2434599,778;0,00813318437013837;0;0,0015691011698721
+"2. After node filter";"Libya";"Africa";"LBY";"LBY";"tomato";30492348,843;0,00744729540321899;401;0,00228610526481629
+"2. After node filter";"Lithuania";"Europe";"LTU";"LTU";"skyblue";39782214,856;0,00865033638917471;400;0,00215648700304611
+"2. After node filter";"Luxembourg";"Europe";"LUX";"LUX";"skyblue";18070133,698;0,00650078494196838;0;0,00214600969739834
+"2. After node filter";"China, Macao SAR";"Asia";"MAC";"MAC";"gold";2016272,224;0,00345358029092081;0;0,00184013226170481
+"2. After node filter";"Madagascar";"Africa";"MDG";"MDG";"tomato";3468597,443;0,00169125616057109;0;0,00136592215709057
+"2. After node filter";"Malawi";"Africa";"MWI";"MWI";"tomato";1002022,244;0,00052197889382137;0;0,00048559276848252
+"2. After node filter";"Malaysia";"Asia";"MYS";"MYS";"gold";407568339,995;0,169721902385215;402;0,00244162568615756
+"2. After node filter";"Maldives";"Asia";"MDV";"MDV";"gold";278847,348;0,000756911977441228;0;0,000392024091546772
+"2. After node filter";"Mali";"Africa";"MLI";"MLI";"tomato";1252645,123;0,000757603323119605;0;0,000954909900811152
+"2. After node filter";"Malta";"Europe";"MLT";"MLT";"skyblue";7084337,016;0,0039964679682141;0;0,00159029833714825
+"2. After node filter";"Mauritania";"Africa";"MRT";"MRT";"tomato";4748117,316;0,00190097603004926;0;0,00178913701420762
+"2. After node filter";"Mauritius";"Africa";"MUS";"MUS";"tomato";2551781,163;0,00141018774122046;0;0,00089472988211867
+"2. After node filter";"Mexico";"Americas";"MEX";"MEX";"palegreen3";650271807,505;0,52892701205615;0;0,00244572139045738
+"2. After node filter";"Other Asia, nes";"Asia";NA;"Oth";"gold";526068308,141;0,229979370999756;0;0,00244367222322243
+"2. After node filter";"Mongolia";"Asia";"MNG";"MNG";"gold";14797284,638;0,00940770165702214;0;0,00236994820813472
+"2. After node filter";"Rep. of Moldova";"Europe";"MDA";"MDA";"skyblue";4299602,03;0,00148745205432717;0;0,00173758107751378
+"2. After node filter";"Montenegro";"Europe";"MNE";"MNE";"skyblue";1254358,323;0,000630504916997938;0;0,000996594706688562
+"2. After node filter";"Morocco";"Africa";"MAR";"MAR";"tomato";67539137,739;0,0220102333896231;0;0,00234380094136358
+"2. After node filter";"Mozambique";"Africa";"MOZ";"MOZ";"tomato";13464156,404;0,00398405022455815;0;0,00203839453022884
+"2. After node filter";"Oman";"Asia";"OMN";"OMN";"gold";69632323,342;0,0242357350200941;0;0,00241711197776738
+"2. After node filter";"Namibia";"Africa";"NAM";"NAM";"tomato";8024052,455;0,00232928385860341;0;0,00193167628053942
+"2. After node filter";"Nauru";"Oceania";"NRU";"NRU";"orchid";202264,597;3,11322281019096e-05;0;0,000554364727788132
+"2. After node filter";"Nepal";"Asia";"NPL";"NPL";"gold";1239178,159;0,00217288603491151;0;0,00155427325322113
+"2. After node filter";"Netherlands";"Europe";"NLD";"NLD";"skyblue";582679599,425;0,21215413032832;855;0,00243560012706903
+"2. After node filter";"CuraÃ§ao";"Americas";"CUW";"CUW";"palegreen3";322489,741;0,00056063674907235;0;0,000768349865664573
+"2. After node filter";"Aruba";"Americas";"ABW";"ABW";"palegreen3";153607,062;0,000475614479305798;0;0,000414700389167198
+"2. After node filter";"New Caledonia";"Oceania";"NCL";"NCL";"orchid";1374477,209;0,0006776849310651;0;0,00145619200999271
+"2. After node filter";"Vanuatu";"Oceania";"VUT";"VUT";"orchid";321226,077;0,000160849202111091;0;0,000729232674358316
+"2. After node filter";"New Zealand";"Oceania";"NZL";"NZL";"orchid";45099712,11;0,0223907666065093;201;0,0023507862379033
+"2. After node filter";"Nicaragua";"Americas";"NIC";"NIC";"palegreen3";8334421,289;0,00561792203613195;0;0,00216514451407803
+"2. After node filter";"Niger";"Africa";"NER";"NER";"tomato";1571362,003;0,000640144245741638;0;0,00135613395891766
+"2. After node filter";"Nigeria";"Africa";"NGA";"NGA";"tomato";63699820,016;0,0224179819717269;0;0,00226452673070406
+"2. After node filter";"Norway";"Europe";"NOR";"NOR";"skyblue";174337738,665;0,040011788146313;1;0,002404978897489
+"2. After node filter";"FS Micronesia";"Oceania";"FSM";"FSM";"orchid";329818,29;0,000111650728794007;0;0,000721027288850407
+"2. After node filter";"Marshall Isds";"Oceania";"MHL";"MHL";"orchid";1067767,236;0,0036703701840778;0;0,000763508922014893
+"2. After node filter";"Pakistan";"Asia";"PAK";"PAK";"gold";37113912,399;0,0195587953552378;402;0,00224645018524037
+"2. After node filter";"Panama";"Americas";"PAN";"PAN";"palegreen3";3701989,735;0,0118285096051112;0;0,00121664644792778
+"2. After node filter";"Papua New Guinea";"Oceania";"PNG";"PNG";"orchid";13880292,835;0,00406832921064565;0;0,00213399295214905
+"2. After node filter";"Paraguay";"Americas";"PRY";"PRY";"palegreen3";11465650,419;0,00514393215634355;0;0,00214483768609524
+"2. After node filter";"Peru";"Americas";"PER";"PER";"palegreen3";74940291,247;0,0371564665383736;0;0,0024057754585855
+"2. After node filter";"Philippines";"Asia";"PHL";"PHL";"gold";96206457,898;0,0593070049029588;0;0,0023858021516291
+"2. After node filter";"Poland";"Europe";"POL";"POL";"skyblue";366675565,733;0,119599079568851;1194;0,0024346144432957
+"2. After node filter";"Portugal";"Europe";"PRT";"PRT";"skyblue";86166560,983;0,0260769297326941;603;0,00236248401920544
+"2. After node filter";"Guinea-Bissau";"Africa";"GNB";"GNB";"tomato";215881,106;8,57846989663276e-05;0;0,000705994299010906
+"2. After node filter";"Timor-Leste";"Asia";"TLS";"TLS";"gold";88847,023;0,000206190388593803;0;0,000281402965746399
+"2. After node filter";"Qatar";"Asia";"QAT";"QAT";"gold";88847213,557;0,026002440860875;0;0,00239592264823357
+"2. After node filter";"Romania";"Europe";"ROU";"ROU";"skyblue";106581323,102;0,0300856232234455;602;0,00238781967906544
+"2. After node filter";"Russian Federation";"Europe";"RUS";"RUS";"skyblue";374422796,772;0,142124683121533;200;0,00244562508229714
+"2. After node filter";"Rwanda";"Africa";"RWA";"RWA";"tomato";579987,731;0,000468120567080506;0;0,000598831041219132
+"2. After node filter";"Saint Helena";"Africa";"SHN";"SHN";"tomato";32903,86;1,57212206889893e-05;0;4,92601745266223e-05
+"2. After node filter";"Saint Kitts and Nevis";"Americas";"KNA";"KNA";"palegreen3";40324,004;0,000112482063163567;0;7,57567268064188e-05
+"2. After node filter";"San Marino";"Europe";"SMR";"SMR";"skyblue";231294,263;8,12405671813387e-05;0;0,000123865321964256
+"2. After node filter";"Sao Tome and Principe";"Africa";"STP";"STP";"tomato";48987,676;2,03091855189553e-05;0;4,85899492517963e-05
+"2. After node filter";"Saudi Arabia";"Asia";"SAU";"SAU";"gold";307648472,148;0,107519517063115;1601;0,00243406593870917
+"2. After node filter";"Senegal";"Africa";"SEN";"SEN";"tomato";6679395,075;0,0036910094734509;0;0,0015783872411612
+"2. After node filter";"Serbia";"Europe";"SRB";"SRB";"skyblue";34927475,51;0,00902955455386526;201;0,00223647023581796
+"2. After node filter";"Seychelles";"Africa";"SYC";"SYC";"tomato";898933,348;0,000229440273753343;0;0,000879058666791286
+"2. After node filter";"Sierra Leone";"Africa";"SLE";"SLE";"tomato";1517629,776;0,00106225431459022;0;0,00161776147160676
+"2. After node filter";"India";"Asia";"IND";"IND";"gold";454753666,885;0,204507512699507;2953;0,00243485954993895
+"2. After node filter";"Singapore";"Asia";"SGP";"SGP";"gold";330207301,967;0,148923418164096;800;0,00242698310180118
+"2. After node filter";"Slovakia";"Europe";"SVK";"SVK";"skyblue";118389232,823;0,0313935990040311;0;0,00239711667413105
+"2. After node filter";"Viet Nam";"Asia";"VNM";"VNM";"gold";504977367,122;0,265335989574305;0;0,00244288023136781
+"2. After node filter";"Slovenia";"Europe";"SVN";"SVN";"skyblue";67845746,708;0,016232162692457;0;0,0023747084481391
+"2. After node filter";"Somalia";"Africa";"SOM";"SOM";"tomato";508953,682;0,00068195698615665;0;0,00101688965477525
+"2. After node filter";"South Africa";"Africa";"ZAF";"ZAF";"tomato";152196782,582;0,0496440255377326;1989;0,00241615652750668
+"2. After node filter";"Zimbabwe";"Africa";"ZWE";"ZWE";"tomato";7898441,693;0,00231534548022409;0;0,00205463317430855
+"2. After node filter";"Spain";"Europe";"ESP";"ESP";"skyblue";400730469,027;0,124860071471046;2216;0,00242023348120617
+"2. After node filter";"South Sudan";"Africa";"SSD";"SSD";"tomato";506954,792;0,000286929926787043;0;0,000927337592146217
+"2. After node filter";"Sudan";"Africa";"SDN";"SDN";"tomato";3060915,094;0,0010440876350208;0;0,00150934110021382
+"2. After node filter";"Suriname";"Americas";"SUR";"SUR";"palegreen3";1656663,651;0,000662631318989018;0;0,00177963830412305
+"2. After node filter";"Eswatini";"Africa";"SWZ";"SWZ";"tomato";2172779,553;0,000184479594100137;0;0,00182320491394709
+"2. After node filter";"Sweden";"Europe";"SWE";"SWE";"skyblue";191527989,619;0,0536258656506595;2;0,00238662892113424
+"2. After node filter";"Switzerland";"Europe";"CHE";"CHE";"skyblue";398747010,723;0,14683881475464;1799;0,00243070850729671
+"2. After node filter";"Syria";"Asia";"SYR";"SYR";"gold";978860,503;0,000411068543165885;0;0,00113767016252457
+"2. After node filter";"Tajikistan";"Asia";"TJK";"TJK";"gold";1689364,452;0,00207463599559375;0;0,00100460803757642
+"2. After node filter";"Thailand";"Asia";"THA";"THA";"gold";340713177,68;0,149648373654433;1401;0,00242956083270513
+"2. After node filter";"Togo";"Africa";"TGO";"TGO";"tomato";2327328,052;0,00265281091886711;0;0,00149059004341804
+"2. After node filter";"Tokelau";"Oceania";"TKL";"TKL";"orchid";35844,455;5,38432250338142e-06;0;6,6953464518673e-05
+"2. After node filter";"Trinidad and Tobago";"Americas";"TTO";"TTO";"palegreen3";11033655,707;0,00475606954203133;0;0,002142186732721
+"2. After node filter";"United Arab Emirates";"Asia";"ARE";"ARE";"gold";309551308,463;0,112381961313978;1398;0,00242264801901187
+"2. After node filter";"Tunisia";"Africa";"TUN";"TUN";"tomato";23344490,75;0,00693966086524798;0;0,00223158596775181
+"2. After node filter";"TÃ¼rkiye";"Asia";"TUR";"TUR";"gold";267322606,158;0,0816458740643857;1532;0,00239344005535101
+"2. After node filter";"Turkmenistan";"Asia";"TKM";"TKM";"gold";13457374,203;0,00542361157336551;0;0,00233956381214156
+"2. After node filter";"Tuvalu";"Oceania";"TUV";"TUV";"orchid";80189,663;1,88123926577732e-05;0;0,000319964401413015
+"2. After node filter";"Uganda";"Africa";"UGA";"UGA";"tomato";8881087,148;0,00265450917068785;401;0,00204499269479797
+"2. After node filter";"Ukraine";"Europe";"UKR";"UKR";"skyblue";46148275,46;0,0168344995978622;0;0,00220738499188558
+"2. After node filter";"North Macedonia";"Europe";"MKD";"MKD";"skyblue";9254017,258;0,00262679902940573;0;0,00213622572414179
+"2. After node filter";"Egypt";"Africa";"EGY";"EGY";"tomato";52993903,438;0,0221934513863586;0;0,00224542266618973
+"2. After node filter";"United Kingdom";"Europe";"GBR";"GBR";"skyblue";423521927,512;0,224334606268382;603;0,00243144420487304
+"2. After node filter";"United Rep. of Tanzania";"Africa";"TZA";"TZA";"tomato";11979520,955;0,00534692341481934;0;0,00199531267447334
+"2. After node filter";"USA";"Americas";"USA";"USA";"palegreen3";1895375563,076;1;15481;0,00244814125413635
+"2. After node filter";"Burkina Faso";"Africa";"BFA";"BFA";"tomato";9459680,149;0,00156304093888214;0;0,00226092507292137
+"2. After node filter";"Uruguay";"Americas";"URY";"URY";"palegreen3";12290694,658;0,00512947610177194;0;0,00204789102302838
+"2. After node filter";"Uzbekistan";"Asia";"UZB";"UZB";"gold";22835254,028;0,0100882922627648;0;0,00225140701588565
+"2. After node filter";"Venezuela";"Americas";"VEN";"VEN";"palegreen3";13609199,518;0,00966452815384262;0;0,00227106717110506
+"2. After node filter";"Samoa";"Oceania";"WSM";"WSM";"orchid";39835,711;0,000110513687392589;0;4,03685356666406e-05
+"2. After node filter";"Yemen";"Asia";"YEM";"YEM";"gold";661397,694;0,00178560789750641;0;0,000698184379162064
+"2. After node filter";"Zambia";"Africa";"ZMB";"ZMB";"tomato";14520198,405;0,0038135327510492;0;0,00220706538463306
+"3. After edge filter";"Afghanistan";"Asia";"AFG";"AFG";"gold";1323613,369;0,000911608674825627;0;0,00245910141018491
+"3. After edge filter";"Albania";"Europe";"ALB";"ALB";"skyblue";2536931,737;0,00143577979297682;0;0,00405844877991622
+"3. After edge filter";"Algeria";"Africa";"DZA";"DZA";"tomato";45953032,277;0,0148232459174798;0;0,00704090387493405
+"3. After edge filter";"Andorra";"Europe";"AND";"AND";"skyblue";0;0,000129139841963881;0;NA
+"3. After edge filter";"Angola";"Africa";"AGO";"AGO";"tomato";41075771,305;0,0136910793213009;0;0,00744487274260215
+"3. After edge filter";"Antigua and Barbuda";"Americas";"ATG";"ATG";"palegreen3";0;0,000272621768474907;0;NA
+"3. After edge filter";"Azerbaijan";"Asia";"AZE";"AZE";"gold";25639684,856;0,00580452785120739;0;0,00677457384314333
+"3. After edge filter";"Argentina";"Americas";"ARG";"ARG";"palegreen3";77132224,813;0,0248096053883093;0;0,00721865973378542
+"3. After edge filter";"Australia";"Oceania";"AUS";"AUS";"orchid";353985125,472;0,17030000242057;358;0,0080313370238492
+"3. After edge filter";"Austria";"Europe";"AUT";"AUT";"skyblue";202046308,201;0,0713256393079717;0;0,00784021995895408
+"3. After edge filter";"Bahamas";"Americas";"BHS";"BHS";"palegreen3";1909545,025;0,00374645325316522;0;0,00323203201637426
+"3. After edge filter";"Bahrain";"Asia";"BHR";"BHR";"gold";16035454,116;0,00451261120122538;0;0,00527373880626309
+"3. After edge filter";"Bangladesh";"Asia";"BGD";"BGD";"gold";55837875,557;0,0268769266913285;186;0,00688864924607791
+"3. After edge filter";"Armenia";"Asia";"ARM";"ARM";"gold";11676432,605;0,00334241256474938;186;0,00611651320943688
+"3. After edge filter";"Barbados";"Americas";"BRB";"BRB";"palegreen3";0;0,00045678442037359;0;NA
+"3. After edge filter";"Belgium";"Europe";"BEL";"BEL";"skyblue";376202633,794;0,124566443386946;0;0,0078372091202315
+"3. After edge filter";"Bermuda";"Americas";"BMU";"BMU";"palegreen3";182916,621;0,000913776700729893;0;0,000719234171209282
+"3. After edge filter";"Bhutan";"Asia";"BTN";"BTN";"gold";435643,14;0,000182036963439601;0;0,001803341957187
+"3. After edge filter";"Bolivia (Plurinational State of)";"Americas";"BOL";"BOL";"palegreen3";8130885,829;0,00324446027157923;0;0,00405803225084479
+"3. After edge filter";"Bosnia Herzegovina";"Europe";"BIH";"BIH";"skyblue";8147240,934;0,00249320500451446;0;0,00388386418930689
+"3. After edge filter";"Botswana";"Africa";"BWA";"BWA";"tomato";3727119,058;0,00109291712872838;0;0,00352281613883988
+"3. After edge filter";"Brazil";"Americas";"BRA";"BRA";"palegreen3";347211444,105;0,1578678706767;728;0,00800180140509522
+"3. After edge filter";"Belize";"Americas";"BLZ";"BLZ";"palegreen3";0;0,000556085104524114;0;NA
+"3. After edge filter";"Solomon Isds";"Oceania";"SLB";"SLB";"orchid";396737,835;0,000286311806704096;0;0,00169608899156042
+"3. After edge filter";"Br. Virgin Isds";"Americas";"VGB";"VGB";"palegreen3";0;0,000238966650885152;0;NA
+"3. After edge filter";"Brunei Darussalam";"Asia";"BRN";"BRN";"gold";11085429,276;0,00309751635366546;0;0,0047074038169217
+"3. After edge filter";"Bulgaria";"Europe";"BGR";"BGR";"skyblue";48963375,109;0,0115015249568243;0;0,00667140378540729
+"3. After edge filter";"Myanmar";"Asia";"MMR";"MMR";"gold";18077801,758;0,00897362521117847;0;0,00631998482631374
+"3. After edge filter";"Belarus";"Europe";"BLR";"BLR";"skyblue";5003282,355;0,00474626354985535;0;0,00442001468391751
+"3. After edge filter";"Cambodia";"Asia";"KHM";"KHM";"gold";34290445,342;0,0196160027921724;0;0,00719334467492004
+"3. After edge filter";"Cameroon";"Africa";"CMR";"CMR";"tomato";6164721,23;0,00330466666920552;174;0,00387561973502306
+"3. After edge filter";"Canada";"Americas";"CAN";"CAN";"palegreen3";569048558,879;0,45925793753323;0;0,00802949171463885
+"3. After edge filter";"Cabo Verde";"Africa";"CPV";"CPV";"tomato";0;5,88940792999037e-06;0;NA
+"3. After edge filter";"Cayman Isds";"Americas";"CYM";"CYM";"palegreen3";1809850,568;0,00146460107145301;0;0,00436811119123793
+"3. After edge filter";"Central African Rep.";"Africa";"CAF";"CAF";"tomato";0;8,28579060091669e-05;0;NA
+"3. After edge filter";"Sri Lanka";"Asia";"LKA";"LKA";"gold";10729667,393;0,00632845694494016;0;0,00542924969603797
+"3. After edge filter";"Chad";"Africa";"TCD";"TCD";"tomato";3231688,523;0,000932560242821016;0;0,00323530964991858
+"3. After edge filter";"Chile";"Americas";"CHL";"CHL";"palegreen3";98911170,563;0,0548666685738263;0;0,00781579084442172
+"3. After edge filter";"China";"Asia";"CHN";"CHN";"gold";3603856310,084;0,855458699966346;25122;0,0081264126872581
+"3. After edge filter";"Colombia";"Americas";"COL";"COL";"palegreen3";48372118,024;0,0322447534526381;0;0,00730229290629114
+"3. After edge filter";"Congo";"Africa";"COG";"COG";"tomato";7722757,959;0,00325913839683464;0;0,00599270744701472
+"3. After edge filter";"Dem. Rep. of the Congo";"Africa";"COD";"COD";"tomato";29026469,212;0,0134588466188037;0;0,00760543087847144
+"3. After edge filter";"Costa Rica";"Americas";"CRI";"CRI";"palegreen3";21997575,04;0,0145928398084371;0;0,00699465995319909
+"3. After edge filter";"Croatia";"Europe";"HRV";"HRV";"skyblue";21954039,139;0,006956404986851;0;0,00535607842611017
+"3. After edge filter";"Cuba";"Americas";"CUB";"CUB";"palegreen3";270281,889;0,000888793440807889;0;0,00122894725661672
+"3. After edge filter";"Cyprus";"Asia";"CYP";"CYP";"gold";2703091,833;0,00159422626076964;186;0,00270340464398059
+"3. After edge filter";"Czechia";"Europe";"CZE";"CZE";"skyblue";242365153,222;0,0750495494448944;0;0,00788690680489914
+"3. After edge filter";"Benin";"Africa";"BEN";"BEN";"tomato";1001439,266;0,000740961482341404;0;0,00187687517388735
+"3. After edge filter";"Denmark";"Europe";"DNK";"DNK";"skyblue";116056996,254;0,0382883249199694;359;0,00738979495260581
+"3. After edge filter";"Dominican Rep.";"Americas";"DOM";"DOM";"palegreen3";12528717,75;0,0163145989030457;0;0,0067487492212541
+"3. After edge filter";"Ecuador";"Americas";"ECU";"ECU";"palegreen3";37930811,571;0,0181193113747091;0;0,00686484744896922
+"3. After edge filter";"El Salvador";"Americas";"SLV";"SLV";"palegreen3";5601021,023;0,00576150513896569;0;0,00469699845883948
+"3. After edge filter";"Equatorial Guinea";"Africa";"GNQ";"GNQ";"tomato";3742952,302;0,000873906955279516;0;0,00325966331838281
+"3. After edge filter";"Ethiopia";"Africa";"ETH";"ETH";"tomato";1658927,088;0,00247004020438532;0;0,00172539991056869
+"3. After edge filter";"Eritrea";"Africa";"ERI";"ERI";"tomato";451785,818;0,000289425639549347;0;0,00188430050569661
+"3. After edge filter";"Estonia";"Europe";"EST";"EST";"skyblue";17771609,454;0,00447337167597027;0;0,00463935521160675
+"3. After edge filter";"Falkland Isds (Malvinas)";"Americas";"FLK";"FLK";"palegreen3";255053,607;1,76192431905208e-05;0;0,00115527190964312
+"3. After edge filter";"Fiji";"Oceania";"FJI";"FJI";"orchid";547941,577;0,00073441538675894;0;0,00161836983443397
+"3. After edge filter";"Finland";"Europe";"FIN";"FIN";"skyblue";77740403,967;0,0239538118477073;184;0,0068911938827217
+"3. After edge filter";"France";"Europe";"FRA";"FRA";"skyblue";633014816,045;0,219571083495515;1060;0,00790741499148606
+"3. After edge filter";"French Polynesia";"Oceania";"PYF";"PYF";"orchid";0;0,000166426337972209;0;NA
+"3. After edge filter";"Djibouti";"Africa";"DJI";"DJI";"tomato";0;0,00163224992332133;0;NA
+"3. After edge filter";"Gabon";"Africa";"GAB";"GAB";"tomato";7333746,82;0,00234275987837376;0;0,00538141594855566
+"3. After edge filter";"Georgia";"Asia";"GEO";"GEO";"gold";1332546,231;0,00188387889586296;0;0,0022945906251225
+"3. After edge filter";"Gambia";"Africa";"GMB";"GMB";"tomato";0;0,000223821723785655;0;NA
+"3. After edge filter";"State of Palestine";"Asia";"PSE";"PSE";"gold";0;0,000114650386579013;0;NA
+"3. After edge filter";"Germany";"Europe";"DEU";"DEU";"skyblue";1549480257,679;0,431420619898916;10801;0,00804653854764294
+"3. After edge filter";"Ghana";"Africa";"GHA";"GHA";"tomato";14720999,35;0,0085160314688714;0;0,00586917121910474
+"3. After edge filter";"Gibraltar";"Europe";"GIB";"GIB";"skyblue";0;0,000856057730088911;0;NA
+"3. After edge filter";"Greece";"Europe";"GRC";"GRC";"skyblue";50693895,377;0,0165304517964098;56;0,00611914428409456
+"3. After edge filter";"Greenland";"Americas";"GRL";"GRL";"palegreen3";1095558,532;0,000212876112830632;0;0,00253796826244431
+"3. After edge filter";"Guatemala";"Americas";"GTM";"GTM";"palegreen3";13322850,384;0,0134574331639722;0;0,00619612029301864
+"3. After edge filter";"Guinea";"Africa";"GIN";"GIN";"tomato";8797498,836;0,00580291724193625;0;0,00678958970672783
+"3. After edge filter";"Guyana";"Americas";"GUY";"GUY";"palegreen3";17875634,028;0,00588543533390498;0;0,00634285777176433
+"3. After edge filter";"Haiti";"Americas";"HTI";"HTI";"palegreen3";637429,166;0,00119968571801917;0;0,0024006194352346
+"3. After edge filter";"Honduras";"Americas";"HND";"HND";"palegreen3";8993915,688;0,00826998430515788;0;0,00612265430024883
+"3. After edge filter";"China, Hong Kong SAR";"Asia";"HKG";"HKG";"gold";151287623,6;0,221637037745999;186;0,00782474196439055
+"3. After edge filter";"Hungary";"Europe";"HUN";"HUN";"skyblue";156968836,286;0,0449826449496047;0;0,0077368460411556
+"3. After edge filter";"Iceland";"Europe";"ISL";"ISL";"skyblue";6402478,897;0,00265319971044247;0;0,00483151791134307
+"3. After edge filter";"Indonesia";"Asia";"IDN";"IDN";"gold";291892137,02;0,124519791773984;174;0,00794556470302055
+"3. After edge filter";"Iran";"Asia";"IRN";"IRN";"gold";11871186,14;0,00789301483470584;0;0,00605926482678238
+"3. After edge filter";"Iraq";"Asia";"IRQ";"IRQ";"gold";108761693,457;0,0403157911523125;0;0,00782016621341891
+"3. After edge filter";"Ireland";"Europe";"IRL";"IRL";"skyblue";241659474,305;0,0980277846301195;0;0,00790955824952886
+"3. After edge filter";"Israel";"Asia";"ISR";"ISR";"gold";61431418,962;0,0352299053287816;0;0,00751442869213329
+"3. After edge filter";"Italy";"Europe";"ITA";"ITA";"skyblue";636141286,009;0,183405837724795;1978;0,00792039668222109
+"3. After edge filter";"CÃ´te d'Ivoire";"Africa";"CIV";"CIV";"tomato";23434443,696;0,00581495223031101;172;0,00625319906434459
+"3. After edge filter";"Jamaica";"Americas";"JAM";"JAM";"palegreen3";502572,25;0,0021849052147191;0;0,0015328022894581
+"3. After edge filter";"Japan";"Asia";"JPN";"JPN";"gold";727094175,076;0,355194263783289;0;0,00803350077167178
+"3. After edge filter";"Kazakhstan";"Asia";"KAZ";"KAZ";"gold";85015098,142;0,0290427365873308;0;0,0073834831515622
+"3. After edge filter";"Jordan";"Asia";"JOR";"JOR";"gold";8202152,051;0,00677130920049114;0;0,00557263946540288
+"3. After edge filter";"Kenya";"Africa";"KEN";"KEN";"tomato";6428551,32;0,00558273255510109;0;0,00272355085795799
+"3. After edge filter";"Dem. People's Rep. of Korea";"Asia";"PRK";"PRK";"gold";337113,485;0,00101951639396794;0;0,00147664095128094
+"3. After edge filter";"Rep. of Korea";"Asia";"KOR";"KOR";"gold";717443196,589;0,332688917313556;173;0,00804089944852048
+"3. After edge filter";"Kuwait";"Asia";"KWT";"KWT";"gold";64835040,026;0,020135802002461;0;0,00720492636605997
+"3. After edge filter";"Kyrgyzstan";"Asia";"KGZ";"KGZ";"gold";9011748,462;0,0111094486805293;0;0,00525755112102537
+"3. After edge filter";"Lao People's Dem. Rep.";"Asia";"LAO";"LAO";"gold";9670412,647;0,00478907813816657;0;0,00595938661527024
+"3. After edge filter";"Lebanon";"Asia";"LBN";"LBN";"gold";644272,15;0,00213760521881501;0;0,00119626677166518
+"3. After edge filter";"Lesotho";"Africa";"LSO";"LSO";"tomato";962310,104;0,000307740412604748;0;0,00189013767566257
+"3. After edge filter";"Latvia";"Europe";"LVA";"LVA";"skyblue";16701273,415;0,00327317078998696;0;0,00438594577290856
+"3. After edge filter";"Liberia";"Africa";"LBR";"LBR";"tomato";1138800,352;0,00792154339168355;0;0,00297705128148024
+"3. After edge filter";"Libya";"Africa";"LBY";"LBY";"tomato";29257937,956;0,00730690887419973;371;0,00662899174416885
+"3. After edge filter";"Lithuania";"Europe";"LTU";"LTU";"skyblue";36570174,429;0,00842106724715026;357;0,00570894899311757
+"3. After edge filter";"Luxembourg";"Europe";"LUX";"LUX";"skyblue";15822385,738;0,00625753172615496;0;0,00563982897183378
+"3. After edge filter";"China, Macao SAR";"Asia";"MAC";"MAC";"gold";1539452,581;0,00322823071912034;0;0,00401596425404763
+"3. After edge filter";"Madagascar";"Africa";"MDG";"MDG";"tomato";2057812,125;0,00136659537231769;0;0,00236059136975945
+"3. After edge filter";"Malawi";"Africa";"MWI";"MWI";"tomato";0;0,000311584793688743;0;NA
+"3. After edge filter";"Malaysia";"Asia";"MYS";"MYS";"gold";403361961,889;0,169693959995379;173;0,00799182910447347
+"3. After edge filter";"Maldives";"Asia";"MDV";"MDV";"gold";0;0,000616781318354869;0;NA
+"3. After edge filter";"Mali";"Africa";"MLI";"MLI";"tomato";758972,269;0,000575044186283875;0;0,00139821142674291
+"3. After edge filter";"Malta";"Europe";"MLT";"MLT";"skyblue";4608179,231;0,00378186589028881;0;0,00304841781303621
+"3. After edge filter";"Mauritania";"Africa";"MRT";"MRT";"tomato";3486671,733;0,00166265068333632;0;0,00379801988386058
+"3. After edge filter";"Mauritius";"Africa";"MUS";"MUS";"tomato";1449705,107;0,00111320845841565;0;0,00128114702579999
+"3. After edge filter";"Mexico";"Americas";"MEX";"MEX";"palegreen3";648458039,684;0,528942864672413;0;0,00803525408133902
+"3. After edge filter";"Other Asia, nes";"Asia";NA;"Oth";"gold";522403449,804;0,229953182455992;0;0,00801374202443579
+"3. After edge filter";"Mongolia";"Asia";"MNG";"MNG";"gold";14499146,305;0,00927743052391206;0;0,00732374525523079
+"3. After edge filter";"Rep. of Moldova";"Europe";"MDA";"MDA";"skyblue";2706297,219;0,00116359874945873;0;0,00358850425210003
+"3. After edge filter";"Montenegro";"Europe";"MNE";"MNE";"skyblue";547431,932;0,000425014417440334;0;0,00148199627478996
+"3. After edge filter";"Morocco";"Africa";"MAR";"MAR";"tomato";64161687,643;0,0219007070059624;0;0,00709453864455208
+"3. After edge filter";"Mozambique";"Africa";"MOZ";"MOZ";"tomato";12183529,194;0,00376617296708436;0;0,0049984548877507
+"3. After edge filter";"Oman";"Asia";"OMN";"OMN";"gold";67867167,282;0,0240906750745192;0;0,00775652229355744
+"3. After edge filter";"Namibia";"Africa";"NAM";"NAM";"tomato";6785583,76;0,00209970300440716;0;0,0044412765935272
+"3. After edge filter";"Nauru";"Oceania";"NRU";"NRU";"orchid";141766,832;1,17383924887109e-05;0;0,000688194566156685
+"3. After edge filter";"Nepal";"Asia";"NPL";"NPL";"gold";867584,541;0,00192627612241649;0;0,00292803553979078
+"3. After edge filter";"Netherlands";"Europe";"NLD";"NLD";"skyblue";578403716,1;0,212127806400463;771;0,00793474195558018
+"3. After edge filter";"CuraÃ§ao";"Americas";"CUW";"CUW";"palegreen3";237103,927;0,000465879612243418;0;0,00105191092227418
+"3. After edge filter";"Aruba";"Americas";"ABW";"ABW";"palegreen3";0;0,000397636228348257;0;NA
+"3. After edge filter";"New Caledonia";"Oceania";"NCL";"NCL";"orchid";947356,8;0,000512039370384373;0;0,00262080263986166
+"3. After edge filter";"Vanuatu";"Oceania";"VUT";"VUT";"orchid";209277,143;0,000103519783172398;0;0,00098522354630869
+"3. After edge filter";"New Zealand";"Oceania";"NZL";"NZL";"orchid";41757165,176;0,0222874320085028;0;0,0071473162535892
+"3. After edge filter";"Nicaragua";"Americas";"NIC";"NIC";"palegreen3";7302570,832;0,00534652807916938;0;0,00576445376025705
+"3. After edge filter";"Niger";"Africa";"NER";"NER";"tomato";924506,126;0,000506557105186434;0;0,00233453025688722
+"3. After edge filter";"Nigeria";"Africa";"NGA";"NGA";"tomato";61972964,82;0,0222807392478311;0;0,00646133579664218
+"3. After edge filter";"Norway";"Europe";"NOR";"NOR";"skyblue";172011282,234;0,0399304348645438;1;0,0076402466985114
+"3. After edge filter";"FS Micronesia";"Oceania";"FSM";"FSM";"orchid";202105,404;1,67344683010302e-05;0;0,000945922832087036
+"3. After edge filter";"Marshall Isds";"Oceania";"MHL";"MHL";"orchid";394266,95;0,00353878099675471;0;0,00104339177075322
+"3. After edge filter";"Pakistan";"Asia";"PAK";"PAK";"gold";33143818,365;0,019447810028683;0;0,00632869961957301
+"3. After edge filter";"Panama";"Americas";"PAN";"PAN";"palegreen3";1772976,985;0,0115845113593096;0;0,00197306701132161
+"3. After edge filter";"Papua New Guinea";"Oceania";"PNG";"PNG";"orchid";13157552,026;0,00389974228629021;0;0,00556478407279252
+"3. After edge filter";"Paraguay";"Americas";"PRY";"PRY";"palegreen3";9718066,441;0,00485324135079551;0;0,00563271156469189
+"3. After edge filter";"Peru";"Americas";"PER";"PER";"palegreen3";72789488,393;0,0370191487256959;0;0,00764895816025496
+"3. After edge filter";"Philippines";"Asia";"PHL";"PHL";"gold";93667919,723;0,0592430277578242;0;0,00746485957396095
+"3. After edge filter";"Poland";"Europe";"POL";"POL";"skyblue";363112489,684;0,11955828404539;894;0,0079252027720293
+"3. After edge filter";"Portugal";"Europe";"PRT";"PRT";"skyblue";82533234,568;0,0259181920609297;174;0,00724705922824018
+"3. After edge filter";"Guinea-Bissau";"Africa";"GNB";"GNB";"tomato";199276,66;2,25502474377926e-05;0;0,000934984566397932
+"3. After edge filter";"Timor-Leste";"Asia";"TLS";"TLS";"gold";0;0,000152332152220589;0;NA
+"3. After edge filter";"Qatar";"Asia";"QAT";"QAT";"gold";87587491,661;0,025904680422871;0;0,00755802120020969
+"3. After edge filter";"Romania";"Europe";"ROU";"ROU";"skyblue";103680825,618;0,0299531677211847;359;0,00748349957855106
+"3. After edge filter";"Russian Federation";"Europe";"RUS";"RUS";"skyblue";372447968,967;0,142042382311001;172;0,00803411483397318
+"3. After edge filter";"Rwanda";"Africa";"RWA";"RWA";"tomato";159743,066;0,000318150868905479;0;0,00077416669509972
+"3. After edge filter";"Saint Kitts and Nevis";"Americas";"KNA";"KNA";"palegreen3";0;7,82944032057795e-05;0;NA
+"3. After edge filter";"Saudi Arabia";"Asia";"SAU";"SAU";"gold";304955301,757;0,107448973557714;913;0,00791985000018204
+"3. After edge filter";"Senegal";"Africa";"SEN";"SEN";"tomato";5021220,181;0,00349354728695436;0;0,00300898418280025
+"3. After edge filter";"Serbia";"Europe";"SRB";"SRB";"skyblue";32677802,161;0,00879666223609043;173;0,00625728850551571
+"3. After edge filter";"Seychelles";"Africa";"SYC";"SYC";"tomato";277967,757;5,01537851416125e-05;0;0,00125172785336538
+"3. After edge filter";"Sierra Leone";"Africa";"SLE";"SLE";"tomato";1096066,522;0,000890288232198684;0;0,00314379881794105
+"3. After edge filter";"India";"Asia";"IND";"IND";"gold";451756495,541;0,204481398403985;2321;0,00792838657883196
+"3. After edge filter";"Singapore";"Asia";"SGP";"SGP";"gold";326407904,744;0,148872372996336;173;0,00784573374658358
+"3. After edge filter";"Slovakia";"Europe";"SVK";"SVK";"skyblue";115905359,32;0,0312902382268639;0;0,00756834238295685
+"3. After edge filter";"Viet Nam";"Asia";"VNM";"VNM";"gold";503120299,18;0,265317236332922;0;0,00800700715983552
+"3. After edge filter";"Slovenia";"Europe";"SVN";"SVN";"skyblue";64959585,79;0,0160439648633199;0;0,0073662172078385
+"3. After edge filter";"Somalia";"Africa";"SOM";"SOM";"tomato";352157,274;0,000599854149227276;0;0,0015238648180507
+"3. After edge filter";"South Africa";"Africa";"ZAF";"ZAF";"tomato";148659162,842;0,0495863371295927;1748;0,00774972025504337
+"3. After edge filter";"Zimbabwe";"Africa";"ZWE";"ZWE";"tomato";6685073,395;0,00203103457503526;0;0,00508987872625654
+"3. After edge filter";"Spain";"Europe";"ESP";"ESP";"skyblue";397393000,02;0,124828775589906;1262;0,00778209928764618
+"3. After edge filter";"South Sudan";"Africa";"SSD";"SSD";"tomato";457817,546;0,000235020287268302;0;0,00134400984270744
+"3. After edge filter";"Sudan";"Africa";"SDN";"SDN";"tomato";2674421,125;0,000932572349302126;0;0,00278404869790266
+"3. After edge filter";"Suriname";"Americas";"SUR";"SUR";"palegreen3";1317770,972;0,000504319236664221;0;0,00376071464185029
+"3. After edge filter";"Eswatini";"Africa";"SWZ";"SWZ";"tomato";1494124,301;8,73595293745974e-05;0;0,0039431892629963
+"3. After edge filter";"Sweden";"Europe";"SWE";"SWE";"skyblue";188523910,54;0,0535713234141765;2;0,00747298152711824
+"3. After edge filter";"Switzerland";"Europe";"CHE";"CHE";"skyblue";395260804,717;0,146810775055672;1651;0,00788764796512717
+"3. After edge filter";"Syria";"Asia";"SYR";"SYR";"gold";619996,82;0,000324851040542743;0;0,00178700199429727
+"3. After edge filter";"Tajikistan";"Asia";"TJK";"TJK";"gold";1296610,604;0,00196786699365015;0;0,00149832130483294
+"3. After edge filter";"Thailand";"Asia";"THA";"THA";"gold";336610926,262;0,149621127313512;730;0,00787614874803481
+"3. After edge filter";"Togo";"Africa";"TGO";"TGO";"tomato";1166580,622;0,00246509269857663;0;0,00272509875464188
+"3. After edge filter";"Trinidad and Tobago";"Americas";"TTO";"TTO";"palegreen3";9708461,003;0,00452028400277733;0;0,00561616465229584
+"3. After edge filter";"United Arab Emirates";"Asia";"ARE";"ARE";"gold";307144066,102;0,112345593051289;1280;0,00780947545168574
+"3. After edge filter";"Tunisia";"Africa";"TUN";"TUN";"tomato";20535209,611;0,00669912579809137;0;0,00622039299297849
+"3. After edge filter";"TÃ¼rkiye";"Asia";"TUR";"TUR";"gold";263659782,447;0,0816133039154824;1172;0,00753602864441768
+"3. After edge filter";"Turkmenistan";"Asia";"TKM";"TKM";"gold";12808928,217;0,00524793281309129;0;0,007064035739773
+"3. After edge filter";"Uganda";"Africa";"UGA";"UGA";"tomato";7402662,634;0,00243160390333524;358;0,00503704671857221
+"3. After edge filter";"Ukraine";"Europe";"UKR";"UKR";"skyblue";43679647,573;0,0167006008614123;0;0,00604902217218901
+"3. After edge filter";"North Macedonia";"Europe";"MKD";"MKD";"skyblue";7931058,848;0,00236153414864127;0;0,00557909055171711
+"3. After edge filter";"Egypt";"Africa";"EGY";"EGY";"tomato";48498978,936;0,022051558889768;0;0,00632135179223828
+"3. After edge filter";"United Kingdom";"Europe";"GBR";"GBR";"skyblue";419755862,694;0,224313646304376;173;0,00789113556204754
+"3. After edge filter";"United Rep. of Tanzania";"Africa";"TZA";"TZA";"tomato";10261104,774;0,00509521432452027;0;0,00476655269193106
+"3. After edge filter";"USA";"Americas";"USA";"USA";"palegreen3";1892864873,403;1;12034;0,00805946657582543
+"3. After edge filter";"Burkina Faso";"Africa";"BFA";"BFA";"tomato";8587255,132;0,00134614531483774;0;0,00643891964541887
+"3. After edge filter";"Uruguay";"Americas";"URY";"URY";"palegreen3";9451953,804;0,0048594478787619;0;0,00505144669417393
+"3. After edge filter";"Uzbekistan";"Asia";"UZB";"UZB";"gold";21355182,493;0,00994341955714969;0;0,00636524003706963
+"3. After edge filter";"Venezuela";"Americas";"VEN";"VEN";"palegreen3";12741579,943;0,00948982423763796;0;0,00651274088572127
+"3. After edge filter";"Yemen";"Asia";"YEM";"YEM";"gold";372447,108;0,00157200914232161;0;0,000932990340681804
+"3. After edge filter";"Zambia";"Africa";"ZMB";"ZMB";"tomato";13300707,541;0,00362994977116715;0;0,00604800459807149
+"4. Backbone (disparity)";"Afghanistan";"Asia";"AFG";"AFG";"gold";1323613,369;0,000885040366275094;0;0,00140098224274447
+"4. Backbone (disparity)";"Albania";"Europe";"ALB";"ALB";"skyblue";2785171,137;0,00131045681891734;0;0,00184961754189017
+"4. Backbone (disparity)";"Algeria";"Africa";"DZA";"DZA";"tomato";39014103,804;0,0122979454678104;0;0,00233712314708296
+"4. Backbone (disparity)";"American Samoa";"Oceania";"ASM";"ASM";"orchid";28591,726;1,48554721277789e-05;0;2,89169948982823e-05
+"4. Backbone (disparity)";"Andorra";"Europe";"AND";"AND";"skyblue";77824,492;0,000125184466998084;0;0,000177628141793821
+"4. Backbone (disparity)";"Angola";"Africa";"AGO";"AGO";"tomato";34911395,85;0,0130109461965851;0;0,00238342384128623
+"4. Backbone (disparity)";"Antigua and Barbuda";"Americas";"ATG";"ATG";"palegreen3";183644,36;0,00036254469139442;0;0,000343579610514628
+"4. Backbone (disparity)";"Azerbaijan";"Asia";"AZE";"AZE";"gold";23140411,49;0,00518517857708454;0;0,0023045585527309
+"4. Backbone (disparity)";"Argentina";"Americas";"ARG";"ARG";"palegreen3";52337327,64;0,021800526523182;0;0,00235799849778281
+"4. Backbone (disparity)";"Australia";"Oceania";"AUS";"AUS";"orchid";319775923,893;0,165641701863322;800;0,00244547207235514
+"4. Backbone (disparity)";"Austria";"Europe";"AUT";"AUT";"skyblue";167808824,749;0,0654880614818006;0;0,00242591733519558
+"4. Backbone (disparity)";"Bahamas";"Americas";"BHS";"BHS";"palegreen3";2077986,285;0,00377533306233258;0;0,0016428941644773
+"4. Backbone (disparity)";"Bahrain";"Asia";"BHR";"BHR";"gold";11504661,984;0,00386306168629219;0;0,0020863625249814
+"4. Backbone (disparity)";"Bangladesh";"Asia";"BGD";"BGD";"gold";41799853,115;0,0240305139075808;201;0,00231878247865186
+"4. Backbone (disparity)";"Armenia";"Asia";"ARM";"ARM";"gold";11275074,912;0,00303811936481089;201;0,0022169591365304
+"4. Backbone (disparity)";"Barbados";"Americas";"BRB";"BRB";"palegreen3";305439,275;0,000643194385977988;0;0,000430381298336162
+"4. Backbone (disparity)";"Belgium";"Europe";"BEL";"BEL";"skyblue";319265532,775;0,113111951956875;201;0,00242557483130713
+"4. Backbone (disparity)";"Bermuda";"Americas";"BMU";"BMU";"palegreen3";222813,903;0,000965404269520216;0;0,000562885343193573
+"4. Backbone (disparity)";"Bhutan";"Asia";"BTN";"BTN";"gold";435643,14;0,000183184570730056;0;0,00114478035823585
+"4. Backbone (disparity)";"Bolivia (Plurinational State of)";"Americas";"BOL";"BOL";"palegreen3";7651612,591;0,00315830326001447;0;0,00184955831528607
+"4. Backbone (disparity)";"Bosnia Herzegovina";"Europe";"BIH";"BIH";"skyblue";7488434,324;0,00224218014534346;0;0,00180956679913278
+"4. Backbone (disparity)";"Botswana";"Africa";"BWA";"BWA";"tomato";3727119,058;0,000907635821905868;0;0,00172083770139263
+"4. Backbone (disparity)";"Brazil";"Americas";"BRA";"BRA";"palegreen3";284789110,624;0,150630285827575;801;0,00244237735887996
+"4. Backbone (disparity)";"Belize";"Americas";"BLZ";"BLZ";"palegreen3";319032,183;0,000648099079810732;0;0,000485187013199877
+"4. Backbone (disparity)";"Solomon Isds";"Oceania";"SLB";"SLB";"orchid";562200,183;0,000321567112803732;0;0,0010968419370574
+"4. Backbone (disparity)";"Br. Virgin Isds";"Americas";"VGB";"VGB";"palegreen3";151867,565;0,000334473364071221;0;0,000236555639047844
+"4. Backbone (disparity)";"Brunei Darussalam";"Asia";"BRN";"BRN";"gold";9962657,196;0,00288924155100173;0;0,00198442657828119
+"4. Backbone (disparity)";"Bulgaria";"Europe";"BGR";"BGR";"skyblue";40050727,567;0,0101179945794406;0;0,00229163210462574
+"4. Backbone (disparity)";"Myanmar";"Asia";"MMR";"MMR";"gold";14810847,985;0,0085929396364536;0;0,00224533295718318
+"4. Backbone (disparity)";"Burundi";"Africa";"BDI";"BDI";"tomato";45523,842;6,40216423245363e-05;0;0,000108497501269371
+"4. Backbone (disparity)";"Belarus";"Europe";"BLR";"BLR";"skyblue";4681510,914;0,00464935993970137;0;0,00192737092315556
+"4. Backbone (disparity)";"Cambodia";"Asia";"KHM";"KHM";"gold";28999181,008;0,0187071514128971;0;0,00235505988082642
+"4. Backbone (disparity)";"Cameroon";"Africa";"CMR";"CMR";"tomato";5855095,641;0,00308434107091685;201;0,00180745532144214
+"4. Backbone (disparity)";"Canada";"Americas";"CAN";"CAN";"palegreen3";490372154,334;0,453462439499006;0;0,00244514439742067
+"4. Backbone (disparity)";"Cabo Verde";"Africa";"CPV";"CPV";"tomato";80483,787;9,27773062838416e-05;0;0,00021979021664186
+"4. Backbone (disparity)";"Cayman Isds";"Americas";"CYM";"CYM";"palegreen3";1809850,568;0,00143157100252103;0;0,00191655966663051
+"4. Backbone (disparity)";"Central African Rep.";"Africa";"CAF";"CAF";"tomato";196818,068;0,000146559941092759;0;0,000273220725522663
+"4. Backbone (disparity)";"Sri Lanka";"Asia";"LKA";"LKA";"gold";9851412,861;0,0059036349110129;0;0,00211227303665152
+"4. Backbone (disparity)";"Chad";"Africa";"TCD";"TCD";"tomato";3231688,523;0,000989627726428184;0;0,00164329417422755
+"4. Backbone (disparity)";"Chile";"Americas";"CHL";"CHL";"palegreen3";83175350,897;0,0530993647737765;0;0,00242335608677416
+"4. Backbone (disparity)";"China";"Asia";"CHN";"CHN";"gold";3604882424,531;0,850430637034411;31350;0,00245480719248704
+"4. Backbone (disparity)";"Colombia";"Americas";"COL";"COL";"palegreen3";39909908,173;0,0307996816519065;0;0,00236756171746903
+"4. Backbone (disparity)";"Comoros";"Africa";"COM";"COM";"tomato";38740,05;5,81482119054277e-05;0;7,64983791244053e-05
+"4. Backbone (disparity)";"Congo";"Africa";"COG";"COG";"tomato";7192902,427;0,00324827068864918;0;0,00219905440792719
+"4. Backbone (disparity)";"Dem. Rep. of the Congo";"Africa";"COD";"COD";"tomato";22093937,542;0,0125759776002981;0;0,00240102901186106
+"4. Backbone (disparity)";"Cook Isds";"Oceania";"COK";"COK";"orchid";30553,659;2,26910051095368e-05;0;6,14528855579743e-05
+"4. Backbone (disparity)";"Costa Rica";"Americas";"CRI";"CRI";"palegreen3";17233994,415;0,0138286959699163;0;0,00233162146402047
+"4. Backbone (disparity)";"Croatia";"Europe";"HRV";"HRV";"skyblue";18655327,481;0,00636457691819513;0;0,00210020812052949
+"4. Backbone (disparity)";"Cuba";"Americas";"CUB";"CUB";"palegreen3";687135,341;0,000938150549135809;0;0,000866918912930959
+"4. Backbone (disparity)";"Cyprus";"Asia";"CYP";"CYP";"gold";3977205,683;0,00158602098597645;201;0,00148347530992986
+"4. Backbone (disparity)";"Czechia";"Europe";"CZE";"CZE";"skyblue";213044943,125;0,0694844555466038;201;0,00243071820092492
+"4. Backbone (disparity)";"Benin";"Africa";"BEN";"BEN";"tomato";1176237,988;0,000800400915645974;0;0,00117634292643989
+"4. Backbone (disparity)";"Denmark";"Europe";"DNK";"DNK";"skyblue";88699377,144;0,0350515755092335;402;0,00237741965373351
+"4. Backbone (disparity)";"Dominican Rep.";"Americas";"DOM";"DOM";"palegreen3";11490206,608;0,0159107313574627;0;0,00230144161116187
+"4. Backbone (disparity)";"Ecuador";"Americas";"ECU";"ECU";"palegreen3";31230353,301;0,0175120128446088;0;0,00231581259777752
+"4. Backbone (disparity)";"El Salvador";"Americas";"SLV";"SLV";"palegreen3";5601021,023;0,00555427289739018;0;0,00198239446605695
+"4. Backbone (disparity)";"Equatorial Guinea";"Africa";"GNQ";"GNQ";"tomato";2559346,432;0,000764790646698863;0;0,00164935536863662
+"4. Backbone (disparity)";"Ethiopia";"Africa";"ETH";"ETH";"tomato";2330212,143;0,00252507990274741;0;0,00111045662182772
+"4. Backbone (disparity)";"Eritrea";"Africa";"ERI";"ERI";"tomato";549624,454;0,000336454549253205;0;0,00117895213734542
+"4. Backbone (disparity)";"Estonia";"Europe";"EST";"EST";"skyblue";15176454,007;0,0039263905379842;0;0,00197100570807733
+"4. Backbone (disparity)";"Falkland Isds (Malvinas)";"Americas";"FLK";"FLK";"palegreen3";330792,459;5,07822957756551e-05;0;0,000834990116563823
+"4. Backbone (disparity)";"Fiji";"Oceania";"FJI";"FJI";"orchid";921656,817;0,000831161518492661;201;0,0010660565055308
+"4. Backbone (disparity)";"Finland";"Europe";"FIN";"FIN";"skyblue";62782845,458;0,0214185130045102;199;0,00231906964689979
+"4. Backbone (disparity)";"France";"Europe";"FRA";"FRA";"skyblue";570539095,463;0,201453048434327;1188;0,00243286162714013
+"4. Backbone (disparity)";"French Polynesia";"Oceania";"PYF";"PYF";"orchid";162525,849;0,000269630653021169;0;0,000339891258545805
+"4. Backbone (disparity)";"Djibouti";"Africa";"DJI";"DJI";"tomato";160707,49;0,00165463456809966;0;0,000412921056021877
+"4. Backbone (disparity)";"Gabon";"Africa";"GAB";"GAB";"tomato";6779819,571;0,00226102183289012;0;0,00210402550809929
+"4. Backbone (disparity)";"Georgia";"Asia";"GEO";"GEO";"gold";1958287,572;0,00165711659880347;0;0,00134180726066381
+"4. Backbone (disparity)";"Gambia";"Africa";"GMB";"GMB";"tomato";168958,543;0,000362513891165845;0;0,000335713737755238
+"4. Backbone (disparity)";"State of Palestine";"Asia";"PSE";"PSE";"gold";65279,411;0,000146121646789133;0;0,000100318560827745
+"4. Backbone (disparity)";"Germany";"Europe";"DEU";"DEU";"skyblue";1529699796,38;0,419325335313646;13476;0,00244689397207307
+"4. Backbone (disparity)";"Ghana";"Africa";"GHA";"GHA";"tomato";12577501,595;0,00794689549115924;0;0,00218097076445535
+"4. Backbone (disparity)";"Gibraltar";"Europe";"GIB";"GIB";"skyblue";132529,127;0,000429562987531333;0;0,000253627351624581
+"4. Backbone (disparity)";"Kiribati";"Oceania";"KIR";"KIR";"orchid";90519,643;3,88547036079116e-05;0;0,00030066555469337
+"4. Backbone (disparity)";"Greece";"Europe";"GRC";"GRC";"skyblue";39230495,912;0,0143966366547449;62;0,00221719856260412
+"4. Backbone (disparity)";"Greenland";"Americas";"GRL";"GRL";"palegreen3";1260533,101;0,000239403187152343;0;0,00142818151452244
+"4. Backbone (disparity)";"Guatemala";"Americas";"GTM";"GTM";"palegreen3";12811501,181;0,013110164508241;0;0,00222822323841677
+"4. Backbone (disparity)";"Guinea";"Africa";"GIN";"GIN";"tomato";8360451,877;0,0057326301841787;0;0,00230650369991051
+"4. Backbone (disparity)";"Guyana";"Americas";"GUY";"GUY";"palegreen3";15755849,874;0,00559539936763678;0;0,00224814029871314
+"4. Backbone (disparity)";"Haiti";"Americas";"HTI";"HTI";"palegreen3";674660,078;0,00123467195397915;0;0,00138028775055272
+"4. Backbone (disparity)";"Honduras";"Americas";"HND";"HND";"palegreen3";7943945,581;0,0080565218569741;0;0,00221786145773541
+"4. Backbone (disparity)";"China, Hong Kong SAR";"Asia";"HKG";"HKG";"gold";130933508,249;0,21662080681484;201;0,00242430694457685
+"4. Backbone (disparity)";"Hungary";"Europe";"HUN";"HUN";"skyblue";134913634,161;0,040840730537625;0;0,00241512389841627
+"4. Backbone (disparity)";"Iceland";"Europe";"ISL";"ISL";"skyblue";6249530,888;0,00255950726313976;0;0,00200764897507722
+"4. Backbone (disparity)";"Indonesia";"Asia";"IDN";"IDN";"gold";241096441,251;0,118908566374938;401;0,00243668935817466
+"4. Backbone (disparity)";"Iran";"Asia";"IRN";"IRN";"gold";10418510,669;0,00749563633705319;0;0,00220886401850304
+"4. Backbone (disparity)";"Iraq";"Asia";"IRQ";"IRQ";"gold";94437433,354;0,0369726823252575;0;0,00242380266235709
+"4. Backbone (disparity)";"Ireland";"Europe";"IRL";"IRL";"skyblue";209952938,271;0,0939801415704367;0;0,00243298966957
+"4. Backbone (disparity)";"Israel";"Asia";"ISR";"ISR";"gold";49610732,262;0,0333833466411265;0;0,00239119220415707
+"4. Backbone (disparity)";"Italy";"Europe";"ITA";"ITA";"skyblue";574144619,506;0,167720392782806;2181;0,00243408578476775
+"4. Backbone (disparity)";"CÃ´te d'Ivoire";"Africa";"CIV";"CIV";"tomato";19073140,736;0,00521539317032981;200;0,00223580875539644
+"4. Backbone (disparity)";"Jamaica";"Americas";"JAM";"JAM";"palegreen3";873929,939;0,00228376711835362;0;0,00102123554448641
+"4. Backbone (disparity)";"Japan";"Asia";"JPN";"JPN";"gold";664346254,927;0,350419317714761;402;0,00244555691645682
+"4. Backbone (disparity)";"Kazakhstan";"Asia";"KAZ";"KAZ";"gold";73195175,449;0,0268698622347302;0;0,00237674958309204
+"4. Backbone (disparity)";"Jordan";"Asia";"JOR";"JOR";"gold";7343072,879;0,00630199938483854;0;0,00213537249320357
+"4. Backbone (disparity)";"Kenya";"Africa";"KEN";"KEN";"tomato";6614568,139;0,0053590729428654;0;0,00148989262534834
+"4. Backbone (disparity)";"Dem. People's Rep. of Korea";"Asia";"PRK";"PRK";"gold";337113,485;0,00103626443160907;0;0,00099401957347304
+"4. Backbone (disparity)";"Rep. of Korea";"Asia";"KOR";"KOR";"gold";631089505,947;0,320784453389632;201;0,00244629755624675
+"4. Backbone (disparity)";"Kuwait";"Asia";"KWT";"KWT";"gold";54640641,194;0,0189909793553202;0;0,0023563994217997
+"4. Backbone (disparity)";"Kyrgyzstan";"Asia";"KGZ";"KGZ";"gold";8851151,13;0,0110279376026703;0;0,00208375976771472
+"4. Backbone (disparity)";"Lao People's Dem. Rep.";"Asia";"LAO";"LAO";"gold";8794179,034;0,00473675148441606;0;0,00219434185484846
+"4. Backbone (disparity)";"Lebanon";"Asia";"LBN";"LBN";"gold";1391754,726;0,00199638617592325;0;0,000849279320081216
+"4. Backbone (disparity)";"Lesotho";"Africa";"LSO";"LSO";"tomato";1007906,346;0,000321258717274811;0;0,00118196753373388
+"4. Backbone (disparity)";"Latvia";"Europe";"LVA";"LVA";"skyblue";15046414,543;0,00261594800614879;0;0,00192001107848106
+"4. Backbone (disparity)";"Liberia";"Africa";"LBR";"LBR";"tomato";1479456,514;0,00775619260118579;0;0,0015691011698721
+"4. Backbone (disparity)";"Libya";"Africa";"LBY";"LBY";"tomato";25008796,853;0,00616530415959989;401;0,00228610526481629
+"4. Backbone (disparity)";"Lithuania";"Europe";"LTU";"LTU";"skyblue";29524627,8;0,00765366943288487;400;0,00215648700304611
+"4. Backbone (disparity)";"Luxembourg";"Europe";"LUX";"LUX";"skyblue";14391764,633;0,00585521663425272;0;0,00214600969739834
+"4. Backbone (disparity)";"China, Macao SAR";"Asia";"MAC";"MAC";"gold";1718666,378;0,00328442304425251;0;0,00184013226170481
+"4. Backbone (disparity)";"Madagascar";"Africa";"MDG";"MDG";"tomato";2655953,5;0,0014810033507386;0;0,00136592215709057
+"4. Backbone (disparity)";"Malawi";"Africa";"MWI";"MWI";"tomato";645175,428;0,000409105763871208;0;0,00048559276848252
+"4. Backbone (disparity)";"Malaysia";"Asia";"MYS";"MYS";"gold";363127022,315;0,165766390112952;402;0,00244162568615756
+"4. Backbone (disparity)";"Maldives";"Asia";"MDV";"MDV";"gold";215675,518;0,000659092008672123;0;0,000392024091546772
+"4. Backbone (disparity)";"Mali";"Africa";"MLI";"MLI";"tomato";1077734,105;0,000615838471671876;0;0,000954909900811152
+"4. Backbone (disparity)";"Malta";"Europe";"MLT";"MLT";"skyblue";4994212,033;0,0037059741641991;0;0,00159029833714825
+"4. Backbone (disparity)";"Mauritania";"Africa";"MRT";"MRT";"tomato";4002732,04;0,00179580943472558;0;0,00178913701420762
+"4. Backbone (disparity)";"Mauritius";"Africa";"MUS";"MUS";"tomato";1953239,697;0,00118095762893292;0;0,00089472988211867
+"4. Backbone (disparity)";"Mexico";"Americas";"MEX";"MEX";"palegreen3";559613144,612;0,517963742812414;0;0,00244572139045738
+"4. Backbone (disparity)";"Other Asia, nes";"Asia";NA;"Oth";"gold";473284552,482;0,224396278577844;0;0,00244367222322243
+"4. Backbone (disparity)";"Mongolia";"Asia";"MNG";"MNG";"gold";14499146,305;0,00934545465331366;0;0,00236994820813472
+"4. Backbone (disparity)";"Rep. of Moldova";"Europe";"MDA";"MDA";"skyblue";3181064,45;0,0011891498342281;0;0,00173758107751378
+"4. Backbone (disparity)";"Montenegro";"Europe";"MNE";"MNE";"skyblue";1040690,479;0,000500981283970009;0;0,000996594706688562
+"4. Backbone (disparity)";"Morocco";"Africa";"MAR";"MAR";"tomato";51626661,255;0,0192896675140258;0;0,00234380094136358
+"4. Backbone (disparity)";"Mozambique";"Africa";"MOZ";"MOZ";"tomato";11057460,938;0,00334184979956067;0;0,00203839453022884
+"4. Backbone (disparity)";"Oman";"Asia";"OMN";"OMN";"gold";57475212,249;0,0223135448051454;0;0,00241711197776738
+"4. Backbone (disparity)";"Namibia";"Africa";"NAM";"NAM";"tomato";6785583,76;0,00207961169244749;0;0,00193167628053942
+"4. Backbone (disparity)";"Nauru";"Oceania";"NRU";"NRU";"orchid";178453,75;2,730516866795e-05;0;0,000554364727788132
+"4. Backbone (disparity)";"Nepal";"Asia";"NPL";"NPL";"gold";1028521,062;0,00196343746541838;0;0,00155427325322113
+"4. Backbone (disparity)";"Netherlands";"Europe";"NLD";"NLD";"skyblue";525344499,602;0,197918822753456;855;0,00243560012706903
+"4. Backbone (disparity)";"CuraÃ§ao";"Americas";"CUW";"CUW";"palegreen3";286347,171;0,000531860642175203;0;0,000768349865664573
+"4. Backbone (disparity)";"Aruba";"Americas";"ABW";"ABW";"palegreen3";136179,909;0,000452762802890688;0;0,000414700389167198
+"4. Backbone (disparity)";"New Caledonia";"Oceania";"NCL";"NCL";"orchid";1127521,718;0,000585808857678845;0;0,00145619200999271
+"4. Backbone (disparity)";"Vanuatu";"Oceania";"VUT";"VUT";"orchid";262878,787;0,000137694276309756;0;0,000729232674358316
+"4. Backbone (disparity)";"New Zealand";"Oceania";"NZL";"NZL";"orchid";36062149,152;0,0215464344902683;201;0,0023507862379033
+"4. Backbone (disparity)";"Nicaragua";"Americas";"NIC";"NIC";"palegreen3";7144137,429;0,00538873645886293;0;0,00216514451407803
+"4. Backbone (disparity)";"Niger";"Africa";"NER";"NER";"tomato";1376341,149;0,000585510188276774;0;0,00135613395891766
+"4. Backbone (disparity)";"Nigeria";"Africa";"NGA";"NGA";"tomato";51352819,514;0,0207658574772377;0;0,00226452673070406
+"4. Backbone (disparity)";"Norway";"Europe";"NOR";"NOR";"skyblue";148425948,15;0,036522385297709;1;0,002404978897489
+"4. Backbone (disparity)";"FS Micronesia";"Oceania";"FSM";"FSM";"orchid";295112,326;0,000106042421108799;0;0,000721027288850407
+"4. Backbone (disparity)";"Marshall Isds";"Oceania";"MHL";"MHL";"orchid";839125,252;0,00343977237325357;0;0,000763508922014893
+"4. Backbone (disparity)";"Pakistan";"Asia";"PAK";"PAK";"gold";25579779,449;0,0176296793869357;402;0,00224645018524037
+"4. Backbone (disparity)";"Panama";"Americas";"PAN";"PAN";"palegreen3";2236321,525;0,0110337045612418;0;0,00121664644792778
+"4. Backbone (disparity)";"Papua New Guinea";"Oceania";"PNG";"PNG";"orchid";10940034,89;0,00361980728147598;0;0,00213399295214905
+"4. Backbone (disparity)";"Paraguay";"Americas";"PRY";"PRY";"palegreen3";8376552,215;0,00455800141217794;0;0,00214483768609524
+"4. Backbone (disparity)";"Peru";"Americas";"PER";"PER";"palegreen3";62843517,354;0,0357503526163586;0;0,0024057754585855
+"4. Backbone (disparity)";"Philippines";"Asia";"PHL";"PHL";"gold";85377140,08;0,0570064694234631;0;0,0023858021516291
+"4. Backbone (disparity)";"Poland";"Europe";"POL";"POL";"skyblue";323684422,22;0,108892048189008;1194;0,0024346144432957
+"4. Backbone (disparity)";"Portugal";"Europe";"PRT";"PRT";"skyblue";67905792,86;0,0226469453591445;603;0,00236248401920544
+"4. Backbone (disparity)";"Guinea-Bissau";"Africa";"GNB";"GNB";"tomato";199276,66;7,31215634095575e-05;0;0,000705994299010906
+"4. Backbone (disparity)";"Timor-Leste";"Asia";"TLS";"TLS";"gold";75094,983;0,000167988999559927;0;0,000281402965746399
+"4. Backbone (disparity)";"Qatar";"Asia";"QAT";"QAT";"gold";74535370,319;0,0231768736650611;0;0,00239592264823357
+"4. Backbone (disparity)";"Romania";"Europe";"ROU";"ROU";"skyblue";87905122,19;0,026512715882916;602;0,00238781967906544
+"4. Backbone (disparity)";"Russian Federation";"Europe";"RUS";"RUS";"skyblue";304376688,976;0,129765181012135;200;0,00244562508229714
+"4. Backbone (disparity)";"Rwanda";"Africa";"RWA";"RWA";"tomato";467190,244;0,000390433909434188;0;0,000598831041219132
+"4. Backbone (disparity)";"Saint Helena";"Africa";"SHN";"SHN";"tomato";26132,551;1,52898445417466e-05;0;4,92601745266223e-05
+"4. Backbone (disparity)";"Saint Kitts and Nevis";"Americas";"KNA";"KNA";"palegreen3";31186,209;0,000104022383485494;0;7,57567268064188e-05
+"4. Backbone (disparity)";"San Marino";"Europe";"SMR";"SMR";"skyblue";157867,185;6,48588145006243e-05;0;0,000123865321964256
+"4. Backbone (disparity)";"Sao Tome and Principe";"Africa";"STP";"STP";"tomato";39171,274;1,67057705486103e-05;0;4,85899492517963e-05
+"4. Backbone (disparity)";"Saudi Arabia";"Asia";"SAU";"SAU";"gold";265653476,384;0,101704454602638;1601;0,00243406593870917
+"4. Backbone (disparity)";"Senegal";"Africa";"SEN";"SEN";"tomato";5115755,937;0,0032817189591124;0;0,0015783872411612
+"4. Backbone (disparity)";"Serbia";"Europe";"SRB";"SRB";"skyblue";28291795,823;0,0077566271364777;201;0,00223647023581796
+"4. Backbone (disparity)";"Seychelles";"Africa";"SYC";"SYC";"tomato";705149,299;0,000168301392298781;0;0,000879058666791286
+"4. Backbone (disparity)";"Sierra Leone";"Africa";"SLE";"SLE";"tomato";1238923,467;0,000980231743823482;0;0,00161776147160676
+"4. Backbone (disparity)";"India";"Asia";"IND";"IND";"gold";368447595,284;0,191134492200939;2953;0,00243485954993895
+"4. Backbone (disparity)";"Singapore";"Asia";"SGP";"SGP";"gold";282933916,572;0,141949477191384;800;0,00242698310180118
+"4. Backbone (disparity)";"Slovakia";"Europe";"SVK";"SVK";"skyblue";96819680,572;0,0281718962383726;0;0,00239711667413105
+"4. Backbone (disparity)";"Viet Nam";"Asia";"VNM";"VNM";"gold";425388304,949;0,25990060123048;0;0,00244288023136781
+"4. Backbone (disparity)";"Slovenia";"Europe";"SVN";"SVN";"skyblue";55174489,992;0,0141610275632057;0;0,0023747084481391
+"4. Backbone (disparity)";"Somalia";"Africa";"SOM";"SOM";"tomato";430468,139;0,000606119526621474;0;0,00101688965477525
+"4. Backbone (disparity)";"South Africa";"Africa";"ZAF";"ZAF";"tomato";123830299,971;0,0459944881113391;1989;0,00241615652750668
+"4. Backbone (disparity)";"Zimbabwe";"Africa";"ZWE";"ZWE";"tomato";6349566,127;0,00197567512058778;0;0,00205463317430855
+"4. Backbone (disparity)";"Spain";"Europe";"ESP";"ESP";"skyblue";354772852,611;0,112788458781006;2216;0,00242023348120617
+"4. Backbone (disparity)";"South Sudan";"Africa";"SSD";"SSD";"tomato";492482,883;0,000238281672858093;0;0,000927337592146217
+"4. Backbone (disparity)";"Sudan";"Africa";"SDN";"SDN";"tomato";2674421,125;0,000931716107802977;0;0,00150934110021382
+"4. Backbone (disparity)";"Suriname";"Americas";"SUR";"SUR";"palegreen3";1468220,805;0,000602829459786995;0;0,00177963830412305
+"4. Backbone (disparity)";"Eswatini";"Africa";"SWZ";"SWZ";"tomato";1733637,042;8,4254297352371e-05;0;0,00182320491394709
+"4. Backbone (disparity)";"Sweden";"Europe";"SWE";"SWE";"skyblue";144428175,301;0,0479605771270295;2;0,00238662892113424
+"4. Backbone (disparity)";"Switzerland";"Europe";"CHE";"CHE";"skyblue";335531761,432;0,136805114781015;1799;0,00243070850729671
+"4. Backbone (disparity)";"Syria";"Asia";"SYR";"SYR";"gold";862260,894;0,000326252728710265;0;0,00113767016252457
+"4. Backbone (disparity)";"Tajikistan";"Asia";"TJK";"TJK";"gold";1583574,206;0,00198235542970015;0;0,00100460803757642
+"4. Backbone (disparity)";"Thailand";"Asia";"THA";"THA";"gold";290119616,594;0,145838959400589;1401;0,00242956083270513
+"4. Backbone (disparity)";"Togo";"Africa";"TGO";"TGO";"tomato";1656827,442;0,00221578681334911;0;0,00149059004341804
+"4. Backbone (disparity)";"Tokelau";"Oceania";"TKL";"TKL";"orchid";25729,428;4,0397765905156e-06;0;6,6953464518673e-05
+"4. Backbone (disparity)";"Trinidad and Tobago";"Americas";"TTO";"TTO";"palegreen3";8102594,821;0,00440834149126729;0;0,002142186732721
+"4. Backbone (disparity)";"United Arab Emirates";"Asia";"ARE";"ARE";"gold";273205786,434;0,100175456522126;1398;0,00242264801901187
+"4. Backbone (disparity)";"Tunisia";"Africa";"TUN";"TUN";"tomato";16610743,595;0,0057937517420008;0;0,00223158596775181
+"4. Backbone (disparity)";"TÃ¼rkiye";"Asia";"TUR";"TUR";"gold";218919878,629;0,072172446866219;1532;0,00239344005535101
+"4. Backbone (disparity)";"Turkmenistan";"Asia";"TKM";"TKM";"gold";11705672,537;0,00528310731875135;0;0,00233956381214156
+"4. Backbone (disparity)";"Tuvalu";"Oceania";"TUV";"TUV";"orchid";73397,166;1,64334878286924e-05;0;0,000319964401413015
+"4. Backbone (disparity)";"Uganda";"Africa";"UGA";"UGA";"tomato";7157975,386;0,00213807732510651;401;0,00204499269479797
+"4. Backbone (disparity)";"Ukraine";"Europe";"UKR";"UKR";"skyblue";34828307,966;0,0150669697332365;0;0,00220738499188558
+"4. Backbone (disparity)";"North Macedonia";"Europe";"MKD";"MKD";"skyblue";6501958,196;0,0020164276292999;0;0,00213622572414179
+"4. Backbone (disparity)";"Egypt";"Africa";"EGY";"EGY";"tomato";38678523,216;0,019715260520633;0;0,00224542266618973
+"4. Backbone (disparity)";"United Kingdom";"Europe";"GBR";"GBR";"skyblue";375669886,857;0,214113908970912;603;0,00243144420487304
+"4. Backbone (disparity)";"United Rep. of Tanzania";"Africa";"TZA";"TZA";"tomato";9774192,596;0,00470023189800944;0;0,00199531267447334
+"4. Backbone (disparity)";"USA";"Americas";"USA";"USA";"palegreen3";1882514598,438;1;15481;0,00244814125413635
+"4. Backbone (disparity)";"Burkina Faso";"Africa";"BFA";"BFA";"tomato";8241431,407;0,00129403619352511;0;0,00226092507292137
+"4. Backbone (disparity)";"Uruguay";"Americas";"URY";"URY";"palegreen3";8619221,078;0,00469635006189931;0;0,00204789102302838
+"4. Backbone (disparity)";"Uzbekistan";"Asia";"UZB";"UZB";"gold";18927012,007;0,00893598308751372;0;0,00225140701588565
+"4. Backbone (disparity)";"Venezuela";"Americas";"VEN";"VEN";"palegreen3";11862734,856;0,00945303033701584;0;0,00227106717110506
+"4. Backbone (disparity)";"Samoa";"Oceania";"WSM";"WSM";"orchid";33036,192;7,70547502150112e-05;0;4,03685356666406e-05
+"4. Backbone (disparity)";"Yemen";"Asia";"YEM";"YEM";"gold";512946,995;0,00151782047730895;0;0,000698184379162064
+"4. Backbone (disparity)";"Zambia";"Africa";"ZMB";"ZMB";"tomato";12397665,709;0,00339205982256092;0;0,00220706538463306
