@@ -105,3 +105,6 @@ Previous versions of the code and results, kept for reference:
 ## Repository
 
 https://github.com/BarbBS/AniaLozowicka
+
+GitHub connection test.
+
