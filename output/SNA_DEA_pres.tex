@@ -7,7 +7,10 @@
 \usepackage{graphicx}          % Do wstawiania obrazków
 \usepackage{booktabs}          % Do tworzenia ładnych tabel
 \usepackage{natbib}
+\usepackage{url}
 \bibliographystyle{abbrvnat}
+
+\graphicspath{{./plots/}{./}}
 
 % --- Ustawienia motywu ---
 % Motyw 'Madrid' jest czysty, profesjonalny, z paskami nawigacyjnymi u góry
@@ -142,73 +145,109 @@ International Conference November 21, 2025\\\textit{Indo-Pacific in the era of t
 
 
 \begin{frame}
-\frametitle{Two Families of Centrality Measures: Local and Positional Measures}
+\frametitle{Centrality Measures Used in SNA}
 
-    % --- Blok 1: Miary Lokalne / "Oparte na węźle" ---
-%    \begin{block}
-{1. Local Measures (A node's "size")}
+{1. Local Measures (A node's ``size'')}
         Describe a node's immediate trade volume, independent of the rest of the network.
         
         \begin{itemize}
-            \item \texttt{Strength}: Measures total trade volume -> higher strength = more trade.
+            \item \texttt{Strength}: total outgoing trade volume.
         \end{itemize}
-{2. Positional Measures (A node's "role")}
-        Describe a node's strategic role and position within the \emph{entire} network structure.
+
+{2. Positional Measures (A node's ``role'')}
+        Describe a node's strategic role within the \emph{entire} network structure.
         
 \begin{itemize}
-    \item \texttt{Betweenness} and \texttt{Closeness}: Measure access and control over network "paths" -> high trade = low distance
-         
-            \vspace{0.5em} 
-            
-    \item \texttt{Eigencentrality}: Measures influence from \emph{who} you are connected to ->  those connected to high-value nodes = more influence.
+    \item \texttt{Betweenness} and \texttt{Closeness}: access and control over network paths (trade distance = inverse of flow volume).
+    \item \texttt{Eigenvector centrality}: influence from \emph{who} a country is connected to.
         \end{itemize}
+
+\vspace{0.5em}
+\small
+All four measures are exported for each network variant (\texttt{csv\_results/centralities/centralities\_ex.csv}, \texttt{centralities\_im.csv}).
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Data}
+    \frametitle{Data: Global Merchandise Trade}
      \begin{itemize}
-     \item Data concerning the merchandise trade (exports and imports) is from The United Nations Trade and Development Data Hub (\url{https://unctadstat.unctad.org/datacentre/dataviewer/US.TradeMatrix}).
+     \item Bilateral merchandise trade (exports and imports) from the UN Trade and Development DataHub; we use the harmonised \textbf{BACI/CEPII} database \citep{Hoang2023} to address inconsistencies in raw UN/WTO statistics.
+     \item \textbf{Extended dataset:} 226 countries and territories, 28{,}909 directed trade links per network (export and import).
+     \item Each network is a weighted, directed graph: nodes = countries, edges = bilateral trade flows, weights = trade value (million USD).
+     \item The full network is extremely dense; we apply three filtering strategies for visualisation and analysis:
         \begin{itemize}
-         \item WTO and UN Trade Data are criticised for the inconsistent data. 
-         \item The French research center CEPII provides database BACI/CEPII \citep{Hoang2023}.
+            \item \textbf{Node filter} -- remove the bottom 10\% of countries by strength;
+            \item \textbf{Edge filter} -- keep the top 20\% of trade links by weight;
+            \item \textbf{Backbone filter} -- retain statistically significant links (Disparity, $\alpha = 0.05$).
         \end{itemize}
-     
-    \item We utilise data from European Union countries and selected Southeast Asian countries, which are among the most engaged in trade exchange.
-    \item Southeast Asian countries represent a critical area in the Indo-Pacific region, while the EU serves as a key external economic partner seeking to strengthen ties amid shifting global power dynamics. 
-    \item The EU-SA corridor exemplifies the geoeconomic responses to recent tectonic shifts, including supply chain diversification, the search for alternative partnerships, and the reconfiguration of trade relationships in response to US-China tensions.
-% przy tym slajdzie podać i uzasadnić wybór krajów do badania –> kraje Europy, głównie kraje Unii Europejskiej. Jeśli chodzi o Azję, wybrałyśmy kraje wschodniej i południowej Azji, które najsilniej współpracują z Europą w obszarze handlu (???) - może być?
+     \item Centrality measures are computed for all four network variants and saved in \texttt{csv\_results/centralities/}.
     \end{itemize}
-
-    
 \end{frame}
 
 % --- SLAJD 8: Wyniki i Dyskusja ---
 
 
 \begin{frame}
-    \frametitle{Results: SNA. }
-The size of a node represents its strength. The layout: Furchtermann-Reingold ensures that the more connected nodes are inside the network, the less connected -- outside. The left network is for export and the right for import.  
-
+    \frametitle{Results: SNA -- Network Size Across Variants}
+    \small
+    The full network has 226 nodes and $\approx$29{,}000 edges; filtering reduces density while preserving major hubs.
+    \vspace{0.4em}
     \begin{figure}
         \centering
-        \begin{subfigure}
-            \includegraphics[width=0.4\textwidth]{plots/network_export1.png}
-        \end{subfigure}
-        \begin{subfigure}
-            \includegraphics[width=0.4\textwidth]{plots/network_import1.png}
-        \end{subfigure}
+        \includegraphics[width=0.92\linewidth]{network_summary_slide.png}
     \end{figure}
-
 \end{frame}
 
-\begin{frame}{Main insights from the SNA - Top Five}
+\begin{frame}
+    \frametitle{Results: SNA -- Trade Networks (Export and Import)}
+    \small
+    Node size = strength; colour = continent. Networks after \textbf{edge filtering} (top 20\% of links). Layout: Fruchterman--Reingold. Left: export; right: import.
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{network_ex_pruned.png}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{network_im_pruned.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SNA -- Backbone Extraction (Export)}
+    \small
+    LANS vs.\ Disparity backbone on the export network after node filtering (203 countries). Nodes coloured by continent; shared layout for comparability.
+    \vspace{0.3em}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.95\linewidth]{backbone_comparison.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SNA -- Role Maps (Strength vs.\ Betweenness)}
+    \small
+    Node-filtered networks. Median lines separate hub, broker, peripheral, and local-player quadrants.
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{role_map_export.png}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{role_map_import.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Main Insights from the SNA -- Top Five Countries}
+    \small
+    Top five countries by strength, betweenness, and eigenvector centrality (export: top row; import: bottom row). Node-filtered network.
  \begin{figure}
      \centering
-     \includegraphics[width=0.85\linewidth]{plots/top5_strength_between_combined.png}
-     %\caption{Caption}
-     %\label{fig:placeholder}
- \end{figure}   
+     \includegraphics[width=0.88\linewidth]{top5_centralities_combined.png}
+ \end{figure}
 \end{frame}
 
 %DEA results - Export
@@ -217,7 +256,7 @@ The size of a node represents its strength. The layout: Furchtermann-Reingold en
     
  \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{plots/Ex_SBM_wykrRef.png}
+        \includegraphics[width=0.9\textwidth]{Ex_SBM_wykrRef.png}
  \end{figure}
  
 \end{frame}
@@ -228,7 +267,7 @@ The size of a node represents its strength. The layout: Furchtermann-Reingold en
     
  \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{plots/Im_SBM_wykrRef.png}
+        \includegraphics[width=0.9\textwidth]{Im_SBM_wykrRef.png}
  \end{figure}
  
 \end{frame}
@@ -241,7 +280,7 @@ The size of a node represents its strength. The layout: Furchtermann-Reingold en
  
  \begin{figure}
         \centering
-        \includegraphics[width=0.7\textwidth]{plots/DEA_ImpVsExp.png}
+        \includegraphics[width=0.7\textwidth]{DEA_ImpVsExp.png}
  \end{figure}
  
 % \hyperlink{dea_results}{\beamergotobutton{Back}}
@@ -326,84 +365,3 @@ The size of a node represents its strength. The layout: Furchtermann-Reingold en
 % KONIEC DOKUMENTU
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
-
-
-
-Here are several short labels for this type of country, categorized by their focus.
-
-### 1. Most Direct Labels (Focus on "Potential")
-
-These labels are neutral and accurate, highlighting the gap between current performance and potential.
-
-* **Potential-Based Economies**
-* **Transitional Traders**
-* **Developing Trade Economies**
-
----
-
-### 2. Most Descriptive Labels (Focus on "Medium")
-
-These labels directly use the "medium-but-balanced" concept from your description.
-
-* **Sub-optimal Balancers** (This directly addresses your critique)
-* **Mid-Efficiency Economies**
-* **Moderate-Volume Traders**
-
----
-
-### 3. Most Critical Labels (Focus on "Inefficiency")
-
-If the goal is to emphasize the *problem* that needs to be solved, these are more pointed.
-
-* **Under-leveraged Economies** (They have trade, but aren't leveraging it for maximum benefit)
-* **Unoptimized Traders**
-* **Inefficient Balancers**
-
-You're right to be critical. This description paints a picture of a "jack of all trades, master of none" economy. The problem isn't the **balance** itself, but the **sub-optimal level** at which it's balanced.
-
-The goal isn't to *unbalance* the economy (e.g., by stopping imports), but to **increase the efficiency of both sides**—to move from a "medium-medium" status to a "high-high" status.
-
-This "change" involves shifting from just *participating* in trade to actively *excelling* through specialization and strategic improvements. Here’s how.
-
----
-
-## �� 1. Improve Export Efficiency (Mastering Your Strengths)
-
-The goal is to make your country's goods and services more desirable, more competitive, and easier to sell abroad.
-
-* **Specialize Based on Comparative Advantage:** Stop trying to be "medium" at everything. Identify the few sectors where your country has a *natural* or *developed* edge (e.g., skilled labor, unique natural resources, strong tech clusters). Aggressively invest in these "champion" industries to make them world-class.
-* **Invest in R&D and Innovation:** Efficiency comes from technology. By investing in research and development, industries can produce higher-value goods (which command higher prices) or produce existing goods at a lower cost.
-* **Enhance Workforce Skills:** A more skilled workforce is more productive. This means investing in targeted education, vocational training, and life-long learning that directly support your "champion" industries.
-* **Seek New Markets:** Actively pursue free trade agreements (FTAs) to reduce tariffs on your exports in other countries. Help your domestic companies (especially small- and medium-sized enterprises) navigate the complexities of selling internationally.
-
----
-
-## �� 2. Improve Import Efficiency (Becoming a Smarter Buyer)
-
-The goal isn't just to *buy* things, but to buy them *smartly*—using imports to make your own economy stronger, faster, and cheaper.
-
-* **Modernize Infrastructure:** This is critical. Efficient ports, roads, rail, and high-speed internet are essential. If it takes 30 days for a shipping container to clear your port while it takes 3 days in a neighboring country, you are fundamentally inefficient. 
-* **Streamline Customs and Reduce Red Tape:** Simplify paperwork, digitize import/export processes, and reduce bureaucracy. Every day a part is stuck in customs is a day a factory isn't running at full potential. This is often called "trade facilitation."
-* **Prioritize Productive Imports:** Lower or remove tariffs on imports that make your economy more productive. This includes:
-    * **Capital Goods:** Machinery and technology that help your local factories produce more.
-    * **Raw Materials:** Inputs that your domestic industries need to create finished export goods.
-* **Diversify Suppliers:** Don't rely on a single country for critical imports. An efficient import strategy is also a *resilient* one. By having multiple supplier countries, you can better manage price shocks and supply chain disruptions.
-
----
-
-## ��️ 3. Implement Foundational Changes (Upgrading the System)
-
-These are macro-level policies that create an environment where both import and export efficiency can flourish.
-
-* **Attract Foreign Direct Investment (FDI):** Encourage foreign companies to build factories, R&D centers, or offices in your country. They bring new technology, capital, and—critically—access to their existing global supply chains, instantly boosting both your import and export capabilities.
-* **Ensure Economic Stability:** Maintain predictable inflation, a stable currency, and clear government regulations. Businesses cannot plan long-term investments in innovation or infrastructure if the economic environment is chaotic.
-
-#page rank
-#Atlas: https://atlas.hks.harvard.edu/
-
-https://oec.world/en
-OECD TiVA
-#omplex hubs 
-
-Nacewska-Twardowska, Aleksandra
-MRIOT ADB Multi Region Input Output Table
