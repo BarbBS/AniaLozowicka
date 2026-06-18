@@ -1,0 +1,409 @@
+% Używamy klasy 'beamer' i ustawiamy proporcje ekranu na 16:9
+\documentclass[aspectratio=169]{beamer}
+
+% --- Pakiety podstawowe ---
+\usepackage[utf8]{inputenc}    % Kodowanie znaków
+\usepackage[T1]{fontenc}       % Nowoczesne kodowanie czcionek
+\usepackage{graphicx}          % Do wstawiania obrazków
+\usepackage{booktabs}          % Do tworzenia ładnych tabel
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+
+% --- Ustawienia motywu ---
+% Motyw 'Madrid' jest czysty, profesjonalny, z paskami nawigacyjnymi u góry
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\setbeamercolor{frametitle}{fg=blue}
+\setbeamercolor{structure}{fg=blue}
+\setbeamercolor{block title}{fg=blue}
+
+
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{author}{fg=blue}
+\setbeamercolor{institute}{fg=blue}
+\setbeamercolor{date}{fg=blue}
+
+\setbeamercolor{palette primary}{bg=blue, fg=white}
+\setbeamercolor{author in head/foot}{bg=blue, fg=white}
+\setbeamercolor{title in head/foot}{bg=blue, fg=white}
+
+% 
+\title[SNA-DEA in Europe and Asia Trade]{Evaluating the Efficiency of Europe and Asia Trade Networks: \\A Two-Stage SNA-DEA Approach}
+\author[A.Łozowicka, B. Będowska-Sójka]{Anna Łozowicka, Barbara Będowska-Sójka}
+\institute[PUEB]{
+    Department of Econometrics \\
+    Poznań University of Economics and Business \\
+    \medskip
+    \textit{corresponding author: anna.lozowicka@ue.poznan.pl}
+}
+\date[The 14th Asia-Pacific
+Conference'25]{The 14th Asia-Pacific
+International Conference November 21, 2025\\\textit{Indo-Pacific in the era of tectonic shifts: responses and strategies from the region to geopolitical and geoeconomic challenges}}
+
+% Opcjonalnie: logo Twojej uczelni lub instytutu (pojawi się w prawym dolnym rogu)
+% \logo{\includegraphics[height=0.5cm]{logo.png}} % Odkomentuj i podaj nazwę pliku z logo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% POCZĄTEK DOKUMENTU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% --- SLAJD 1: Strona tytułowa ---
+% Opcja [plain] usuwa nagłówek i stopkę, aby strona tytułowa była czysta
+\begin{frame}[plain]
+    \maketitle
+\end{frame}
+
+% --- SLAJD 2: Wprowadzenie i Motywacja ---
+%\begin{frame}
+
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Introduction \& Motivation}
+    
+    \begin{itemize}
+        \item 
+        The trade connections between Europe and Asia are important for the economic growth of the countries. 
+       % \pause % Czeka na kliknięcie przed pokazaniem następnego punktu
+        %\item \textbf{Problem:} %State the specific gap in knowledge or problem that your work addresses.
+        %\pause
+        \item %\textbf{Research Question:} %Clearly formulate your main research question or hypothesis.
+        We examine how efficiently selected European and Asian countries convert their economic potential, measured by GDP, trade openness, and FDI inflows, into their positions in international trade networks. 
+      %  \pause
+        \item %\textbf{Contribution:} %What is the key contribution of your work? (e.g., a new method, a surprising result, a new dataset).
+        By applying Data Envelopment Analysis (DEA), the research evaluates the relative efficiency of countries in converting these economic inputs into network centrality outcomes (strength, eigenvector, and closeness) obtained through Social Network Analysis (SNA). 
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 3: Metody i materiały ---
+\begin{frame}
+\frametitle{Methods}
+    
+    \begin{itemize}
+        \item 
+        Social Network Analysis (SNA) - a method used to study the structure and relationships within a network of actors (such as people, organisations, or countries) by analysing the patterns and strengths of their connections. Advanced SNA, incorporating formal graph theory and applications in economics and management, has appeared since the 1970s:
+    \begin{itemize}
+        \item \cite{LorrainWhite1971} and \cite{White1976} developed the formal aspects of SNA related to social structure and networks. %tu znalazłam dwie prace -obie we współautorstwie -podać obie?: François Lorrain & Harrison C. White (1971) Structural equivalence of individuals in social networks, The Journal of Mathematical Sociology, 1:1, 49-80, DOI: 10.1080/0022250X.1971.9989788    oraz    White, Harrison C., Scott A. Boorman, and Ronald L. Breiger. “Social Structure from Multiple Networks. I. Blockmodels of Roles and Positions.” American Journal of Sociology 81, no. 4 (1976): 730–80. http://www.jstor.org/stable/2777596
+        \item \cite{Freeman1979} was one of the first to formally define centrality measures in networks.
+    \item \cite{barabasi2016network} summarises the concepts of the SNAs.   
+    \end{itemize}
+         
+        %\pause % Czeka na kliknięcie przed pokazaniem następnego punktu
+        %\item \textbf{Problem:} %State the specific gap in knowledge or problem that your work addresses.
+        %\pause
+        \item 
+        Data Envelopment Analysis (DEA) - a method for assessing the relative efficiency of decision-making units (e.g. firms, regions, or countries) by comparing their inputs and outputs to identify best performers and efficiency gaps. The first DEA model was developed by \cite{CCR1978}. Slack-Based Measure (SBM) by \cite{Tone2001}.
+        %\pause
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 4: Metody i materiały c.d. ---
+\begin{frame}
+\frametitle{Methods}
+    
+    \begin{itemize}
+\item The concept of combining SNA with DEA is relatively new. The first studies integrating SNA and DEA have appeared in the last two decades, mainly as the use of DEA results in SNA: \cite{Liu2009}, \cite{Leem20151}, \cite{Blas2018} (SNA used to improve the discriminatory power of DEA)
+        %\pause
+\item In \cite{Gobbo2021}, the reverse approach was proposed for the first time -- SNA results (centrality measures) are used as outputs in DEA (the efficiency with which a healthcare professional’s selection of employment contracts is converted into influential social network positioning).
+        %\pause
+\item In our study, we applied this latter concept.
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 5: Metody i dane c.d.---
+
+
+\begin{frame}
+    \frametitle{Methods}
+% 'columns' pozwala umieścić tekst obok obrazka
+    \begin{columns}[T] % 'T' wyrównuje kolumny do góry
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                
+                \item We applied the SNA-DEA two-stage approach by conducting two separate analyses - one for exports and one for imports. 
+                \item We obtain centrality measures for networks, then we utilise them as the outputs in the DEA (SBM-O).
+                
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{SNA_DEA_2025.pdf}
+        \end{column}
+    \end{columns}
+  %proces uzyskiwania tego diagramu po prawej: najpierw recompile scheme1.tex, potem download and save, a potem drag and drop to the project.  
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Two Families of Centrality Measures: Local and Positional Measures}
+
+    % --- Blok 1: Miary Lokalne / "Oparte na węźle" ---
+%    \begin{block}
+{1. Local Measures (A node's "size")}
+        Describe a node's immediate trade volume, independent of the rest of the network.
+        
+        \begin{itemize}
+            \item \texttt{Strength}: Measures total trade volume -> higher strength = more trade.
+        \end{itemize}
+{2. Positional Measures (A node's "role")}
+        Describe a node's strategic role and position within the \emph{entire} network structure.
+        
+\begin{itemize}
+    \item \texttt{Betweenness} and \texttt{Closeness}: Measure access and control over network "paths" -> high trade = low distance
+         
+            \vspace{0.5em} 
+            
+    \item \texttt{Eigencentrality}: Measures influence from \emph{who} you are connected to ->  those connected to high-value nodes = more influence.
+        \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Data}
+     \begin{itemize}
+     \item Data concerning the merchandise trade (exports and imports) is from The United Nations Trade and Development Data Hub (\url{https://unctadstat.unctad.org/datacentre/dataviewer/US.TradeMatrix}).
+        \begin{itemize}
+         \item WTO and UN Trade Data are criticised for the inconsistent data. 
+         \item The French research center CEPII provides database BACI/CEPII \citep{Hoang2023}.
+        \end{itemize}
+     
+    \item We utilise data from European Union countries and selected Southeast Asian countries, which are among the most engaged in trade exchange.
+    \item Southeast Asian countries represent a critical area in the Indo-Pacific region, while the EU serves as a key external economic partner seeking to strengthen ties amid shifting global power dynamics. 
+    \item The EU-SA corridor exemplifies the geoeconomic responses to recent tectonic shifts, including supply chain diversification, the search for alternative partnerships, and the reconfiguration of trade relationships in response to US-China tensions.
+% przy tym slajdzie podać i uzasadnić wybór krajów do badania –> kraje Europy, głównie kraje Unii Europejskiej. Jeśli chodzi o Azję, wybrałyśmy kraje wschodniej i południowej Azji, które najsilniej współpracują z Europą w obszarze handlu (???) - może być?
+    \end{itemize}
+
+    
+\end{frame}
+
+% --- SLAJD 8: Wyniki i Dyskusja ---
+
+
+\begin{frame}
+    \frametitle{Results: SNA. }
+The size of a node represents its strength. The layout: Furchtermann-Reingold ensures that the more connected nodes are inside the network, the less connected -- outside. The left network is for export and the right for import.  
+
+    \begin{figure}
+        \centering
+        \begin{subfigure}
+            \includegraphics[width=0.4\textwidth]{plots/network_export1.png}
+        \end{subfigure}
+        \begin{subfigure}
+            \includegraphics[width=0.4\textwidth]{plots/network_import1.png}
+        \end{subfigure}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Main insights from the SNA - Top Five}
+ \begin{figure}
+     \centering
+     \includegraphics[width=0.85\linewidth]{plots/top5_strength_between_combined.png}
+     %\caption{Caption}
+     %\label{fig:placeholder}
+ \end{figure}   
+\end{frame}
+
+%DEA results - Export
+\begin{frame}
+    \frametitle{Results: DEA (export)}
+    
+ \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{plots/Ex_SBM_wykrRef.png}
+ \end{figure}
+ 
+\end{frame}
+
+%DEA resutts - Import
+\begin{frame}
+    \frametitle{Results: DEA (import)}
+    
+ \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{plots/Im_SBM_wykrRef.png}
+ \end{figure}
+ 
+\end{frame}
+
+%DEA results - Export vs. Import
+\begin{frame}
+    \frametitle{Results: DEA (import/export)}
+    
+% \hypertarget{dea_results}{}   
+ 
+ \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{plots/DEA_ImpVsExp.png}
+ \end{figure}
+ 
+% \hyperlink{dea_results}{\beamergotobutton{Back}}
+ 
+\end{frame}
+
+
+% --- SLAJD 8: Wnioski - cd ---
+\begin{frame}
+    \frametitle{The results of DEA allowed identifying five groups of countries: }
+\small
+%\setlength{\leftmargini}{1em}    % wcięcie pierwszego poziomu
+%\setlength{\leftmarginii}{1em}     % wcięcie drugiego poziomu
+
+    \begin{itemize}
+        \item \textbf{Full efficiency leaders} - efficiently convert their economic potential into central positions and well-connected trade relationships, as captured by the SNA. These are the key hubs in global trade networks with diversified trade partnerships. %and strong production competitiveness
+        \item \textbf{Import-oriented economies} - full import efficiency, lower export efficiency - efficiently acquire goods, technologies from abroad, but their export networks are less developed or less competitive, often due to a strong domestic market, limited export diversification, or more passive participation in international trade networks.
+        \item \textbf{Export-specialised economies} - high export efficiency is driven by sectoral or resource-based advantages (e.g. energy exports), while import centrality is lower, reflecting a specialised, less country-diversified trade profile.
+        \item \textbf{Near-efficient balanced economies} - not fully efficient in either imports or exports - achieve medium-to-high efficiency in both areas. They are active trade players, but in both cases, there is room to improve their efficiency.
+        \item \textbf{Peripheral economies} - the lowest efficiency both in imports and exports - these countries occupy marginal network positions, with trade concentrated in a few sectors, dependent on dominant partners, and often serving transit or service roles rather than production.          %Chart \hyperlink{dea_results} {\beamergotobutton{Results: DEA (import/export)}}
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 7: Wnioski  ---
+\begin{frame}
+    \frametitle{Conclusions}
+
+    \begin{itemize}
+        \item The aim of this study was to evaluate how efficiently European and selected Asian countries transform their economic potential – measured by GDP, trade openness, and FDI inflows – into their positions within international trade networks.
+        \item Using SNA, the positions of individual countries within the Europe–Asia trade network were assessed, and DEA was subsequently applied to evaluate how efficiently countries achieve these positions within the international trade network.
+        \item We grouped countries into five categories based on their centrality in the trade network and efficiency. Some policy implications are offered:
+        \begin{itemize}
+            \item Improve export efficiency: specialisation based on comparative advantage, investing in R\&D and innovations, enhancing workforce skills, \textbf{seeking new markets};
+            \item Improve import efficiency (becoming a smarter buyer): modernise infrastructure, streamline customs and reduce red tape (possible with AI), prioritise productive imports, \textbf{diversify suppliers};
+            \item Implement Foundational Changes: attract Foreign Direct Investment (FDI) \& ensure economic stability.
+        \end{itemize}
+        
+    \end{itemize}
+\end{frame}
+
+
+% --- SLAJD 9: Przyszłe Prace ---
+\begin{frame}
+    \frametitle{Future Work}
+
+    \begin{itemize}
+       \item Extending the analysis to countries beyond Europe and the selected Asian economies.
+       \item Incorporating additional macroeconomic inputs into the DEA model to better capture countries’ capacity to build their positions in the international trade network.
+           
+    \end{itemize}
+    
+   % \begin{block}{Main Conclusions}
+   %     \begin{itemize}
+   %         \item Re-state the answer to your research question.
+   %         \item Summarize your key contributions in 1-2 points.
+   %     \end{itemize}
+   % \end{block}
+
+   % \begin{block}{Future Work}
+   %     \begin{itemize}
+   %         \item What are the next logical steps? (e.g., applying the method to a larger dataset).
+   %         \item Are there any limitations to your work that could be addressed in the future?
+   %     \end{itemize}
+   % \end{block}
+    
+    \vfill % Wypełnia pionową przestrzeń, spychając podziękowania na dół
+    
+    \centering
+    \Large{\textbf{Thank you for your attention! \\ We will be happy to answer any questions!}}
+\end{frame}
+
+
+%\begin{frame}[allowframebreaks]{Full References}
+\begin{frame}{Full References}
+  \frametitle{References}
+  \footnotesize
+  \tiny
+   \bibliography{sample} % Ensure .bib files are correct
+ \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KONIEC DOKUMENTU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
+
+Here are several short labels for this type of country, categorized by their focus.
+
+### 1. Most Direct Labels (Focus on "Potential")
+
+These labels are neutral and accurate, highlighting the gap between current performance and potential.
+
+* **Potential-Based Economies**
+* **Transitional Traders**
+* **Developing Trade Economies**
+
+---
+
+### 2. Most Descriptive Labels (Focus on "Medium")
+
+These labels directly use the "medium-but-balanced" concept from your description.
+
+* **Sub-optimal Balancers** (This directly addresses your critique)
+* **Mid-Efficiency Economies**
+* **Moderate-Volume Traders**
+
+---
+
+### 3. Most Critical Labels (Focus on "Inefficiency")
+
+If the goal is to emphasize the *problem* that needs to be solved, these are more pointed.
+
+* **Under-leveraged Economies** (They have trade, but aren't leveraging it for maximum benefit)
+* **Unoptimized Traders**
+* **Inefficient Balancers**
+
+You're right to be critical. This description paints a picture of a "jack of all trades, master of none" economy. The problem isn't the **balance** itself, but the **sub-optimal level** at which it's balanced.
+
+The goal isn't to *unbalance* the economy (e.g., by stopping imports), but to **increase the efficiency of both sides**—to move from a "medium-medium" status to a "high-high" status.
+
+This "change" involves shifting from just *participating* in trade to actively *excelling* through specialization and strategic improvements. Here’s how.
+
+---
+
+## �� 1. Improve Export Efficiency (Mastering Your Strengths)
+
+The goal is to make your country's goods and services more desirable, more competitive, and easier to sell abroad.
+
+* **Specialize Based on Comparative Advantage:** Stop trying to be "medium" at everything. Identify the few sectors where your country has a *natural* or *developed* edge (e.g., skilled labor, unique natural resources, strong tech clusters). Aggressively invest in these "champion" industries to make them world-class.
+* **Invest in R&D and Innovation:** Efficiency comes from technology. By investing in research and development, industries can produce higher-value goods (which command higher prices) or produce existing goods at a lower cost.
+* **Enhance Workforce Skills:** A more skilled workforce is more productive. This means investing in targeted education, vocational training, and life-long learning that directly support your "champion" industries.
+* **Seek New Markets:** Actively pursue free trade agreements (FTAs) to reduce tariffs on your exports in other countries. Help your domestic companies (especially small- and medium-sized enterprises) navigate the complexities of selling internationally.
+
+---
+
+## �� 2. Improve Import Efficiency (Becoming a Smarter Buyer)
+
+The goal isn't just to *buy* things, but to buy them *smartly*—using imports to make your own economy stronger, faster, and cheaper.
+
+* **Modernize Infrastructure:** This is critical. Efficient ports, roads, rail, and high-speed internet are essential. If it takes 30 days for a shipping container to clear your port while it takes 3 days in a neighboring country, you are fundamentally inefficient. 
+* **Streamline Customs and Reduce Red Tape:** Simplify paperwork, digitize import/export processes, and reduce bureaucracy. Every day a part is stuck in customs is a day a factory isn't running at full potential. This is often called "trade facilitation."
+* **Prioritize Productive Imports:** Lower or remove tariffs on imports that make your economy more productive. This includes:
+    * **Capital Goods:** Machinery and technology that help your local factories produce more.
+    * **Raw Materials:** Inputs that your domestic industries need to create finished export goods.
+* **Diversify Suppliers:** Don't rely on a single country for critical imports. An efficient import strategy is also a *resilient* one. By having multiple supplier countries, you can better manage price shocks and supply chain disruptions.
+
+---
+
+## ��️ 3. Implement Foundational Changes (Upgrading the System)
+
+These are macro-level policies that create an environment where both import and export efficiency can flourish.
+
+* **Attract Foreign Direct Investment (FDI):** Encourage foreign companies to build factories, R&D centers, or offices in your country. They bring new technology, capital, and—critically—access to their existing global supply chains, instantly boosting both your import and export capabilities.
+* **Ensure Economic Stability:** Maintain predictable inflation, a stable currency, and clear government regulations. Businesses cannot plan long-term investments in innovation or infrastructure if the economic environment is chaotic.
+
+#page rank
+#Atlas: https://atlas.hks.harvard.edu/
+
+https://oec.world/en
+OECD TiVA
+#omplex hubs 
+
+Nacewska-Twardowska, Aleksandra
+MRIOT ADB Multi Region Input Output Table
