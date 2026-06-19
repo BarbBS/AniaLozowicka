@@ -8,7 +8,7 @@
 # =====================================
 
 library(writexl)
-
+library(readxl)
 
 # =====================================
 # SNA exports centrality measures -> DEA outputs (ex)
@@ -105,3 +105,43 @@ write_xlsx(
   dea_outputs_im,
   "DEA_results/DEA_outputs_im.xlsx"
 )
+
+# =====================================
+# DEA dataset for exports efficiency analysis
+# =====================================
+
+#wczytanie pliku z inputs oraz pliku z outputs
+inputs_complete <- read_excel("DEA_results/inputs_complete.xlsx")
+names(inputs_complete)
+dea_outputs_ex <- read_excel("DEA_results/DEA_outputs_ex.xlsx")
+names(dea_outputs_ex)
+
+# sprawdzenie ró¿nic w nazwach krajow
+setdiff(inputs_complete$Country, dea_outputs_ex$name)
+
+# spr które nazwy krajów z outpus s¹ podobne do fragmentów nazw z pliku inputs 
+dea_outputs_ex$name[
+  grepl(
+    "Bosnia|Central African|Ivoire|Dominican|Iran|Netherlands|Korea|Dem. People|Moldova|Solomon|Syria|TA1rkiye|Tanzania|USA|Venezuela",
+    dea_outputs_ex$name
+  )
+]
+
+# tworzenie s³ownika, gdzie odmienne nazwy krajow z inputs dostaja nazwy z pliku outputs (to plik z SNA)
+name_map <- c(
+  "Bosnia and Herzegovina" = "Bosnia Herzegovina",
+  "Central African Republic" = "Central African Rep.",
+  "Cote d'Ivoire" = "CA´te d'Ivoire",
+  "Dominican Republic" = "Dominican Rep.",
+  "Iran (Islamic Republic of)" = "Iran",
+  "Netherlands (Kingdom of the)" = "Netherlands",
+  "Republic of Korea" = "Rep. of Korea",
+  "Republic of Moldova" = "Rep. of Moldova",
+  "Solomon Islands" = "Solomon Isds",
+  "Syrian Arab Republic" = "Syria",
+  "Turkiye" = "TA1rkiye",
+  "United Republic of Tanzania" = "United Rep. of Tanzania",
+  "United States" = "USA",
+  "Venezuela (Bolivarian Rep. of)" = "Venezuela"
+)
+name_map
