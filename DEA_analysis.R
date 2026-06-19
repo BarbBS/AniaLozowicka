@@ -12,7 +12,7 @@ library(writexl)
 
 
 # Wczytanie pliku
-centralities_ex <- read.csv2("output/centralities_ex.csv")
+centralities_ex <- read.csv2("output/csv_results/centralities/centralities_ex.csv")
 
 # Sprawdzenie czy dane s¹ wczytane jako liczbowe
 head(centralities_ex)
