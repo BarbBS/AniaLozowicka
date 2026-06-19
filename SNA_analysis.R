@@ -4,9 +4,11 @@
 # Run from project root: source("SNA_analysis.R")
 #
 # Project structure:
-#   data/     – input trade data (aggregated export/import)
-#   output/   – analysis results (plots, CSV, RData)
-#   archive/  – legacy scripts, data, and outputs
+#   data/                        – input trade data (aggregated export/import)
+#   output/plots/                – figures (PNG)
+#   output/csv_results/centralities/ – centrality tables (all network variants)
+#   output/csv_results/summary/      – summary tables for slides/reports
+#   archive/                     – legacy scripts, data, and outputs
 # =============================================================================
 
 rm(list = ls())
@@ -16,6 +18,9 @@ CONFIG <- list(
   data_export            = "data/eksport_agregowany.csv",
   data_import            = "data/import_agregowany.csv",
   output_dir             = "output",
+  plots_dir              = "output/plots",
+  csv_centralities_dir   = "output/csv_results/centralities",
+  csv_summary_dir        = "output/csv_results/summary",
   weight_scale           = 1e6,          # weight scale (million USD)
   node_strength_quantile = 0.10,         # remove bottom 10% of nodes by strength
   edge_weight_quantile   = 0.80,         # keep top 20% of edges by weight
@@ -26,6 +31,25 @@ CONFIG <- list(
 
 output_path <- function(filename, config = CONFIG) {
   file.path(config$output_dir, filename)
+}
+
+plot_path <- function(filename, config = CONFIG) {
+  file.path(config$plots_dir, filename)
+}
+
+csv_centralities_path <- function(filename, config = CONFIG) {
+  file.path(config$csv_centralities_dir, filename)
+}
+
+csv_summary_path <- function(filename, config = CONFIG) {
+  file.path(config$csv_summary_dir, filename)
+}
+
+ensure_output_dirs <- function(config = CONFIG) {
+  dir.create(config$output_dir, showWarnings = FALSE, recursive = TRUE)
+  dir.create(config$plots_dir, showWarnings = FALSE, recursive = TRUE)
+  dir.create(config$csv_centralities_dir, showWarnings = FALSE, recursive = TRUE)
+  dir.create(config$csv_summary_dir, showWarnings = FALSE, recursive = TRUE)
 }
 
 CONTINENT_COLORS <- c(
@@ -286,21 +310,21 @@ save_variant_centralities <- function(full, nodes_filtered, pruned, backbone,
   combined <- dplyr::bind_rows(centrality_tables)
   write.csv2(
     combined,
-    output_path(paste0("centralities_", prefix, ".csv")),
+    csv_centralities_path(paste0("centralities_", prefix, ".csv")),
     row.names = FALSE
   )
 
   for (key in names(graphs)) {
     write.csv2(
       centrality_tables[[key]] %>% select(-variant),
-      output_path(paste0("nodes_", prefix, "_", key, ".csv")),
+      csv_centralities_path(paste0("nodes_", prefix, "_", key, ".csv")),
       row.names = FALSE
     )
   }
 
   # Backward-compatible alias: node-filtered network (used for DA input)
   filtered_only <- centrality_tables$filtered %>% select(-variant)
-  write.csv2(filtered_only, output_path(paste0("nodes_", prefix, ".csv")), row.names = FALSE)
+  write.csv2(filtered_only, csv_centralities_path(paste0("nodes_", prefix, ".csv")), row.names = FALSE)
 
   message(
     "Saved centralities for ", length(graphs), " variants -> centralities_", prefix, ".csv"
@@ -376,7 +400,7 @@ plot_backbone_comparison <- function(g_ref, alpha = 0.05, filename = NULL) {
   combined <- panel_lans + panel_disp + plot_layout(guides = "collect")
 
   if (!is.null(filename)) {
-    ggsave(filename, plot = combined, width = 16, height = 8, dpi = 300, bg = "white")
+    ggsave(plot_path(basename(filename)), plot = combined, width = 16, height = 8, dpi = 300, bg = "white")
   }
 
   invisible(list(plot = combined, lans = g_lans, disparity = g_disp))
@@ -406,7 +430,7 @@ plot_trade_network <- function(g, layout = "fr", title = NULL) {
 save_network_plot <- function(g, filename, layout = "fr", title = NULL,
                               width = 14, height = 10) {
   p <- plot_trade_network(g, layout = layout, title = title)
-  ggsave(filename, plot = p, width = width, height = height, dpi = 300, bg = "white")
+  ggsave(plot_path(filename), plot = p, width = width, height = height, dpi = 300, bg = "white")
   invisible(p)
 }
 
@@ -575,21 +599,21 @@ run_pipeline <- function(edge_df, prefix, config = CONFIG) {
 
   # --- Visualizations ---
   save_network_plot(
-    g_nodes, output_path(paste0("network_", prefix, "_filtered.png")),
+    g_nodes, paste0("network_", prefix, "_filtered.png"),
     layout = "kk",
     title = paste0(trade_label, " – after node filter (bottom ",
                    config$node_strength_quantile * 100, "% strength)")
   )
 
   save_network_plot(
-    g_pruned, output_path(paste0("network_", prefix, "_pruned.png")),
+    g_pruned, paste0("network_", prefix, "_pruned.png"),
     layout = "fr",
     title = paste0(trade_label, " – top ",
                    (1 - config$edge_weight_quantile) * 100, "% edges by weight")
   )
 
   save_network_plot(
-    g_backbone, output_path(paste0("network_", prefix, "_backbone.png")),
+    g_backbone, paste0("network_", prefix, "_backbone.png"),
     layout = "fr",
     title = paste0(trade_label, " – backbone ", config$backbone_model)
   )
@@ -610,7 +634,7 @@ run_pipeline <- function(edge_df, prefix, config = CONFIG) {
 # =============================================================================
 
 message("Working directory: ", getwd())
-dir.create(CONFIG$output_dir, showWarnings = FALSE, recursive = TRUE)
+ensure_output_dirs()
 
 trade_data <- load_trade_data(CONFIG$data_export, CONFIG$data_import)
 
@@ -621,13 +645,13 @@ results_im <- run_pipeline(trade_data$import, "im")
 backbone_comparison <- plot_backbone_comparison(
   results_ex$nodes_filtered,
   alpha = CONFIG$backbone_alpha,
-  filename = output_path("backbone_comparison.png")
+  filename = plot_path("backbone_comparison.png")
 )
 g_lans <- backbone_comparison$lans
 g_disp <- backbone_comparison$disparity
 
 # --- Histogram strength (LeapSpace) ---
-png(output_path("strength_hist.png"), width = 800, height = 600)
+png(plot_path("strength_hist.png"), width = 800, height = 600)
 hist(
   strength(results_ex$full, mode = "all"),
   breaks = 30, col = "steelblue",
@@ -647,22 +671,22 @@ top_eigen_im     <- plot_top5_bars(results_im$nodes, "eigenv",    "Import – To
 combined_top5 <- (top_strength_ex + top_between_ex + top_eigen_ex) /
                  (top_strength_im + top_between_im + top_eigen_im)
 
-ggsave(output_path("top5_centralities_combined.png"), plot = combined_top5, width = 15, height = 8, dpi = 300)
+ggsave(plot_path("top5_centralities_combined.png"), plot = combined_top5, width = 15, height = 8, dpi = 300)
 
 role_map_ex <- plot_role_map(results_ex$nodes, "Role map – export")
 role_map_im <- plot_role_map(results_im$nodes, "Role map – import")
-ggsave(output_path("role_map_export.png"), plot = role_map_ex, width = 10, height = 8, dpi = 300)
-ggsave(output_path("role_map_import.png"), plot = role_map_im, width = 10, height = 8, dpi = 300)
+ggsave(plot_path("role_map_export.png"), plot = role_map_ex, width = 10, height = 8, dpi = 300)
+ggsave(plot_path("role_map_import.png"), plot = role_map_im, width = 10, height = 8, dpi = 300)
 
 # --- Slide: network variant characteristics ---
 network_stats <- collect_network_stats(results_ex, results_im)
 network_summary_slide <- plot_network_summary_slide(network_stats)
 ggsave(
-  output_path("network_summary_slide.png"),
+  plot_path("network_summary_slide.png"),
   plot = network_summary_slide,
   width = 14, height = 8, dpi = 300, bg = "white"
 )
-write.csv2(network_stats, output_path("network_stats.csv"), row.names = FALSE)
+write.csv2(network_stats, csv_summary_path("network_stats.csv"), row.names = FALSE)
 
 # --- Summary ---
 cat("\n=== SUMMARY ===\n")
@@ -672,16 +696,11 @@ cat("Export – nodes:", vcount(results_ex$nodes_filtered),
 cat("Import – nodes:", vcount(results_im$nodes_filtered),
     "| edges (pruned):", ecount(results_im$pruned),
     "| edges (backbone):", ecount(results_im$backbone), "\n")
-cat("\nOutput files (output/ directory):\n")
-cat("  centralities_ex.csv, centralities_im.csv  (all variants, long format)\n")
-cat("  nodes_ex.csv, nodes_im.csv               (node-filtered, for DA)\n")
-cat("  nodes_ex_full.csv, nodes_ex_filtered.csv, nodes_ex_pruned.csv, nodes_ex_backbone.csv\n")
-cat("  nodes_im_full.csv, nodes_im_filtered.csv, nodes_im_pruned.csv, nodes_im_backbone.csv\n")
-cat("  network_ex_filtered.png, network_ex_pruned.png, network_ex_backbone.png\n")
-cat("  network_im_filtered.png, network_im_pruned.png, network_im_backbone.png\n")
-cat("  backbone_comparison.png, strength_hist.png\n")
-cat("  top5_centralities_combined.png, role_map_export.png, role_map_import.png\n")
-cat("  network_summary_slide.png, network_stats.csv\n")
+cat("\nOutput files:\n")
+cat("  output/plots/                          – all figures (PNG)\n")
+cat("  output/csv_results/centralities/       – centralities_*.csv, nodes_*.csv\n")
+cat("  output/csv_results/summary/            – network_stats.csv\n")
+cat("  output/SNA_analysis_results.RData\n")
 
 threshold_results <- results_ex$threshold_results
 save(

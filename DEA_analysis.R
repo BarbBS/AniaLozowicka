@@ -3,6 +3,14 @@
 # Purpose: DEA analysis
 # =====================================
 
+# =====================================
+# Packages
+# =====================================
+
+library(writexl)
+
+
+
 # Wczytanie pliku
 centralities_ex <- read.csv2("output/centralities_ex.csv")
 
@@ -20,7 +28,7 @@ centralities_ex_full <- subset(
 dim(centralities_ex_full)
 head(centralities_ex_full)
 
-#sprawdenie czy kolumna iso3=label
+#sprawdzenie czy kolumna iso3=label
 table(centralities_ex_full$iso3 == centralities_ex_full$label)
 #wartoœci siê zgadzaj¹ dla 225 z 226 oberwacji. Szukam tej jednej obserwacji
 sum(is.na(centralities_ex_full$iso3))
@@ -28,7 +36,7 @@ centralities_ex_full[is.na(centralities_ex_full$iso3), ]
 sum(is.na(centralities_ex_full$label))
 #ta jedna obserwacja to Other Asia (przyp.Taiwan- w DEA brak danych dla Taiwan, wiêc póŸniej ta pozycja wypadnie)
 
-#sprawdenie czy dany kraj wystêpuje tylko raz
+#sprawdzenie czy dany kraj wystêpuje tylko raz
 sum(duplicated(centralities_ex_full$iso3))
 
 #sprawdzenie kompletnoœci danych dla centrality measures (czy s¹ braki danych)
@@ -39,3 +47,9 @@ dea_outputs_ex <- centralities_ex_full[
   , c("name", "continent", "iso3", "label", "strength", "eigenv", "closen")
 ]
 head(dea_outputs_ex)
+
+#Eksport DEA outputs do pliku
+write_xlsx(
+  dea_outputs_ex,
+  "DEA_results/DEA_outputs_ex.xlsx"
+)

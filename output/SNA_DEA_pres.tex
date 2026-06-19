@@ -1,0 +1,367 @@
+% Używamy klasy 'beamer' i ustawiamy proporcje ekranu na 16:9
+\documentclass[aspectratio=169]{beamer}
+
+% --- Pakiety podstawowe ---
+\usepackage[utf8]{inputenc}    % Kodowanie znaków
+\usepackage[T1]{fontenc}       % Nowoczesne kodowanie czcionek
+\usepackage{graphicx}          % Do wstawiania obrazków
+\usepackage{booktabs}          % Do tworzenia ładnych tabel
+\usepackage{natbib}
+\usepackage{url}
+\bibliographystyle{abbrvnat}
+
+\graphicspath{{./plots/}{./}}
+
+% --- Ustawienia motywu ---
+% Motyw 'Madrid' jest czysty, profesjonalny, z paskami nawigacyjnymi u góry
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\setbeamercolor{frametitle}{fg=blue}
+\setbeamercolor{structure}{fg=blue}
+\setbeamercolor{block title}{fg=blue}
+
+
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{author}{fg=blue}
+\setbeamercolor{institute}{fg=blue}
+\setbeamercolor{date}{fg=blue}
+
+\setbeamercolor{palette primary}{bg=blue, fg=white}
+\setbeamercolor{author in head/foot}{bg=blue, fg=white}
+\setbeamercolor{title in head/foot}{bg=blue, fg=white}
+
+% 
+\title[SNA-DEA in Europe and Asia Trade]{Evaluating the Efficiency of Europe and Asia Trade Networks: \\A Two-Stage SNA-DEA Approach}
+\author[A.Łozowicka, B. Będowska-Sójka]{Anna Łozowicka, Barbara Będowska-Sójka}
+\institute[PUEB]{
+    Department of Econometrics \\
+    Poznań University of Economics and Business \\
+    \medskip
+    \textit{corresponding author: anna.lozowicka@ue.poznan.pl}
+}
+\date[The 14th Asia-Pacific
+Conference'25]{The 14th Asia-Pacific
+International Conference November 21, 2025\\\textit{Indo-Pacific in the era of tectonic shifts: responses and strategies from the region to geopolitical and geoeconomic challenges}}
+
+% Opcjonalnie: logo Twojej uczelni lub instytutu (pojawi się w prawym dolnym rogu)
+% \logo{\includegraphics[height=0.5cm]{logo.png}} % Odkomentuj i podaj nazwę pliku z logo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% POCZĄTEK DOKUMENTU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% --- SLAJD 1: Strona tytułowa ---
+% Opcja [plain] usuwa nagłówek i stopkę, aby strona tytułowa była czysta
+\begin{frame}[plain]
+    \maketitle
+\end{frame}
+
+% --- SLAJD 2: Wprowadzenie i Motywacja ---
+%\begin{frame}
+
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Introduction \& Motivation}
+    
+    \begin{itemize}
+        \item 
+        The trade connections between Europe and Asia are important for the economic growth of the countries. 
+       % \pause % Czeka na kliknięcie przed pokazaniem następnego punktu
+        %\item \textbf{Problem:} %State the specific gap in knowledge or problem that your work addresses.
+        %\pause
+        \item %\textbf{Research Question:} %Clearly formulate your main research question or hypothesis.
+        We examine how efficiently selected European and Asian countries convert their economic potential, measured by GDP, trade openness, and FDI inflows, into their positions in international trade networks. 
+      %  \pause
+        \item %\textbf{Contribution:} %What is the key contribution of your work? (e.g., a new method, a surprising result, a new dataset).
+        By applying Data Envelopment Analysis (DEA), the research evaluates the relative efficiency of countries in converting these economic inputs into network centrality outcomes (strength, eigenvector, and closeness) obtained through Social Network Analysis (SNA). 
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 3: Metody i materiały ---
+\begin{frame}
+\frametitle{Methods}
+    
+    \begin{itemize}
+        \item 
+        Social Network Analysis (SNA) - a method used to study the structure and relationships within a network of actors (such as people, organisations, or countries) by analysing the patterns and strengths of their connections. Advanced SNA, incorporating formal graph theory and applications in economics and management, has appeared since the 1970s:
+    \begin{itemize}
+        \item \cite{LorrainWhite1971} and \cite{White1976} developed the formal aspects of SNA related to social structure and networks. %tu znalazłam dwie prace -obie we współautorstwie -podać obie?: François Lorrain & Harrison C. White (1971) Structural equivalence of individuals in social networks, The Journal of Mathematical Sociology, 1:1, 49-80, DOI: 10.1080/0022250X.1971.9989788    oraz    White, Harrison C., Scott A. Boorman, and Ronald L. Breiger. “Social Structure from Multiple Networks. I. Blockmodels of Roles and Positions.” American Journal of Sociology 81, no. 4 (1976): 730–80. http://www.jstor.org/stable/2777596
+        \item \cite{Freeman1979} was one of the first to formally define centrality measures in networks.
+    \item \cite{barabasi2016network} summarises the concepts of the SNAs.   
+    \end{itemize}
+         
+        %\pause % Czeka na kliknięcie przed pokazaniem następnego punktu
+        %\item \textbf{Problem:} %State the specific gap in knowledge or problem that your work addresses.
+        %\pause
+        \item 
+        Data Envelopment Analysis (DEA) - a method for assessing the relative efficiency of decision-making units (e.g. firms, regions, or countries) by comparing their inputs and outputs to identify best performers and efficiency gaps. The first DEA model was developed by \cite{CCR1978}. Slack-Based Measure (SBM) by \cite{Tone2001}.
+        %\pause
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 4: Metody i materiały c.d. ---
+\begin{frame}
+\frametitle{Methods}
+    
+    \begin{itemize}
+\item The concept of combining SNA with DEA is relatively new. The first studies integrating SNA and DEA have appeared in the last two decades, mainly as the use of DEA results in SNA: \cite{Liu2009}, \cite{Leem20151}, \cite{Blas2018} (SNA used to improve the discriminatory power of DEA)
+        %\pause
+\item In \cite{Gobbo2021}, the reverse approach was proposed for the first time -- SNA results (centrality measures) are used as outputs in DEA (the efficiency with which a healthcare professional’s selection of employment contracts is converted into influential social network positioning).
+        %\pause
+\item In our study, we applied this latter concept.
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 5: Metody i dane c.d.---
+
+
+\begin{frame}
+    \frametitle{Methods}
+% 'columns' pozwala umieścić tekst obok obrazka
+    \begin{columns}[T] % 'T' wyrównuje kolumny do góry
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                
+                \item We applied the SNA-DEA two-stage approach by conducting two separate analyses - one for exports and one for imports. 
+                \item We obtain centrality measures for networks, then we utilise them as the outputs in the DEA (SBM-O).
+                
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{SNA_DEA_2025.pdf}
+        \end{column}
+    \end{columns}
+  %proces uzyskiwania tego diagramu po prawej: najpierw recompile scheme1.tex, potem download and save, a potem drag and drop to the project.  
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Centrality Measures Used in SNA}
+
+{1. Local Measures (A node's ``size'')}
+        Describe a node's immediate trade volume, independent of the rest of the network.
+        
+        \begin{itemize}
+            \item \texttt{Strength}: total outgoing trade volume.
+        \end{itemize}
+
+{2. Positional Measures (A node's ``role'')}
+        Describe a node's strategic role within the \emph{entire} network structure.
+        
+\begin{itemize}
+    \item \texttt{Betweenness} and \texttt{Closeness}: access and control over network paths (trade distance = inverse of flow volume).
+    \item \texttt{Eigenvector centrality}: influence from \emph{who} a country is connected to.
+        \end{itemize}
+
+\vspace{0.5em}
+\small
+All four measures are exported for each network variant (\texttt{csv\_results/centralities/centralities\_ex.csv}, \texttt{centralities\_im.csv}).
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Data: Global Merchandise Trade}
+     \begin{itemize}
+     \item Bilateral merchandise trade (exports and imports) from the UN Trade and Development DataHub; we use the harmonised \textbf{BACI/CEPII} database \citep{Hoang2023} to address inconsistencies in raw UN/WTO statistics.
+     \item \textbf{Extended dataset:} 226 countries and territories, 28{,}909 directed trade links per network (export and import).
+     \item Each network is a weighted, directed graph: nodes = countries, edges = bilateral trade flows, weights = trade value (million USD).
+     \item The full network is extremely dense; we apply three filtering strategies for visualisation and analysis:
+        \begin{itemize}
+            \item \textbf{Node filter} -- remove the bottom 10\% of countries by strength;
+            \item \textbf{Edge filter} -- keep the top 20\% of trade links by weight;
+            \item \textbf{Backbone filter} -- retain statistically significant links (Disparity, $\alpha = 0.05$).
+        \end{itemize}
+     \item Centrality measures are computed for all four network variants and saved in \texttt{csv\_results/centralities/}.
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 8: Wyniki i Dyskusja ---
+
+
+\begin{frame}
+    \frametitle{Results: SNA -- Network Size Across Variants}
+    \small
+    The full network has 226 nodes and $\approx$29{,}000 edges; filtering reduces density while preserving major hubs.
+    \vspace{0.4em}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.92\linewidth]{network_summary_slide.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SNA -- Trade Networks (Export and Import)}
+    \small
+    Node size = strength; colour = continent. Networks after \textbf{edge filtering} (top 20\% of links). Layout: Fruchterman--Reingold. Left: export; right: import.
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{network_ex_pruned.png}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{network_im_pruned.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SNA -- Backbone Extraction (Export)}
+    \small
+    LANS vs.\ Disparity backbone on the export network after node filtering (203 countries). Nodes coloured by continent; shared layout for comparability.
+    \vspace{0.3em}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.95\linewidth]{backbone_comparison.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SNA -- Role Maps (Strength vs.\ Betweenness)}
+    \small
+    Node-filtered networks. Median lines separate hub, broker, peripheral, and local-player quadrants.
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{role_map_export.png}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{role_map_import.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Main Insights from the SNA -- Top Five Countries}
+    \small
+    Top five countries by strength, betweenness, and eigenvector centrality (export: top row; import: bottom row). Node-filtered network.
+ \begin{figure}
+     \centering
+     \includegraphics[width=0.88\linewidth]{top5_centralities_combined.png}
+ \end{figure}
+\end{frame}
+
+%DEA results - Export
+\begin{frame}
+    \frametitle{Results: DEA (export)}
+    
+ \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Ex_SBM_wykrRef.png}
+ \end{figure}
+ 
+\end{frame}
+
+%DEA resutts - Import
+\begin{frame}
+    \frametitle{Results: DEA (import)}
+    
+ \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Im_SBM_wykrRef.png}
+ \end{figure}
+ 
+\end{frame}
+
+%DEA results - Export vs. Import
+\begin{frame}
+    \frametitle{Results: DEA (import/export)}
+    
+% \hypertarget{dea_results}{}   
+ 
+ \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{DEA_ImpVsExp.png}
+ \end{figure}
+ 
+% \hyperlink{dea_results}{\beamergotobutton{Back}}
+ 
+\end{frame}
+
+
+% --- SLAJD 8: Wnioski - cd ---
+\begin{frame}
+    \frametitle{The results of DEA allowed identifying five groups of countries: }
+\small
+%\setlength{\leftmargini}{1em}    % wcięcie pierwszego poziomu
+%\setlength{\leftmarginii}{1em}     % wcięcie drugiego poziomu
+
+    \begin{itemize}
+        \item \textbf{Full efficiency leaders} - efficiently convert their economic potential into central positions and well-connected trade relationships, as captured by the SNA. These are the key hubs in global trade networks with diversified trade partnerships. %and strong production competitiveness
+        \item \textbf{Import-oriented economies} - full import efficiency, lower export efficiency - efficiently acquire goods, technologies from abroad, but their export networks are less developed or less competitive, often due to a strong domestic market, limited export diversification, or more passive participation in international trade networks.
+        \item \textbf{Export-specialised economies} - high export efficiency is driven by sectoral or resource-based advantages (e.g. energy exports), while import centrality is lower, reflecting a specialised, less country-diversified trade profile.
+        \item \textbf{Near-efficient balanced economies} - not fully efficient in either imports or exports - achieve medium-to-high efficiency in both areas. They are active trade players, but in both cases, there is room to improve their efficiency.
+        \item \textbf{Peripheral economies} - the lowest efficiency both in imports and exports - these countries occupy marginal network positions, with trade concentrated in a few sectors, dependent on dominant partners, and often serving transit or service roles rather than production.          %Chart \hyperlink{dea_results} {\beamergotobutton{Results: DEA (import/export)}}
+    \end{itemize}
+\end{frame}
+
+% --- SLAJD 7: Wnioski  ---
+\begin{frame}
+    \frametitle{Conclusions}
+
+    \begin{itemize}
+        \item The aim of this study was to evaluate how efficiently European and selected Asian countries transform their economic potential – measured by GDP, trade openness, and FDI inflows – into their positions within international trade networks.
+        \item Using SNA, the positions of individual countries within the Europe–Asia trade network were assessed, and DEA was subsequently applied to evaluate how efficiently countries achieve these positions within the international trade network.
+        \item We grouped countries into five categories based on their centrality in the trade network and efficiency. Some policy implications are offered:
+        \begin{itemize}
+            \item Improve export efficiency: specialisation based on comparative advantage, investing in R\&D and innovations, enhancing workforce skills, \textbf{seeking new markets};
+            \item Improve import efficiency (becoming a smarter buyer): modernise infrastructure, streamline customs and reduce red tape (possible with AI), prioritise productive imports, \textbf{diversify suppliers};
+            \item Implement Foundational Changes: attract Foreign Direct Investment (FDI) \& ensure economic stability.
+        \end{itemize}
+        
+    \end{itemize}
+\end{frame}
+
+
+% --- SLAJD 9: Przyszłe Prace ---
+\begin{frame}
+    \frametitle{Future Work}
+
+    \begin{itemize}
+       \item Extending the analysis to countries beyond Europe and the selected Asian economies.
+       \item Incorporating additional macroeconomic inputs into the DEA model to better capture countries’ capacity to build their positions in the international trade network.
+           
+    \end{itemize}
+    
+   % \begin{block}{Main Conclusions}
+   %     \begin{itemize}
+   %         \item Re-state the answer to your research question.
+   %         \item Summarize your key contributions in 1-2 points.
+   %     \end{itemize}
+   % \end{block}
+
+   % \begin{block}{Future Work}
+   %     \begin{itemize}
+   %         \item What are the next logical steps? (e.g., applying the method to a larger dataset).
+   %         \item Are there any limitations to your work that could be addressed in the future?
+   %     \end{itemize}
+   % \end{block}
+    
+    \vfill % Wypełnia pionową przestrzeń, spychając podziękowania na dół
+    
+    \centering
+    \Large{\textbf{Thank you for your attention! \\ We will be happy to answer any questions!}}
+\end{frame}
+
+
+%\begin{frame}[allowframebreaks]{Full References}
+\begin{frame}{Full References}
+  \frametitle{References}
+  \footnotesize
+  \tiny
+   \bibliography{sample} % Ensure .bib files are correct
+ \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KONIEC DOKUMENTU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
