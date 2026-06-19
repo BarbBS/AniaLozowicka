@@ -177,3 +177,85 @@ write_xlsx(
   DEA_dataset_ex,
   "DEA_results/DEA_dataset_ex.xlsx"
 )
+
+
+# =====================================
+# DEA dataset for imports efficiency analysis
+# =====================================
+
+#wczytanie pliku z inputs oraz pliku z outputs
+inputs_complete <- read_excel("DEA_results/inputs_complete.xlsx")
+names(inputs_complete)
+dea_outputs_ex <- read_excel("DEA_results/DEA_outputs_im.xlsx")
+names(dea_outputs_ex)
+
+# sprawdzenie ró¿nic w nazwach krajow
+setdiff(inputs_complete$Country, dea_outputs_im$name)
+
+# spr które nazwy krajów z outpus s¹ podobne do fragmentów nazw z pliku inputs 
+dea_outputs_im$name[
+  grepl(
+    "Bosnia|Central African|Ivoire|Dominican|Iran|Netherlands|Korea|Dem. People|Moldova|Solomon|Syria|TA1rkiye|Tanzania|USA|Venezuela",
+    dea_outputs_im$name
+  )
+]
+
+# tworzenie s³ownika, gdzie odmienne nazwy krajow z inputs dostaja nazwy z pliku outputs (to plik z SNA)
+name_map <- c(
+  "Bosnia and Herzegovina" = "Bosnia Herzegovina",
+  "Central African Republic" = "Central African Rep.",
+  "Cote d'Ivoire" = "CA´te d'Ivoire",
+  "Dominican Republic" = "Dominican Rep.",
+  "Iran (Islamic Republic of)" = "Iran",
+  "Netherlands (Kingdom of the)" = "Netherlands",
+  "Republic of Korea" = "Rep. of Korea",
+  "Republic of Moldova" = "Rep. of Moldova",
+  "Solomon Islands" = "Solomon Isds",
+  "Syrian Arab Republic" = "Syria",
+  "Turkiye" = "TA1rkiye",
+  "United Republic of Tanzania" = "United Rep. of Tanzania",
+  "United States" = "USA",
+  "Venezuela (Bolivarian Rep. of)" = "Venezuela"
+)
+name_map
+
+# zmiana odmiennych nazw krajów z pliku inputs na nazwy z pliku outputs (pozostale nazwy bez zmian)
+inputs_complete$Country <- ifelse(
+  inputs_complete$Country %in% names(name_map),
+  name_map[inputs_complete$Country],
+  inputs_complete$Country
+)
+setdiff(inputs_complete$Country, dea_outputs_ex$name)
+
+#sprawdzenie czy liczba krajow w inputs sie nie zmienila (172) i czy nie ma zdublowanych nazw
+nrow(inputs_complete)
+sum(duplicated(inputs_complete$Country))
+
+#Dolaczenie do pliku outputs kolumn z nak³adami z pliku inputs (po nazwach krajow). Zostana tylko 172 kraje
+DEA_dataset_im <- merge(
+  dea_outputs_im,
+  inputs_complete,
+  by.x = "name",
+  by.y = "Country",
+  all = FALSE
+)
+dim(DEA_dataset_im)
+names(DEA_dataset_im)
+
+# sprawdzenie czy nie ma brakow danych
+colSums(is.na(DEA_dataset_im))
+
+# Zapisanie dataset do pliku excela
+write_xlsx(
+  DEA_dataset_im,
+  "DEA_results/DEA_dataset_im.xlsx"
+)
+
+
+
+# =====================================
+# Diagnostyka danych w DEA_dataset_ex pod DEA
+# =====================================
+
+summary(DEA_dataset_ex[, c("GDP", "FDI_stock", "Labour", "GHG", "Energy",
+                           "strength", "eigenv", "closen")])
