@@ -252,7 +252,6 @@ write_xlsx(
 )
 
 
-
 # =====================================
 # Diagnostyka danych w DEA_dataset_ex pod DEA
 # =====================================
