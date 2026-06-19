@@ -10,6 +10,7 @@
 library(writexl)
 
 
+# =====================================
 
 # Wczytanie pliku
 centralities_ex <- read.csv2("output/csv_results/centralities/centralities_ex.csv")
@@ -53,3 +54,5 @@ write_xlsx(
   dea_outputs_ex,
   "DEA_results/DEA_outputs_ex.xlsx"
 )
+
+
