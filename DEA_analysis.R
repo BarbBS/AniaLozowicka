@@ -329,3 +329,107 @@ results_ex <- data.frame(
 )
 
 head(results_ex)
+
+#zapisanie rankingu z analizy efektywnoœci dla exports
+write_xlsx(
+  results_ex,
+  "DEA_results/SBM_exports_results.xlsx"
+)
+
+#zapisanie wszystkich informacji do pliku
+names(sbm_ex)
+apropos("slack")
+apropos("target")
+apropos("lambda")
+apropos("peer")
+
+slacks_ex <- slacks(sbm_ex)
+str(slacks_ex)
+
+targets_ex <- targets(sbm_ex)
+str(targets_ex)
+
+lambdas_ex <- lambdas(sbm_ex)
+str(lambdas_ex)
+
+
+# =========================
+# Efficiency scores
+# =========================
+
+Efficiency_ex <- data.frame(
+  Country = DEA_dataset_ex$name,
+  Efficiency = as.numeric(efficiencies(sbm_ex))
+)
+
+# =========================
+# Input slacks
+# =========================
+
+Input_slacks_ex <- data.frame(
+  Country = rownames(slacks_ex$slack_input),
+  slacks_ex$slack_input,
+  row.names = NULL
+)
+
+# =========================
+# Output slacks
+# =========================
+
+Output_slacks_ex <- data.frame(
+  Country = rownames(slacks_ex$slack_output),
+  slacks_ex$slack_output,
+  row.names = NULL
+)
+
+# =========================
+# Target inputs
+# =========================
+
+Target_inputs_ex <- data.frame(
+  Country = rownames(targets_ex$target_input),
+  targets_ex$target_input,
+  row.names = NULL
+)
+
+# =========================
+# Target outputs
+# =========================
+
+Target_outputs_ex <- data.frame(
+  Country = rownames(targets_ex$target_output),
+  targets_ex$target_output,
+  row.names = NULL
+)
+
+# =========================
+# Lambdas
+# =========================
+
+Lambdas_ex <- data.frame(
+  Country = rownames(lambdas_ex),
+  lambdas_ex,
+  row.names = NULL
+)
+
+# =========================
+# Export do Excel
+# =========================
+
+write_xlsx(
+  list(
+    Efficiency_ex     = Efficiency_ex,
+    Input_slacks_ex   = Input_slacks_ex,
+    Output_slacks_ex  = Output_slacks_ex,
+    Target_inputs_ex  = Target_inputs_ex,
+    Target_outputs_ex = Target_outputs_ex,
+    Lambdas_ex        = Lambdas_ex
+  ),
+  "DEA_results/SBM_exports_full_results.xlsx"
+)
+
+#zachowanie modelu
+saveRDS(
+  sbm_ex,
+  "DEA_results/SBM_exports_model.rds"
+)
