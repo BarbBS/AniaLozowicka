@@ -9,6 +9,9 @@
 
 library(writexl)
 library(readxl)
+library(deaR)
+library(DJL)
+
 
 # =====================================
 # SNA exports centrality measures -> DEA outputs (ex)
@@ -288,3 +291,41 @@ quantile(
 # Analiza efektywnosci cz.1 - model SBM dla exports
 # =====================================
 
+packageVersion("deaR")
+packageVersion("DJL")
+apropos("sbm")
+?model_sbmeff
+
+# wczytanie dataset dla exports
+DEA_dataset_ex <- read_excel(
+  "DEA_results/DEA_dataset_ex.xlsx"
+)
+
+# utworzenie obiektu do analizy
+args(read_data)
+
+data_dea_ex <- make_deadata(
+  datadea = DEA_dataset_ex,
+  ni = 5,
+  no = 3,
+  dmus = 1,
+  inputs = c(8, 9, 10, 11, 12),
+  outputs = c(5, 6, 7)
+)
+
+sbm_ex <- model_sbmeff(
+  data_dea_ex,
+  orientation = "io",
+  rts = "vrs"
+)
+
+eff_ex <- efficiencies(sbm_ex)
+head(eff_ex)
+
+results_ex <- data.frame(
+  Country = DEA_dataset_ex$name,
+  Efficiency = as.numeric(efficiencies(sbm_ex)),
+  row.names = NULL
+)
+
+head(results_ex)
