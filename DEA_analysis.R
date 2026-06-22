@@ -253,8 +253,33 @@ write_xlsx(
 
 
 # =====================================
-# Diagnostyka danych w DEA_dataset_ex pod DEA
+# Diagnostyka danych (w DEA_dataset_ex oraz DEA_dataset_im) pod DEA
 # =====================================
 
 summary(DEA_dataset_ex[, c("GDP", "FDI_stock", "Labour", "GHG", "Energy",
                            "strength", "eigenv", "closen")])
+
+summary(DEA_dataset_im[, c("GDP", "FDI_stock", "Labour", "GHG", "Energy",
+                           "strength", "eigenv", "closen")])
+
+cor(
+  DEA_dataset_ex[, c("strength", "eigenv", "closen")]
+)
+
+cor(
+  DEA_dataset_im[, c("strength", "eigenv", "closen")]
+)
+
+cor(
+  DEA_dataset_ex[, c("GDP","FDI_stock","Labour","GHG","Energy")]
+)
+
+sd(DEA_dataset_im$closen)
+sd(DEA_dataset_ex$closen)
+
+hist(DEA_dataset_im$closen)
+
+quantile(
+  DEA_dataset_im$closen,
+  probs = c(0, 0.01, 0.05, 0.25, 0.5, 0.75, 0.95, 0.99, 1)
+)
