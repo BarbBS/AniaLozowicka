@@ -324,6 +324,7 @@ head(eff_ex)
 
 results_ex <- data.frame(
   Country = DEA_dataset_ex$name,
+  iso3 = DEA_dataset_ex$iso3,
   Efficiency = as.numeric(efficiencies(sbm_ex)),
   row.names = NULL
 )
@@ -359,6 +360,7 @@ str(lambdas_ex)
 
 Efficiency_ex <- data.frame(
   Country = DEA_dataset_ex$name,
+  iso3 = DEA_dataset_ex$iso3,
   Efficiency = as.numeric(efficiencies(sbm_ex))
 )
 
@@ -368,6 +370,7 @@ Efficiency_ex <- data.frame(
 
 Input_slacks_ex <- data.frame(
   Country = rownames(slacks_ex$slack_input),
+  iso3 = DEA_dataset_ex$iso3,
   slacks_ex$slack_input,
   row.names = NULL
 )
@@ -378,6 +381,7 @@ Input_slacks_ex <- data.frame(
 
 Output_slacks_ex <- data.frame(
   Country = rownames(slacks_ex$slack_output),
+  iso3 = DEA_dataset_ex$iso3,
   slacks_ex$slack_output,
   row.names = NULL
 )
@@ -388,6 +392,7 @@ Output_slacks_ex <- data.frame(
 
 Target_inputs_ex <- data.frame(
   Country = rownames(targets_ex$target_input),
+  iso3 = DEA_dataset_ex$iso3,
   targets_ex$target_input,
   row.names = NULL
 )
@@ -398,6 +403,7 @@ Target_inputs_ex <- data.frame(
 
 Target_outputs_ex <- data.frame(
   Country = rownames(targets_ex$target_output),
+  iso3 = DEA_dataset_ex$iso3,
   targets_ex$target_output,
   row.names = NULL
 )
@@ -434,7 +440,145 @@ saveRDS(
   "DEA_results/SBM_exports_model.rds"
 )
 
+
 # =====================================
 # Analiza efektywnosci cz.2 - model SBM dla imports
 # =====================================
+
+# wczytanie dataset dla exports
+DEA_dataset_im <- read_excel(
+  "DEA_results/DEA_dataset_im.xlsx"
+)
+
+# utworzenie obiektu do analizy
+#args(read_data)
+
+data_dea_im <- make_deadata(
+  datadea = DEA_dataset_im,
+  ni = 5,
+  no = 3,
+  dmus = 1,
+  inputs = c(8, 9, 10, 11, 12),
+  outputs = c(5, 6, 7)
+)
+
+sbm_im <- model_sbmeff(
+  data_dea_im,
+  orientation = "io",
+  rts = "vrs"
+)
+
+eff_im <- efficiencies(sbm_im)
+head(eff_im)
+
+results_im <- data.frame(
+  Country = DEA_dataset_im$name,
+  iso3 = DEA_dataset_im$iso3,
+  Efficiency = as.numeric(efficiencies(sbm_im)),
+  row.names = NULL
+)
+
+head(results_im)
+
+#zapisanie rankingu z analizy efektywnoœci dla exports
+write_xlsx(
+  results_im,
+  "DEA_results/SBM_imports_results.xlsx"
+)
+
+#zapisanie wszystkich informacji do pliku
+names(sbm_im)
+apropos("slack")
+apropos("target")
+apropos("lambda")
+apropos("peer")
+
+slacks_im <- slacks(sbm_im)
+str(slacks_im)
+
+targets_im <- targets(sbm_im)
+str(targets_im)
+
+lambdas_im <- lambdas(sbm_im)
+str(lambdas_im)
+
+
+# =========================
+# Efficiency scores
+
+Efficiency_im <- data.frame(
+  Country = DEA_dataset_im$name,
+  iso3 = DEA_dataset_im$iso3,
+  Efficiency = as.numeric(efficiencies(sbm_im))
+)
+
+# =========================
+# Input slacks
+
+Input_slacks_im <- data.frame(
+  Country = rownames(slacks_im$slack_input),
+  iso3 = DEA_dataset_im$iso3,
+  slacks_im$slack_input,
+  row.names = NULL
+)
+
+# =========================
+# Output slacks
+
+Output_slacks_im <- data.frame(
+  Country = rownames(slacks_im$slack_output),
+  iso3 = DEA_dataset_im$iso3,
+  slacks_im$slack_output,
+  row.names = NULL
+)
+
+# =========================
+# Target inputs
+
+Target_inputs_im <- data.frame(
+  Country = rownames(targets_im$target_input),
+  iso3 = DEA_dataset_im$iso3,
+  targets_im$target_input,
+  row.names = NULL
+)
+
+# =========================
+# Target outputs
+
+Target_outputs_im <- data.frame(
+  Country = rownames(targets_im$target_output),
+  iso3 = DEA_dataset_im$iso3,
+  targets_im$target_output,
+  row.names = NULL
+)
+
+# =========================
+# Lambdas
+
+Lambdas_im <- data.frame(
+  Country = rownames(lambdas_im),
+  lambdas_im,
+  row.names = NULL
+)
+
+# =========================
+# Export do Excel
+
+write_xlsx(
+  list(
+    Efficiency_im     = Efficiency_im,
+    Input_slacks_im   = Input_slacks_im,
+    Output_slacks_im  = Output_slacks_im,
+    Target_inputs_im  = Target_inputs_im,
+    Target_outputs_im = Target_outputs_im,
+    Lambdas_im        = Lambdas_im
+  ),
+  "DEA_results/SBM_imports_full_results.xlsx"
+)
+
+#zapisanie modelu w formacie RDS
+saveRDS(
+  sbm_im,
+  "DEA_results/SBM_imports_model.rds"
+)
 
