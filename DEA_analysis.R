@@ -11,6 +11,7 @@ library(writexl)
 library(readxl)
 library(deaR)
 library(DJL)
+library(ggplot2)
 
 
 # =====================================
@@ -640,3 +641,25 @@ head(plot_scatter)
 dim(plot_exports)
 dim(plot_imports)
 dim(plot_scatter)
+
+#Exports efficiency statistics
+summary(plot_exports$Efficiency)
+mean(plot_exports$Efficiency)
+median(plot_exports$Efficiency)
+#sum(plot_exports$Efficiency == 1) - jeden kraj ma efekt.b.bliska 1 (w xsl tego nie widac)
+sum(round(plot_exports$Efficiency, 6) == 1)
+100 * sum(round(plot_exports$Efficiency, 6) == 1) / nrow(plot_exports)
+
+# Histogram - exports efficiency
+ggplot(plot_exports, aes(x = Efficiency)) +
+  geom_histogram(
+    bins = 20,
+    color = "black",
+    fill = "steelblue"
+  ) +
+  labs(
+    title = "Distribution of SBM Efficiency Scores (Exports)",
+    x = "Efficiency score",
+    y = "Number of countries"
+  ) +
+  theme_minimal()
