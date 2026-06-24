@@ -1,6 +1,6 @@
 # =====================================
 # Author: Anna £ozowicka
-# Purpose: DEA analysis
+# Purpose: DEA analysis - exports (part 1) & imports (part 2) - centrality measures based on full network from SNA
 # =====================================
 
 # =====================================
@@ -428,8 +428,13 @@ write_xlsx(
   "DEA_results/SBM_exports_full_results.xlsx"
 )
 
-#zachowanie modelu
+#zapisanie modelu w formacie RDS
 saveRDS(
   sbm_ex,
   "DEA_results/SBM_exports_model.rds"
 )
+
+# =====================================
+# Analiza efektywnosci cz.2 - model SBM dla imports
+# =====================================
+
