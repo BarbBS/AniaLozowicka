@@ -575,3 +575,68 @@ saveRDS(
   "DEA_results/SBM_imports_model.rds"
 )
 
+
+# =====================================
+# Prezentacja wyników - wykresy, mapy
+# =====================================
+
+#kolory kontynentów takiej, jak z SNA
+continent_colors <- c(
+  "Europe"   = "skyblue",
+  "Asia"     = "gold",
+  "Africa"   = "tomato",
+  "Americas" = "palegreen3",
+  "Oceania"  = "orchid"
+)
+
+# =========================
+# Dane do map i histogramów
+# =========================
+
+plot_exports <- data.frame(
+  Country = Efficiency_ex$Country,
+  iso3 = Efficiency_ex$iso3,
+  continent = DEA_dataset_ex$continent,
+  color = continent_colors[DEA_dataset_ex$continent],
+  Efficiency = Efficiency_ex$Efficiency
+)
+
+plot_imports <- data.frame(
+  Country = Efficiency_im$Country,
+  iso3 = Efficiency_im$iso3,
+  continent = DEA_dataset_im$continent,
+  color = continent_colors[DEA_dataset_im$continent],
+  Efficiency = Efficiency_im$Efficiency
+)
+
+write_xlsx(
+  list(
+    Exports = plot_exports,
+    Imports = plot_imports
+  ),
+  "DEA_results/DEA_plot_data_maps_histograms.xlsx"
+)
+
+# =========================
+# Dane do scatterplot
+# =========================
+
+plot_scatter <- merge(
+  plot_exports[, c("Country", "iso3", "continent", "color", "Efficiency")],
+  plot_imports[, c("iso3", "Efficiency")],
+  by = "iso3",
+  suffixes = c("_exports", "_imports")
+)
+
+write_xlsx(
+  plot_scatter,
+  "DEA_results/DEA_plot_data_scatter.xlsx"
+)
+
+head(plot_exports)
+head(plot_imports)
+head(plot_scatter)
+
+dim(plot_exports)
+dim(plot_imports)
+dim(plot_scatter)
