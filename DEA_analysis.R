@@ -356,7 +356,6 @@ str(lambdas_ex)
 
 # =========================
 # Efficiency scores
-# =========================
 
 Efficiency_ex <- data.frame(
   Country = DEA_dataset_ex$name,
@@ -366,7 +365,6 @@ Efficiency_ex <- data.frame(
 
 # =========================
 # Input slacks
-# =========================
 
 Input_slacks_ex <- data.frame(
   Country = rownames(slacks_ex$slack_input),
@@ -377,7 +375,6 @@ Input_slacks_ex <- data.frame(
 
 # =========================
 # Output slacks
-# =========================
 
 Output_slacks_ex <- data.frame(
   Country = rownames(slacks_ex$slack_output),
@@ -388,7 +385,6 @@ Output_slacks_ex <- data.frame(
 
 # =========================
 # Target inputs
-# =========================
 
 Target_inputs_ex <- data.frame(
   Country = rownames(targets_ex$target_input),
@@ -399,7 +395,6 @@ Target_inputs_ex <- data.frame(
 
 # =========================
 # Target outputs
-# =========================
 
 Target_outputs_ex <- data.frame(
   Country = rownames(targets_ex$target_output),
@@ -410,7 +405,6 @@ Target_outputs_ex <- data.frame(
 
 # =========================
 # Lambdas
-# =========================
 
 Lambdas_ex <- data.frame(
   Country = rownames(lambdas_ex),
@@ -420,7 +414,6 @@ Lambdas_ex <- data.frame(
 
 # =========================
 # Export do Excel
-# =========================
 
 write_xlsx(
   list(
