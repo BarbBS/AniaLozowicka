@@ -650,6 +650,13 @@ median(plot_exports$Efficiency)
 sum(round(plot_exports$Efficiency, 6) == 1)
 100 * sum(round(plot_exports$Efficiency, 6) == 1) / nrow(plot_exports)
 
+#Imports efficiency statistics
+summary(plot_imports$Efficiency)
+mean(plot_imports$Efficiency)
+median(plot_imports$Efficiency)
+sum(round(plot_imports$Efficiency, 6) == 1)
+100 * sum(round(plot_imports$Efficiency, 6) == 1) / nrow(plot_imports)
+
 # =========================
 # Histogram - exports efficiency
 
