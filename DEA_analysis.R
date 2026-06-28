@@ -16,6 +16,7 @@ library(sf)
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(dplyr)
+library(giscoR)
 
 
 # =====================================
@@ -722,47 +723,47 @@ ggplot(plot_imports, aes(x = Efficiency)) +
   )
 
 # =========================
-# Mapy - 1.Exports efficiency
-
-world <- ne_countries(
-  scale = "medium",
-  returnclass = "sf"
-)
-
-names(world)
+# Maps - 1.Exports efficiency and 2. Imports efficiency
 
 # sprawdzenie kodowania nazw krajow (nasze vs. wbudowane w mapy swiata w pakiecie)
-setdiff(plot_exports$iso3, world$iso_a3)
+world_gisco <- gisco_get_countries(
+  resolution = "20",
+  epsg = "4326"
+)
 
-world[world$name_en == "France", c("name_en", "iso_a3", "adm0_a3")]
-world[world$name_en == "Norway", c("name_en", "iso_a3", "adm0_a3")]
+names(world_gisco)
 
-setdiff(plot_exports$iso3, world$adm0_a3) #czyli bedziemy laczyc kody krajow na potrzeby mapy po adm0_a3, nie po iso_a3
+setdiff(plot_exports$iso3, world_gisco$ISO3_CODE)
+setdiff(plot_imports$iso3, world_gisco$ISO3_CODE)
 
-map_exports <- world %>%
+# =========================
+# Map 1 - exports efficiency 
+
+map_exports_gisco <- world_gisco %>%
   left_join(
     plot_exports,
-    by = c("adm0_a3" = "iso3")
+    by = c("ISO3_CODE" = "iso3")
   )
 
-sum(!is.na(map_exports$Efficiency))
+sum(!is.na(map_exports_gisco$Efficiency))
+table(is.na(map_exports_gisco$Efficiency))
 
-table(is.na(map_exports$Efficiency))
+world_gisco[world_gisco$ISO3_CODE == "UKR", c("CNTR_NAME", "ISO3_CODE")]
+world_gisco[world_gisco$ISO3_CODE == "RUS", c("CNTR_NAME", "ISO3_CODE")]
 
-map_exports$Efficiency_round <- round(map_exports$Efficiency, 6)
+map_exports_gisco$Efficiency_round <- round(map_exports_gisco$Efficiency, 6)
 
-map_exports$eff_class <- cut(
-  map_exports$Efficiency_round,
+map_exports_gisco$eff_class <- cut(
+  map_exports_gisco$Efficiency_round,
   breaks = c(-Inf, 0.25, 0.50, 0.75, 1, Inf),
   labels = c("< 0.25", "0.25–0.50", "0.50–0.75", "0.75–<1.00", "1.00"),
   right = FALSE
 )
 
-table(map_exports$eff_class, useNA = "ifany")
-
+table(map_exports_gisco$eff_class, useNA = "ifany")
 
 map_exports_plot <-
-  ggplot(map_exports) +
+  ggplot(map_exports_gisco) +
   geom_sf(aes(fill = eff_class),
           color = "white",
           linewidth = 0.1) +
@@ -782,42 +783,100 @@ map_exports_plot <-
     ylim = c(-58, 85),
     expand = FALSE
   ) +
-  labs(
-    title = "SBM Efficiency - Exports"
-  ) +
+  labs(title = "SBM Efficiency - Exports") +
   theme_minimal() +
   theme(
-    plot.title = element_text(
-      size = 11,
-      face = "bold",
-      hjust = 0.5
-    ),
-    
-    legend.title = element_text(
-      size = 8.5,
-      face = "bold"
-      ),
-    legend.text  = element_text(size = 7.5),
-    
-    legend.key.width  = unit(0.28, "cm"),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 8.5, face = "bold"),
+    legend.text = element_text(size = 7.5),
+    legend.key.width = unit(0.28, "cm"),
     legend.key.height = unit(0.28, "cm"),
-    
     legend.spacing.y = unit(0.05, "cm"),
     legend.margin = margin(0, 0, 0, 0),
     legend.box.margin = margin(0, 0, 0, -25),
-    
     legend.position = "right",
-    
     axis.text = element_blank(),
     axis.title = element_blank(),
     panel.grid = element_blank(),
-    
     plot.margin = margin(2, 2, 2, 2)
   )
 
 ggsave(
   filename = "DEA_results/SBM_exports_map.pdf",
   plot = map_exports_plot,
+  width = 12,
+  height = 5,
+  units = "in"
+)
+
+# =========================
+# Map 2 - imports efficiency 
+
+map_imports_gisco <- world_gisco %>%
+  left_join(
+    plot_imports,
+    by = c("ISO3_CODE" = "iso3")
+  )
+
+sum(!is.na(map_imports_gisco$Efficiency))
+table(is.na(map_imports_gisco$Efficiency))
+
+world_gisco[world_gisco$ISO3_CODE == "UKR", c("CNTR_NAME", "ISO3_CODE")]
+world_gisco[world_gisco$ISO3_CODE == "RUS", c("CNTR_NAME", "ISO3_CODE")]
+
+map_imports_gisco$Efficiency_round <- round(map_imports_gisco$Efficiency, 6)
+
+map_imports_gisco$eff_class <- cut(
+  map_imports_gisco$Efficiency_round,
+  breaks = c(-Inf, 0.25, 0.50, 0.75, 1, Inf),
+  labels = c("< 0.25", "0.25–0.50", "0.50–0.75", "0.75–<1.00", "1.00"),
+  right = FALSE
+)
+
+table(map_imports_gisco$eff_class, useNA = "ifany")
+
+map_imports_plot <-
+  ggplot(map_imports_gisco) +
+  geom_sf(aes(fill = eff_class),
+          color = "white",
+          linewidth = 0.1) +
+  scale_fill_manual(
+    values = c(
+      "< 0.25"     = "#d73027",
+      "0.25–0.50"  = "#fc8d59",
+      "0.50–0.75"  = "#fee08b",
+      "0.75–<1.00" = "#91cf60",
+      "1.00"       = "#006837"
+    ),
+    na.value = "grey95",
+    name = "Efficiency scores"
+  ) +
+  coord_sf(
+    xlim = c(-180, 180),
+    ylim = c(-58, 85),
+    expand = FALSE
+  ) +
+  labs(title = "SBM Efficiency - Imports") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 11, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 8.5, face = "bold"),
+    legend.text = element_text(size = 7.5),
+    legend.key.width = unit(0.28, "cm"),
+    legend.key.height = unit(0.28, "cm"),
+    legend.spacing.y = unit(0.05, "cm"),
+    legend.margin = margin(0, 0, 0, 0),
+    legend.box.margin = margin(0, 0, 0, -25),
+    legend.position = "right",
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank(),
+    plot.margin = margin(2, 2, 2, 2)
+  )
+
+ggsave(
+  filename = "DEA_results/SBM_imports_map.pdf",
+  plot = map_imports_plot,
   width = 12,
   height = 5,
   units = "in"
