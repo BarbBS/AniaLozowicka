@@ -619,7 +619,7 @@ write_xlsx(
 )
 
 # =========================
-# Dane do scatterplot
+# Dane do scatterplot i histogramow
 # =========================
 
 plot_scatter <- merge(
@@ -650,15 +650,35 @@ median(plot_exports$Efficiency)
 sum(round(plot_exports$Efficiency, 6) == 1)
 100 * sum(round(plot_exports$Efficiency, 6) == 1) / nrow(plot_exports)
 
+# =========================
 # Histogram - exports efficiency
+
 ggplot(plot_exports, aes(x = Efficiency)) +
   geom_histogram(
     bins = 20,
     color = "black",
     fill = "steelblue"
   ) +
+  coord_cartesian(xlim = c(0, 1)) +
   labs(
     title = "Distribution of SBM Efficiency Scores (Exports)",
+    x = "Efficiency score",
+    y = "Number of countries"
+  ) +
+  theme_minimal()
+
+# =========================
+# Histogram - imports efficiency
+
+ggplot(plot_imports, aes(x = Efficiency)) +
+  geom_histogram(
+    bins = 20,
+    color = "black",
+    fill = "steelblue"
+  ) +
+  coord_cartesian(xlim = c(0, 1)) +
+  labs(
+    title = "Distribution of SBM Efficiency Scores (Imports)",
     x = "Efficiency score",
     y = "Number of countries"
   ) +
