@@ -591,7 +591,7 @@ continent_colors <- c(
 )
 
 # =========================
-# Dane do map i histogramów
+# Dane do map, histogramow i scatterplot
 # =========================
 
 plot_exports <- data.frame(
@@ -667,12 +667,25 @@ ggplot(plot_exports, aes(x = Efficiency)) +
     fill = "steelblue"
   ) +
   coord_cartesian(xlim = c(0, 1)) +
+  scale_y_continuous(
+    limits = c(0, 70),
+    breaks = seq(0, 70, by = 10)
+  ) +
   labs(
-    title = "Distribution of SBM Efficiency Scores (Exports)",
+    title = "SBM Efficiency Scores - Exports",
     x = "Efficiency score",
     y = "Number of countries"
   ) +
-  theme_minimal()
+  theme_minimal()+
+  theme(
+    plot.title = element_text(
+      size = 15,
+      face = "bold",
+      hjust = 0.5    # wysrodkowanie tytu³u
+    ),
+    axis.title = element_text(size = 13),
+    axis.text = element_text(size = 11)
+  )
 
 # =========================
 # Histogram - imports efficiency
@@ -684,9 +697,23 @@ ggplot(plot_imports, aes(x = Efficiency)) +
     fill = "steelblue"
   ) +
   coord_cartesian(xlim = c(0, 1)) +
+  scale_y_continuous(
+    limits = c(0, 70),
+    breaks = seq(0, 70, by = 10)
+  ) +
   labs(
-    title = "Distribution of SBM Efficiency Scores (Imports)",
+    title = "SBM Efficiency Scores - Imports",
     x = "Efficiency score",
     y = "Number of countries"
   ) +
-  theme_minimal()
+  theme_minimal()+
+  theme(
+    plot.title = element_text(
+      size = 15,
+      face = "bold",
+      hjust = 0.5    # wysrodkowanie tytu³u
+    ),
+    axis.title = element_text(size = 13),
+    axis.text = element_text(size = 11)
+  )
+
