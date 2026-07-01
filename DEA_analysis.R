@@ -665,62 +665,98 @@ sum(round(plot_imports$Efficiency, 6) == 1)
 # =========================
 # Histogram - exports efficiency
 
-ggplot(plot_exports, aes(x = Efficiency)) +
+hist_exports_plot <-
+  ggplot(plot_exports, aes(x = Efficiency)) +
   geom_histogram(
     bins = 20,
     color = "black",
-    fill = "steelblue"
+    fill = "steelblue",
+    linewidth = 0.3
   ) +
   coord_cartesian(xlim = c(0, 1)) +
   scale_y_continuous(
     limits = c(0, 70),
-    breaks = seq(0, 70, by = 10)
+    breaks = seq(0, 70, 10)
   ) +
   labs(
-    title = "SBM Efficiency Scores - Exports",
+    #title = "SBM Efficiency Scores - Exports",
     x = "Efficiency score",
     y = "Number of countries"
   ) +
-  theme_minimal()+
+  theme_minimal() +
   theme(
     plot.title = element_text(
       size = 15,
       face = "bold",
-      hjust = 0.5    # wysrodkowanie tytu³u
+      hjust = 0.5
     ),
     axis.title = element_text(size = 13),
-    axis.text = element_text(size = 11)
+    axis.text = element_text(size = 11),
+    
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linewidth = 0.25),
+    
+    plot.margin = margin(5, 5, 5, 5)
   )
+
+# zapis do PDF
+ggsave(
+  filename = "DEA_results/SBM_exports_histogram.pdf",
+  plot = hist_exports_plot,
+  width = 10,
+  height = 4.5,
+  units = "in"
+)
+
 
 # =========================
 # Histogram - imports efficiency
 
-ggplot(plot_imports, aes(x = Efficiency)) +
+hist_imports_plot <-
+  ggplot(plot_imports, aes(x = Efficiency)) +
   geom_histogram(
     bins = 20,
     color = "black",
-    fill = "steelblue"
+    fill = "steelblue",
+    linewidth = 0.3
   ) +
   coord_cartesian(xlim = c(0, 1)) +
   scale_y_continuous(
     limits = c(0, 70),
-    breaks = seq(0, 70, by = 10)
+    breaks = seq(0, 70, 10)
   ) +
   labs(
-    title = "SBM Efficiency Scores - Imports",
+    #title = "SBM Efficiency Scores - Imports",
     x = "Efficiency score",
     y = "Number of countries"
   ) +
-  theme_minimal()+
+  theme_minimal() +
   theme(
     plot.title = element_text(
       size = 15,
       face = "bold",
-      hjust = 0.5    # wysrodkowanie tytu³u
+      hjust = 0.5
     ),
     axis.title = element_text(size = 13),
-    axis.text = element_text(size = 11)
+    axis.text = element_text(size = 11),
+    
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linewidth = 0.25),
+    
+    plot.margin = margin(5, 5, 5, 5)
   )
+
+# zapis do PDF
+ggsave(
+  filename = "DEA_results/SBM_imports_histogram.pdf",
+  plot = hist_imports_plot,
+  width = 10,
+  height = 4.5,
+  units = "in"
+)
+
 
 # =========================
 # Maps - 1.Exports efficiency and 2. Imports efficiency
@@ -783,15 +819,15 @@ map_exports_plot <-
     ylim = c(-58, 85),
     expand = FALSE
   ) +
-  labs(title = "SBM Efficiency - Exports") +
+  #labs(title = "SBM Efficiency - Exports") +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 11, face = "bold", hjust = 0.5),
-    legend.title = element_text(size = 8.5, face = "bold"),
-    legend.text = element_text(size = 7.5),
-    legend.key.width = unit(0.28, "cm"),
-    legend.key.height = unit(0.28, "cm"),
-    legend.spacing.y = unit(0.05, "cm"),
+    legend.title = element_text(size = 9.5, face = "bold"),
+    legend.text = element_text(size = 8.5),
+    legend.key.width = unit(0.35, "cm"),
+    legend.key.height = unit(0.35, "cm"),
+    legend.spacing.y = unit(0.08, "cm"),
     legend.margin = margin(0, 0, 0, 0),
     legend.box.margin = margin(0, 0, 0, -25),
     legend.position = "right",
@@ -856,15 +892,15 @@ map_imports_plot <-
     ylim = c(-58, 85),
     expand = FALSE
   ) +
-  labs(title = "SBM Efficiency - Imports") +
+  #(title = "SBM Efficiency - Imports") +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 11, face = "bold", hjust = 0.5),
-    legend.title = element_text(size = 8.5, face = "bold"),
-    legend.text = element_text(size = 7.5),
-    legend.key.width = unit(0.28, "cm"),
-    legend.key.height = unit(0.28, "cm"),
-    legend.spacing.y = unit(0.05, "cm"),
+    legend.title = element_text(size = 9.5, face = "bold"),
+    legend.text = element_text(size = 8.5),
+    legend.key.width = unit(0.35, "cm"),
+    legend.key.height = unit(0.35, "cm"),
+    legend.spacing.y = unit(0.08, "cm"),
     legend.margin = margin(0, 0, 0, 0),
     legend.box.margin = margin(0, 0, 0, -25),
     legend.position = "right",
@@ -881,3 +917,5 @@ ggsave(
   height = 5,
   units = "in"
 )
+
+
