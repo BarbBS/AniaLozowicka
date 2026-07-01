@@ -1036,8 +1036,17 @@ scatter_plot <-
     linewidth = 0.3,
     color = "grey70"
   ) +
-  scale_color_manual(values = continent_colors, name = "Continent") +
-  coord_cartesian(xlim = c(0, 1), ylim = c(0, 1)) +
+  scale_color_manual(
+    values = continent_colors,
+    name = NULL
+  ) +
+  guides(
+    color = guide_legend(nrow = 1)
+  ) +
+  coord_cartesian(
+    xlim = c(0, 1),
+    ylim = c(0, 1)
+  ) +
   labs(
     x = "Imports efficiency",
     y = "Exports efficiency"
@@ -1046,8 +1055,14 @@ scatter_plot <-
   theme(
     axis.title = element_text(size = 9, face = "bold"),
     axis.text = element_text(size = 9),
+    legend.position = "bottom",
+    legend.direction = "horizontal",
     legend.title = element_text(size = 9, face = "bold"),
     legend.text = element_text(size = 8),
+    legend.key.width = unit(0.4, "cm"),
+    legend.key.height = unit(0.25, "cm"),
+    legend.spacing.x = unit(0.1, "cm"),
+    legend.margin = margin(0, 0, 0, 0),
     panel.grid.minor = element_blank(),
     plot.margin = margin(5, 5, 5, 5)
   )
