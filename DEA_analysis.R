@@ -17,6 +17,7 @@ library(rnaturalearth)
 library(rnaturalearthdata)
 library(dplyr)
 library(giscoR)
+library(ggrepel)
 
 
 # =====================================
@@ -918,4 +919,133 @@ ggsave(
   units = "in"
 )
 
+# =========================
+# Exports efficiency vs. Imports efficiency - scatterplot
 
+# Kolory kontynentów
+continent_colors <- c(
+  "Europe" = "skyblue",
+  "Asia" = "gold",
+  "Africa" = "tomato",
+  "Americas" = "palegreen3",
+  "Oceania" = "orchid",
+  "Antarctica" = "lightgray"
+)
+
+# Wczytanie wyników SBM
+eff_exports <- read_excel("DEA_results/SBM_exports_results.xlsx")
+eff_imports <- read_excel("DEA_results/SBM_imports_results.xlsx")
+
+# Ujednolicenie nazw kolumn
+eff_exports <- eff_exports %>%
+  rename(Efficiency_exports = Efficiency)
+
+eff_imports <- eff_imports %>%
+  rename(Efficiency_imports = Efficiency)
+
+# Mapa kontynentów z wczeœniej przygotowanych danych
+continent_map <- plot_exports %>%
+  select(iso3, continent) %>%
+  distinct()
+
+# Dane do scatterplotu
+scatter_data <- eff_exports %>%
+  select(Country, iso3, Efficiency_exports) %>%
+  inner_join(
+    eff_imports %>% select(iso3, Efficiency_imports),
+    by = "iso3"
+  ) %>%
+  left_join(continent_map, by = "iso3")
+
+# Scatterplot
+scatter_plot <-
+  ggplot(
+    scatter_data,
+    aes(
+      x = Efficiency_imports,
+      y = Efficiency_exports,
+      color = continent
+    )
+  ) +
+  geom_point(size = 2.5, alpha = 0.85) +
+  geom_text(
+    aes(label = iso3),
+    color = "grey30",
+    size = 1.9,
+    hjust = -0.1,
+    vjust = 0.3,
+    show.legend = FALSE
+  ) +
+  geom_abline(
+    intercept = 0,
+    slope = 1,
+    linetype = "dashed",
+    linewidth = 0.3,
+    color = "grey70"
+  ) +
+  scale_color_manual(values = continent_colors, name = "Continent") +
+  coord_cartesian(xlim = c(0, 1), ylim = c(0, 1)) +
+  labs(
+    x = "Imports efficiency",
+    y = "Exports efficiency"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title = element_text(size = 9, face = "bold"),
+    axis.text = element_text(size = 9),
+    legend.title = element_text(size = 9, face = "bold"),
+    legend.text = element_text(size = 8),
+    panel.grid.minor = element_blank(),
+    plot.margin = margin(5, 5, 5, 5)
+  )
+
+scatter_plot
+
+# Zapis do PDF
+ggsave(
+  filename = "DEA_results/SBM_exports_imports_scatterplot.pdf",
+  plot = scatter_plot,
+  width = 8,
+  height = 6,
+  units = "in"
+)
+
+# Tabelka z informacj¹ o krajach effekt.w obu obszarach
+
+# Tolerancja numeryczna
+tol <- 1e-6
+
+# Kraje efektywne jednoczeœnie w eksporcie i imporcie
+efficient_both <- scatter_data %>%
+  filter(
+    abs(Efficiency_exports - 1) < tol,
+    abs(Efficiency_imports - 1) < tol
+  )
+
+# Tabela kontynentów
+continent_summary <- efficient_both %>%
+  count(continent, name = "Efficient countries") %>%
+  mutate(
+    Share = round(100 * `Efficient countries` /
+                    sum(`Efficient countries`), 1),
+    Share = paste0(Share, "%")
+  ) %>%
+  arrange(desc(`Efficient countries`))
+
+# Dodanie wiersza Total
+continent_summary <- bind_rows(
+  continent_summary,
+  tibble(
+    continent = "Total",
+    `Efficient countries` = sum(continent_summary$`Efficient countries`),
+    Share = "100%"
+  )
+)
+
+continent_summary
+
+# Zapis do Excela
+write_xlsx(
+  continent_summary,
+  "DEA_results/Efficient_countries_by_continent.xlsx"
+)
