@@ -1069,7 +1069,7 @@ scatter_plot <-
 
 scatter_plot
 
-# Zapis do PDF
+# Zapis scatterplot do PDF
 ggsave(
   filename = "DEA_results/SBM_exports_imports_scatterplot.pdf",
   plot = scatter_plot,
